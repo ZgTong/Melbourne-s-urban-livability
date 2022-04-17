@@ -5,7 +5,7 @@ const NotFound = lazy(() => import('../containers/NotFound'))
 
 const Routers = [
     {
-        path: '/home',
+        path: '/',
         component: Home,
         root: [],
         exact: true

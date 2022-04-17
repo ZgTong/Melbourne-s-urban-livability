@@ -15,8 +15,8 @@ function App() {
               />
           ))}
           <Route
-              path="/"
-              element={<Navigate to="/home" replace />}
+              path="/home"
+              element={<Navigate to="/" replace />}
           />
       </Routes>
     </div>
