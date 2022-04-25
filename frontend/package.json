@@ -4,14 +4,21 @@
   "private": true,
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.31",
+    "@react-spring/parallax": "^9.4.5-beta.1",
+    "@react-spring/web": "^9.4.5-beta.1",
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
     "sass": "^1.50.0",
+    "use-deep-compare-effect": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1",
+    "sass-resources-loader": "^2.2.5"
   }
 }
