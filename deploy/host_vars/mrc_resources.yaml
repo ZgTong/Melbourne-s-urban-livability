@@ -32,21 +32,21 @@ security_groups:
 # 2: docker
 volumes:
   - vol_name: instance01-vol-common
-    vol_size: 40
+    vol_size: 100
   - vol_name: instance01-vol-docker
-    vol_size: 40
+    vol_size: 100
   - vol_name: instance02-vol-common
-    vol_size: 40
+    vol_size: 10
   - vol_name: instance02-vol-docker
-    vol_size: 40
+    vol_size: 10
   - vol_name: instance03-vol-common
-    vol_size: 40
+    vol_size: 10
   - vol_name: instance03-vol-docker
-    vol_size: 40
+    vol_size: 10
   - vol_name: instance04-vol-common
-    vol_size: 40
+    vol_size: 10
   - vol_name: instance04-vol-docker
-    vol_size: 40
+    vol_size: 10
 
 # Instance
 instances:

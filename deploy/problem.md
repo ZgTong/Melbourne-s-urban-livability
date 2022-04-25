@@ -1,4 +1,11 @@
 
+## Quick Start
+
+./deploy.sh 之后输入密码
+OTljMmNlOTBlYzA3YTIw
+
+
+
 ## trouble shooting
 
 1. 同样的脚本在本机wsl下出现ansible syntax error "-name ^ here"
@@ -33,6 +40,7 @@
     1.  目测是没有正确添加用户组
     2.  要手动添加吗。。。
     3.  目前手动添加，需要root用户才能access docker socket
+    4.  进入instance输入sudo chmod 666 /var/run/docker.sock
 
 10. 拉取镜时 Error pulling ibmcom/couchdb3 - code: None message: open /var/lib/docker/tmp/GetImageBlob517118589: no such file or directory
     1. 挂载数据卷覆盖了docker源文件
@@ -40,3 +48,6 @@
        2. systemctl restart docker
         
 11. 注意docker容器命名规则
+
+12. curl无法连接''{{inventory_name}}''
+    1.  未解决

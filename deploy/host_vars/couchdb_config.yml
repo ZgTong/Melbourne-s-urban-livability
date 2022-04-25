@@ -13,7 +13,7 @@ volumes:
 # Master Node e.g. instance01
 # Also as the onlly couchdb processing node
 node_info:
-  - ip: 172.26.133.0
+  - ip: master_node
     dir: /data/master_data
     ports: ["5984:5984", "5986:5986", "4369:4369", "9100-9200:9100-9200"]
   - ip: 172.20.0.2
