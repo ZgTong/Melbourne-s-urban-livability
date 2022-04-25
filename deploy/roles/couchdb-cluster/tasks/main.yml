@@ -1,0 +1,31 @@
+
+
+
+# Enable couch db cluster
+# Or it is already enabled in docker compose file
+- name: Enable couch db cluster
+  uri:
+    url: http://{{ master_node }}:5984/_cluster_setup
+    method: POST
+    usr: "{{ usr }}"
+    password: "{{ pass }}"
+    force_basic_auth: yes
+    status_code: 200, 201
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body: "{\"action\": \"enable_cluster\", \"bind_address\": \"0.0.0.0\", \"username\":\"{{ usr }}\", \"password\": \"{{ pass }}\", \"port\": \"5984\", \"remote_node\": \"{{ inventory_hostname }}\", \"node_count\": \"3\",\"remote_current_user\": \"{{ usr }}\", \"remote_current_password\":\"{{ pass }}\"}"
+
+# Join nodes to CouchDB cluster
+- name: Join nodes to CouchDB cluster
+  uri:
+    url: http://{{ master_node }}:5984/_cluster_setup
+    method: POST
+    usr: "{{ usr }}"
+    password: "{{ pass }}"
+    force_basic_auth: yes
+    status_code: 200, 201
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body: "{\"action\":\"add_node\",\"host\":\"{{ inventory_hostname }}\",\"port\":\"5984\",\"username\":\"{{ usr }}\",\"password\":\"{{ pass }}\"}"

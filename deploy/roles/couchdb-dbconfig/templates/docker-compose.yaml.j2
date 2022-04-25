@@ -1,0 +1,62 @@
+version: "3"
+services:
+  couch_master:
+    image: "ibmcom/couchdb3:{{VERSION}}"
+    restart: always
+    ports:
+      - "{{master_port}}:{{master_port}}"
+      - "5986:5986"
+      - "4369:4369"
+      - "9100-9200:9100-9200"
+    links:
+      - couch_slave1
+      - couch_slave2
+    volumes:
+      - ./data/master/data:/opt/couchdb/data
+    environment:
+      - COUCHDB_USER={{usr}}
+      - COUCHDB_PASSWORD={{pass}}
+      - NODENAME={{master_node}}
+    container_name: couch_master
+    networks:
+      couchdb_nw:
+        ipv4_address: {{master_node}}
+
+  couch_slave1:
+    image: "ibmcom/couchdb3:{{VERSION}}"
+    restart: always
+    ports:
+      - "{{slave1_port}}:{{master_port}}"
+    volumes:
+      - ./data/slave1/data:/opt/couchdb/data
+    environment:
+      - COUCHDB_USER={{usr}}
+      - COUCHDB_PASSWORD={{pass}}
+      - NODENAME={{slave1_node}}
+    container_name: couch_slave1
+    networks:
+      couchdb_nw:
+        ipv4_address: {{slave1_node}}
+
+  couch_slave2:
+    image: "ibmcom/couchdb3:{{VERSION}}"
+    restart: always
+    ports:
+      - "{{slave2_port}}:{{master_port}}"
+    volumes:
+      - ./data/slave2/data:/opt/couchdb/data
+    environment:
+      - COUCHDB_USER={{usr}}
+      - COUCHDB_PASSWORD={{pass}}
+      - NODENAME={{slave2_node}}
+    container_name: couch_slave2
+    networks:
+      couchdb_nw:
+        ipv4_address: {{slave2_node}}
+
+networks:
+  couchdb_nw:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

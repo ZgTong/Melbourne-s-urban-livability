@@ -1,0 +1,40 @@
+
+
+# Stop all containers on the instance
+- name: Get running containers
+      docker_host_info:
+        containers: yes
+      register: docker_info
+
+- name: Stop running containers
+  docker_container:
+    name: "{{ item }}"
+    state: stopped
+  loop: "{{ docker_info.containers | map(attribute='Id') | list }}"
+
+# Config 3-node couch db
+- name: Create Couchdb config directory
+  become: yes
+  ansible.builtin.file:
+    path: "{{ db_dir }}"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    recurse: yes
+    state: directory
+
+- name: Configure compose
+  become: yes
+  ansible.builtin.template:
+    src: docker-compose.yaml.j2
+    dest: "{{ db_dir }}/docker-compose.yaml"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+
+- name: Run docker compose
+  become: yes
+  community.docker.docker_compose:
+    project_src: "{{ db_dir }}"
+    pull: yes
+    state: present
+    remove_orphans: yes
+    recreate: always

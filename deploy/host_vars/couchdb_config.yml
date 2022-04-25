@@ -1,0 +1,29 @@
+
+# couchdb setting
+
+
+# nodes: [172.20.0.2, 172.20.0.3, 172.20.0.4]
+# ports: [5984, 15984, 25984]
+master_node: 172.20.0.2
+slave1_node: 172.20.0.3
+slave2_node: 172.20.0.4
+
+master_port: 5984
+slave1_port: 15984
+slave2_port: 25984
+
+usr: team28
+pass: "team28"
+VERSION: '3.2.1'
+cookie: 'a192aeb9904e6590849337933b000c99'
+
+
+
+# define volume
+---
+volumes:
+  - device: /dev/vdb
+    mountpoint: /var/lib/docker
+  - device: /dev/vdc
+    mountpoint: /data
+
