@@ -35,6 +35,7 @@ OTljMmNlOTBlYzA3YTIw
 
 7. cookie?
    1. 暂时用tutor的
+
 8. 使用compose构建？
    1. 暂时不用
 
@@ -53,3 +54,8 @@ OTljMmNlOTBlYzA3YTIw
 
 12. curl无法连接''{{inventory_name}}''
     1.  未解决
+
+13. 还需要解决
+    1.  docker权限
+    2.  volumes覆盖
+    3.  curl connection

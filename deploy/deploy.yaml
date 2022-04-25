@@ -11,26 +11,24 @@
     - role: openstack-instance
 
 # Deploy one instance
-# instance01: route testing instance
-# - hosts: instance01
-#   vars_files:
-#     - host_vars/couchdb_config.yml
-#   gather_facts: true
-#   vars:
-#     - ansible_user: ubuntu
-#     - ansible_ssh_private_key_file: ~/.ssh/id_rsa_ccc.pem
-#     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
-#   roles:
-#     - role: instances-common
-#     - role: instances-docker
-#     - role: instances-volumes
-#     - role: couchdb-start
-#     - role: couchdb-cluster
-
+instance01: route testing instance
+- hosts: instance01
+  vars_files:
+    - host_vars/couchdb_config.yml
+  gather_facts: true
+  vars:
+    - ansible_user: ubuntu
+    - ansible_ssh_private_key_file: ~/.ssh/id_rsa_ccc.pem
+    - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  roles:
+    - role: instances-common
+    - role: instances-docker
+    - role: instances-volumes
+    - role: couchdb-start
+    - role: couchdb-cluster
 
 # # deploy front end
 # ---
 
 # # delpoy backend
-
 # ---
