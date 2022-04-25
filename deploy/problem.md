@@ -4,7 +4,9 @@
 ./deploy.sh 之后输入密码
 OTljMmNlOTBlYzA3YTIw
 
-
+- 目前还在测试，启动之后进入instance输入以下来解决权限问题
+  - sudo chmod 666 /var/run/docker.sock
+  - systemctl restart docker
 
 ## trouble shooting
 
