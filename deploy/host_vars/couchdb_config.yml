@@ -1,29 +1,32 @@
-
-# couchdb setting
-
-
-# nodes: [172.20.0.2, 172.20.0.3, 172.20.0.4]
-# ports: [5984, 15984, 25984]
-master_node: 172.20.0.2
-slave1_node: 172.20.0.3
-slave2_node: 172.20.0.4
-
-master_port: 5984
-slave1_port: 15984
-slave2_port: 25984
-
-usr: team28
-pass: "team28"
-VERSION: '3.2.1'
-cookie: 'a192aeb9904e6590849337933b000c99'
-
-
-
-# define volume
 ---
+# Define nodes
+master_node: '{{ inventory_hostname }}'
+slave_nodes: [172.20.0.2, 172.20.0.3]
+
+# Mount volume
 volumes:
   - device: /dev/vdb
     mountpoint: /var/lib/docker
   - device: /dev/vdc
     mountpoint: /data
 
+# Master Node e.g. instance01
+# Also as the onlly couchdb processing node
+node_info:
+  - ip: 172.26.133.0
+    dir: /data/master_data
+    ports: ["5984:5984", "5986:5986", "4369:4369", "9100-9200:9100-9200"]
+  - ip: 172.20.0.2
+    dir: /data/slave1_data
+    ports: ["15984:5984"]
+  - ip: 172.20.0.3
+    dir: /data/slave2_data
+    ports: ["25984:5984"]
+
+
+
+# couchdb config
+usr: team28
+pass: "team28"
+VERSION: '3.2.1'
+cookie: 'a192aeb9904e6590849337933b000c99'

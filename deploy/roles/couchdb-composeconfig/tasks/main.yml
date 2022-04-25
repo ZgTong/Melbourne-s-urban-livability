@@ -1,4 +1,5 @@
 
+# Use compose file to config couchdb cluster (may abort)
 
 # Stop all containers on the instance
 - name: Get running containers
