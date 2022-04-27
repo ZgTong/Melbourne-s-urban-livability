@@ -1,11 +1,11 @@
 ---
-# Delete all instances
-- name: Remove all instances
-  openstack.cloud.server:
-    name: '{{ item.name }}'
-    state: absent
-    delete_fip: yes
-  loop: '{{ instances }}'
+# # Delete all instances
+# - name: Remove all instances
+#   openstack.cloud.server:
+#     name: '{{ item.name }}'
+#     state: absent
+#     delete_fip: yes
+#   loop: '{{ instances }}'
 
 # Create an instance on NeCTAR
 - name: Create an instance

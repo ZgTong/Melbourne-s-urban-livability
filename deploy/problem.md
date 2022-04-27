@@ -56,6 +56,13 @@ OTljMmNlOTBlYzA3YTIw
     1.  未解决
 
 13. 还需要解决
-    1.  docker权限
-    2.  volumes覆盖
-    3.  curl connection
+    1.  动态获得各种host的ip地址
+    2.  docker权限
+        1.  become: yes
+    3.  volumes覆盖
+        1.  先做文件系统，在部署docker
+    4.  curl connection
+
+14. curl问题很可能是镜像问题
+    1.  是/opt/date的权限问题
+    2.  如果进行挂载，则用root写，couchdb打不开，出现permission denied，错误

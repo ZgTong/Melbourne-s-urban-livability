@@ -1,17 +1,16 @@
-# Create resources on MRC
-- hosts: localhost
-  vars_files:
-    - host_vars/mrc_resources.yaml
-  gather_facts: true
+# # Create resources on MRC
+# - hosts: localhost
+#   vars_files:
+#     - host_vars/mrc_resources.yaml
+#   gather_facts: true
 
-  roles:
-    - role: openstack-common
-    - role: openstack-volume
-    - role: openstack-security-group
-    - role: openstack-instance
+#   roles:
+#     - role: openstack-common
+#     - role: openstack-volume
+#     - role: openstack-security-group
+#     - role: openstack-instance
 
 # Deploy one instance
-instance01: route testing instance
 - hosts: instance01
   vars_files:
     - host_vars/couchdb_config.yml
@@ -22,10 +21,10 @@ instance01: route testing instance
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
   roles:
     - role: instances-common
-    - role: instances-docker
     - role: instances-volumes
-    - role: couchdb-start
-    - role: couchdb-cluster
+    - role: instances-docker
+    # - role: couchdb-start
+    # - role: couchdb-cluster
 
 # # deploy front end
 # ---

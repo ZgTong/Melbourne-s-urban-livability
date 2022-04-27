@@ -35,26 +35,26 @@ volumes:
     vol_size: 100
   - vol_name: instance01-vol-docker
     vol_size: 100
-  - vol_name: instance02-vol-common
-    vol_size: 10
-  - vol_name: instance02-vol-docker
-    vol_size: 10
-  - vol_name: instance03-vol-common
-    vol_size: 10
-  - vol_name: instance03-vol-docker
-    vol_size: 10
-  - vol_name: instance04-vol-common
-    vol_size: 10
-  - vol_name: instance04-vol-docker
-    vol_size: 10
+  # - vol_name: instance02-vol-common
+  #   vol_size: 10
+  # - vol_name: instance02-vol-docker
+  #   vol_size: 10
+  # - vol_name: instance03-vol-common
+  #   vol_size: 10
+  # - vol_name: instance03-vol-docker
+  #   vol_size: 10
+  # - vol_name: instance04-vol-common
+  #   vol_size: 10
+  # - vol_name: instance04-vol-docker
+  #   vol_size: 10
 
 # Instance
 instances:
   - name: instance01
     volumes: ['instance01-vol-common', 'instance01-vol-docker']
-  - name: instance02
-    volumes: ['instance02-vol-common', 'instance02-vol-docker']
-  - name: instance03
-    volumes: ['instance03-vol-common', 'instance03-vol-docker']
-  - name: instance04
-    volumes: ['instance04-vol-common', 'instance04-vol-docker']
+  # - name: instance02
+  #   volumes: ['instance02-vol-common', 'instance02-vol-docker']
+  # - name: instance03
+  #   volumes: ['instance03-vol-common', 'instance03-vol-docker']
+  # - name: instance04
+  #   volumes: ['instance04-vol-common', 'instance04-vol-docker']
