@@ -66,3 +66,4 @@ OTljMmNlOTBlYzA3YTIw
 14. curl问题很可能是镜像问题
     1.  是/opt/date的权限问题
     2.  如果进行挂载，则用root写，couchdb打不开，出现permission denied，错误
+    3.  master端口映射

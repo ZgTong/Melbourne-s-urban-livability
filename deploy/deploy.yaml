@@ -23,7 +23,7 @@
     - role: instances-common
     - role: instances-volumes
     - role: instances-docker
-    # - role: couchdb-start
+    - role: couchdb-start
     # - role: couchdb-cluster
 
 # # deploy front end

@@ -44,7 +44,6 @@
     timeout: 60
     recreate: true
     pull: yes
-    ports: '{{item.ports}}'
     volumes:
       - '{{item.dir}}'
     env:
@@ -53,3 +52,25 @@
       COUCHDB_SECRET: "{{ cookie }}"
       ERL_FLAGS: "-setcookie \"{{ cookie }}\" -name \"couchdb@{{ item.ip }}\""
   loop: '{{node_info}}'
+
+
+
+# Create and Run couchdb container
+- name: Create master
+  become: yes
+  docker_container:
+    name: 'couchdb-{{item.ip}}'
+    image: "ibmcom/couchdb3:{{ VERSION }}"
+    state: started
+    timeout: 60
+    recreate: true
+    pull: yes
+    ports: '{{item.ports}}'
+    volumes:
+      - '{{item.dir}}'
+    env:
+      COUCHDB_USER: "{{ usr }}"
+      COUCHDB_PASSWORD: "{{ pass }}"
+      COUCHDB_SECRET: "{{ cookie }}"
+      ERL_FLAGS: "-setcookie \"{{ cookie }}\" -name \"couchdb@{{ item.ip }}\""
+  loop: '{{master_info}}'

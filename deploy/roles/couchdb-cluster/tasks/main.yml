@@ -3,43 +3,46 @@
 
 # Enable couchdb cluster
 # Let slave send setup message
-- name: Enable couchdb Cluster
-  uri:
-    url: http://{{ master_node }}:5984/_cluster_setup
-    method: POST
-    usr: "{{ usr }}"
-    password: "{{ pass }}"
-    force_basic_auth: yes
-    status_code: 200, 201
-    headers:
-      Content-Type: "application/json"
-    body_format: json
-    body: "{\"action\": \"enable_cluster\", \"bind_address\": \"0.0.0.0\", \"username\":\"{{ usr }}\", \"password\": \"{{ pass }}\", \"port\": \"5984\", \"remote_node\": \"'{{ item }}'\", \"node_count\": \"3\",\"remote_current_user\": \"{{ usr }}\", \"remote_current_password\":\"{{ pass }}\"}"
+# - name: Enable couchdb Cluster
+#   become: yes
+#   uri:
+#     # url: http://{{ master_node }}:5984/_cluster_setup
+#     url: http://{{usr}}:{{pass}}@{{master_node}}:5984/_cluster_setup
+#     method: POST
+#     # user: "{{ usr }}"
+#     # password: "{{ pass }}"
+#     force_basic_auth: yes
+#     status_code: 200, 201
+#     headers:
+#       Content-Type: "application/json"
+#     body_format: json
+#     body: "{\"action\": \"enable_cluster\", \"bind_address\": \"0.0.0.0\", \"username\":\"{{ usr }}\", \"password\": \"{{ pass }}\", \"port\": \"5984\", \"remote_node\": \"{{ item }}\", \"node_count\": \"3\",\"remote_current_user\": \"{{ usr }}\", \"remote_current_password\":\"{{ pass }}\"}"
 
-  loop: '{{slave_nodes}}'
+#   loop: '{{slave_nodes}}'
 
 # Join nodes to CouchDB cluster
 - name: Join couchdb cluster
+  become: yes
   uri:
-    url: http://{{ master_node }}:5984/_cluster_setup
+    url: http://{{usr}}:{{pass}}@{{master_node}}:5984/_cluster_setup
     method: POST
-    usr: "{{ usr }}"
-    password: "{{ pass }}"
+    # user: "{{ usr }}"
+    # password: "{{ pass }}"
     force_basic_auth: yes
     status_code: 200, 201
     headers:
       Content-Type: "application/json"
     body_format: json
-    body: "{\"action\":\"add_node\",\"host\":\"'{{item}}'\",\"port\":\"5984\",\"username\":\"{{ usr }}\",\"password\":\"{{ pass }}\"}"
+    body: "{\"action\":\"add_node\",\"host\":\"{{ item }}\",\"port\":\"5984\",\"username\":\"{{ usr }}\",\"password\":\"{{ pass }}\"}"
   loop: '{{slave_nodes}}'
 
 # Finish the cluster setup
 - name: Finish the cluster setup
   uri:
-    url: http://{{ masternode }}:5984/_cluster_setup
+    url: http://{{usr}}:{{pass}}@{{master_node}}:5984/_cluster_setup
     method: POST
-    user: "{{ user }}"
-    password: "{{ pass }}"
+    # user: "{{ user }}"
+    # password: "{{ pass }}"
     force_basic_auth: yes
     headers:
       Content-Type: "application/json"
