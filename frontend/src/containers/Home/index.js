@@ -1,7 +1,6 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './index.scss'
-import { Link } from "react-router-dom";
 import MapPage from "../../containers/MapPage";
 
 const Home = () => {

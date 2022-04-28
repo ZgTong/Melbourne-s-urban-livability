@@ -17,7 +17,7 @@ const Map = ({
     const zoom = 13;
     const center = {lat: -37.7998, lng: 144.9460}
     const [map, setMap] = useState()
-    const [infoBox, setInfoBox] = useState(new window.google.maps.InfoWindow({content: "hello"}))
+    const [infoBox] = useState(new window.google.maps.InfoWindow({content: "hello"}))
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
         infoBox.setPosition(e.latLng)

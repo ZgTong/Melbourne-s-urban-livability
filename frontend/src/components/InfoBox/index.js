@@ -1,14 +1,14 @@
 import React, {memo, useEffect, useRef, useState} from 'react';
 const InfoBox = (
-    options // content pixelOffset position maxWidth
+    options
 ) => {
     const ref = useRef(null)
     const [infoWin, setInfoWin] = useState(null)
-    const divStyle = {
-        background: `white`,
-        border: `1px solid #ccc`,
-        padding: 15
-    }
+    // const divStyle = {
+    //     background: `white`,
+    //     border: `1px solid #ccc`,
+    //     padding: 15
+    // }
 
     useEffect(() => {
         console.log("info:", options, ref.current)
