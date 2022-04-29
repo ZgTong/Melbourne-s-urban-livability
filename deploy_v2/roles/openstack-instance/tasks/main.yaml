@@ -1,0 +1,54 @@
+#
+# Part of Assignment 2 - COMP90024 course at The University of Melbourne 
+#
+# Cluster and Cloud Computing - Team 24 
+# 
+# Authors: 
+#
+#  * Liam Simon (Student ID: 1128453)
+#  * Rejoy Benjamin (Student ID: 1110935)
+#  * Parikshit Diwan (Student ID: 1110497)
+#  * Colin McLean (Student ID: 1139518)
+#  * Matthias Bachfischer (Student ID: 1133751)
+#
+# Location: Melbourne
+#
+---
+# Create an instance on Unimelb Research Cloud
+- name: Create an instance
+  os_server:
+    name: '{{ item.name }}'
+    image: '{{ instance_image }}'
+    key_name: '{{ instance_key_name }}'
+    flavor: '{{ instance_flavor }}'
+    availability_zone: '{{ availability_zone }}'
+    security_groups: '{{ sg_names }}'
+    volumes: '{{ item.volumes }}'
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  loop: '{{ instances }}'
+  register: os_instance
+
+- debug:
+    msg: "Instance {{ item.openstack.name }} has been created. IP address is {{ item.openstack.public_v4 }}"
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+- name: Wait for connection
+  wait_for:
+    host: "{{ item.openstack.public_v4 }}"
+    port: 22
+    timeout: 120
+    search_regex: OpenSSH
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined
+
+# Add hosts to Ansible in-memory inventory
+- name: Add host
+  add_host:
+    name: '{{ item.openstack.public_v4 }}'
+    groups: TwitterMining
+  loop: '{{ os_instance.results }}'
+  when: item.openstack is defined

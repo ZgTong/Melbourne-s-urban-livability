@@ -1,0 +1,100 @@
+#
+# Part of Assignment 2 - COMP90024 course at The University of Melbourne 
+#
+# Cluster and Cloud Computing - Team 24 
+# 
+# Authors: 
+#
+#  * Liam Simon (Student ID: 1128453)
+#  * Rejoy Benjamin (Student ID: 1110935)
+#  * Parikshit Diwan (Student ID: 1110497)
+#  * Colin McLean (Student ID: 1139518)
+#  * Matthias Bachfischer (Student ID: 1133751)
+#
+# Location: Melbourne
+#
+
+# Common vars
+availability_zone: melbourne-qh2-uom
+
+# Volume
+volumes:
+  - vol_name: server-01-volume-data
+    vol_size: 40
+  - vol_name: server-01-volume-docker
+    vol_size: 10
+  - vol_name: server-02-volume-data
+    vol_size: 40
+  - vol_name: server-02-volume-docker
+    vol_size: 10
+  - vol_name: server-03-volume-data
+    vol_size: 40
+  - vol_name: server-03-volume-docker
+    vol_size: 10
+  - vol_name: server-04-volume-data
+    vol_size: 40
+  - vol_name: server-04-volume-docker
+    vol_size: 10
+
+# Security group
+security_groups:
+  - name: administration
+    description: "Security group for server administration and remote access (e.g. access via SSH or HTTP for Frontend)"
+  - name: intra_cluster_communication
+    description: "Security group for communication between CouchDB nodes in cluster"
+
+security_group_rules_public: 
+  - name: administration
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 0.0.0.0/0
+  - name: administration
+    protocol: tcp
+    port_range_min: 5984
+    port_range_max: 5984
+    remote_ip_prefix: 0.0.0.0/0
+  - name: administration
+    protocol: tcp
+    port_range_min: 80
+    port_range_max: 80
+    remote_ip_prefix: 0.0.0.0/0
+  - name: administration
+    protocol: tcp
+    port_range_min: 8000
+    port_range_max: 8000
+    remote_ip_prefix: 0.0.0.0/0
+
+security_group_rules_private: 
+  - name: intra_cluster_communication
+    protocol: tcp
+    port_range_min: 9100
+    port_range_max: 9200
+    remote_group: intra_cluster_communication
+  - name: intra_cluster_communication
+    protocol: tcp
+    port_range_min: 5984
+    port_range_max: 5984
+    remote_group: intra_cluster_communication
+  - name: intra_cluster_communication
+    protocol: tcp
+    port_range_min: 4369
+    port_range_max: 4369
+    remote_group: intra_cluster_communication
+
+
+# Instance
+instances:
+  - name: server-01
+    volumes: ['server-01-volume-data', 'server-01-volume-docker']
+  - name: server-02
+    volumes: ['server-02-volume-data', 'server-02-volume-docker']
+  - name: server-03
+    volumes: ['server-03-volume-data', 'server-03-volume-docker']
+  - name: server-04
+    volumes: ['server-04-volume-data', 'server-04-volume-docker']
+
+
+instance_image: 215f9775-483c-4e0a-b703-d21a5c966f2e
+instance_key_name: cloud_unimelb_assignment_2_rsa
+instance_flavor: uom.mse.1c4g
