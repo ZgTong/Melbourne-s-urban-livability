@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './index.scss'
-import MapPage from "../../containers/MapPage";
+import MapPage from "../../containers/MapPage"
+import { GetSports } from '../../api/index'
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
+    useEffect(()=>{
+        GetSports().then((res)=>{
+            console.log("request res: ", res)
+        })
+    }, [])
     return (
         <div className='homeContainer'>
             <Parallax pages={3}>
@@ -13,8 +19,8 @@ const Home = () => {
                         <div className="author">
                             <h1 className='title'>Team 28 Info: </h1>
                             <ul className='authorList'>
-                                <li>ZuguangTong</li>
-                                <li>Shangyuan Zhi</li>
+                                <li>Zuguang Tong</li>
+                                <li>Yuanzhi Shang</li>
                                 <li>Jinyu Tan</li>
                                 <li>Zixuan Guo</li>
                                 <li>Ruoyi Gan</li>
