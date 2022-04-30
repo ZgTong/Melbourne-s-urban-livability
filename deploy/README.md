@@ -15,3 +15,7 @@
 **Check ./hosts and obtain the couchdb master node**
 
 **I left one instance for other possible uses**
+
+
+to check the membership, use curl -X GET "http://${user}:${pass}@${node}:5984/_membership"
+
