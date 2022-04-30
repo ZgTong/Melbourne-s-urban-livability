@@ -1,0 +1,2832 @@
+[
+  [
+    {
+      "tweet_id": "1494641098970464261",
+      "created_at": "2022-02-18 11:53:01",
+      "text": "@Cold_Peace_ And we catch hard leather Cricket balls with bare hands unlike your baseball.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1494540569548189697",
+      "created_at": "2022-02-18 05:13:33",
+      "text": "What's with the #Indian bowling attack?? They take the first 6 wickets comfortably and then let the game down after that. #NZvIND",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.02535
+    },
+    {
+      "tweet_id": "1487959755268431874",
+      "created_at": "2022-01-31 01:23:45",
+      "text": "@blahbery @guerillacricket As young kids growing up in a small in town in India, we didn't understand much English. When they yelled Howzzat, we thought they said OUTERRR, we started using that everytime we wanted to appeal in our gully Cricket matches. I still hear OUTERR when someone appeals #LoveCricket",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0254
+    },
+    {
+      "tweet_id": "1487919875486281730",
+      "created_at": "2022-01-30 22:45:17",
+      "text": "@smh @rpjward In every game he played, he had two opponents, the player and the crowd. It's not easy to cope with constant booing. He played some amazing Tennis imo and he is the future after the top trio fade out.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.02535
+    },
+    {
+      "tweet_id": "1481923182739464194",
+      "created_at": "2022-01-14 09:36:34",
+      "text": "@AndyBagel624 @Tharki_Jijaji @S62828829 @Dannyboyo1955 @cricketcomau Of course you will remember because that was the only thing to celebrate for Australia in last summer's Cricket as you lost two consecutive home series to India.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1481833500433317888",
+      "created_at": "2022-01-14 03:40:12",
+      "text": "Home conditions for #England in #Hobart, hope we get some Cricket today and tomorrow and there will be some fight back from the poms. #AUSvENG The #Ashes",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1481768869555744768",
+      "created_at": "2022-01-13 23:23:23",
+      "text": "@KDprynce @BiggKat02 @cricketcomau Yes, Indian Cricket Council and CA reports to it. Haha.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1481758726784958466",
+      "created_at": "2022-01-13 22:43:04",
+      "text": "@lone_cowboy @Dannyboyo1955 @cricketcomau Sure, a captain who got involved in ball tampering has been made to captain the team again. CA was okay with Captain bulging d*ck playing this summer's Cricket despite his antics. The rubbish Aussie standards you are referring to are a slap on the wrist imo.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.02645
+    },
+    {
+      "tweet_id": "1452056268793737216",
+      "created_at": "2021-10-23 23:36:07",
+      "text": "@ESPNcricinfo Yeah, it does but also playing good Cricket matters to your fans and supporters. WIndies were utter stupid last night, total disappointment!",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1438900277898137603",
+      "created_at": "2021-09-17 16:18:54",
+      "text": "Sorry for your loss Pakis, #PAKvNZ. Don't you worry, we have the biggest Cricket party coming in 2 days. #IPL",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.02535
+    },
+    {
+      "tweet_id": "1434120237666816001",
+      "created_at": "2021-09-04 11:44:43",
+      "text": "@AllBlacks @AFLNZ AFL is for kids. Union is the real deal\ud83d\udc4a\ud83c\udffe",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1424874953514524701",
+      "created_at": "2021-08-09 23:27:16",
+      "text": "@bhogleharsha No one in Aus has time for that rubbish series tbh. My cricket loving white colleagues aren't even following it. There is hardly any news of this in the media. It's all about the lockdowns at the moment here.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1408019391740932104",
+      "created_at": "2021-06-24 11:09:17",
+      "text": "@rickygervais hey Ricky, have you watched the Cricket yesterday mate?",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1368852306175782918",
+      "created_at": "2021-03-08 09:13:16",
+      "text": "So, you are shit at T20 Cricket too?? https://t.co/DiDr8JkggQ",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1367730739773509633",
+      "created_at": "2021-03-05 06:56:34",
+      "text": "FFS, can you guys talk about #NZvAUS instead of Indian Cricket and Indian pitches???? @FoxCricket @patcummins30  @isaguha #markwaugh We'd like to know about young Kiwi cricketers. This commentary panel is total bollocks.#INDvENG",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1354740903886213121",
+      "created_at": "2021-01-28 10:39:36",
+      "text": "Annnnnnaaa, inga asal nuv Cricket aaaadava?? https://t.co/VEykEdwTI4",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1354342841833558017",
+      "created_at": "2021-01-27 08:17:50",
+      "text": "@MelissaMF10 @utdsaml @cricketcomau \ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02 yeah undefeated over the Pakis and the Kiwis.. there was hardly any fight back from the cousins and the Pakis laid themselves like a roll of rags. Last summer's Cricket was one of the most boring summers ever.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1352223785580072962",
+      "created_at": "2021-01-21 11:57:28",
+      "text": "@smh @mrchrisnico So @CricketAus wants to drop Australia Day from their promotions but schedules three games on that day. In a way you are celebrating the holiday by organising more games in a day than ever. What a cunch of hypocrite bunts. Play Cricket or enter full time politics.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1350680513460092928",
+      "created_at": "2021-01-17 05:45:03",
+      "text": "This is the best summer of Cricket in Australia in a very very long time. #AusvInd",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1348564125819887617",
+      "created_at": "2021-01-11 09:35:17",
+      "text": "I witnessed many of those ugly moments near the boundary lines while watching Cricket with my nephew. To be honest, it's usually drunk white men. https://t.co/O1cF755ypo",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1348140554958196738",
+      "created_at": "2021-01-10 05:32:10",
+      "text": "@markgkenny I take my nephews and go to watch Cricket every year either in Melbourne or Sydney or both and have watched Cricket at the MCG, SCG, Gabba, ADL Oval, WACA and there will be a common scene. Drunk white guys would swear outrageously in front of the young children who sit at the..",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1344174500397518848",
+      "created_at": "2020-12-30 06:52:29",
+      "text": "Three boxing day tests and three results. Test Cricket is well and truly alive and kicking. #WeLoveCricket",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1317259985244467202",
+      "created_at": "2020-10-17 00:23:48",
+      "text": "@Dr_Why8 A fun fact, The Victorian Cricket team is called The Victorian Bush Rangers, named after the Kelly gang.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1311652355625025536",
+      "created_at": "2020-10-01 13:01:05",
+      "text": "@AusRepublic Boxing Day Test 2019 at the Gee #AusvNZ https://t.co/nlDWUKd4AW",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.02535
+    },
+    {
+      "tweet_id": "1309458548850532352",
+      "created_at": "2020-09-25 11:43:41",
+      "text": "Seriously? Is this what #CricInfo has come down to? Posting a bloody tabloid click bait? No wonder @cricbuzz is my fav Cricket website. Secondly, Mrs Kohli should grow some thick skin and move the fuck on. https://t.co/IxcFDhQ4VD",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1291397915693309953",
+      "created_at": "2020-08-06 15:37:10",
+      "text": "@AspectGloomy @thatcameraguyy @GeorgeDobell1 @guerillacricket True, billion Indians truly deserve a game or two of Cricket to forget the scores of deaths in the hands of terrorists. I'm totally on your side.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    },
+    {
+      "tweet_id": "1270471499506278400",
+      "created_at": "2020-06-09 21:43:04",
+      "text": "@smh Well, the biggest cash cow of Britain was their former colony, India. Churchil let 3 million Indians die in British induced famines. During this famine, when an Aussie ship filled with wheat was sailing near Bengal, India, he said not to provide the Indians and said let them die.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "35646964",
+      "score": 1.0253
+    }
+  ],
+  [
+    {
+      "tweet_id": "1517977858060460032",
+      "created_at": "2022-04-23 21:24:58",
+      "text": "@theage We may not need the Mickleham facility today, but I can guarantee we\u2019ll need it in some capacity at some stage in the future. Great forward planning by the VIC govt.",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1509954460168388608",
+      "created_at": "2022-04-01 18:02:51",
+      "text": "@wallowsmusic @dylanminnette Upgrade Melbourne as well!? \ud83e\udd1e\ud83c\udffb\ud83e\udd1e\ud83c\udffb\ud83e\udd7a\ud83e\udd7a\ud83d\udc9c\ud83d\udc9c\ud83c\udde6\ud83c\uddfa\ud83c\udde6\ud83c\uddfa",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1306995606926184448",
+      "created_at": "2020-09-18 16:36:50",
+      "text": "@jakedavi35 @Stroppa_Del I\u2019m so sorry to hear that. We\u2019re currently in one of the hardest lockdowns in the world in Melbourne with only a small handful of cases, yet there are similar ppl on the fringes who are acting exactly the same. \ud83d\ude13\ud83d\ude13 at this rate we\u2019ll be in lockdown for 9mths by Christmas \ud83d\ude2d",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1302617782220017664",
+      "created_at": "2020-09-06 14:40:55",
+      "text": "@annabelcef Sending you big love \u2764\ufe0f\u2764\ufe0f (from another single dweller in Melbourne who is just hanging for a hug)",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1301902996809216000",
+      "created_at": "2020-09-04 15:20:37",
+      "text": "I\u2019m legitimately torn as to whether #Synthia (2016) or #TheBrink (2014) is @thejezabels\u2019 magnum opus. Both albums are exquisite and so distinctly different, yet both equally as genius, lyrically and in production. Grateful to have both to listen to in lockdown in Melbourne \u2764\ufe0f\ud83c\udde6\ud83c\uddfa",
+      "topic": "melbourne",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0457
+    },
+    {
+      "tweet_id": "1300972873692057601",
+      "created_at": "2020-09-02 01:44:38",
+      "text": "@ImoveCar @SherylLeeActrss Yeah the Melbourne event was wonderful! My dear friend @AdemEve got to go on stage and ask DKL a question over Skype!",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0456
+    },
+    {
+      "tweet_id": "1299282966070214656",
+      "created_at": "2020-08-28 09:49:33",
+      "text": "@Telstra can I please get some support to replace my handset? I\u2019m in Melbourne and I need my phone to do my job and it\u2019s not currently working. I\u2019ve tried the call centre (closed). Chat line (have been disconnected 7 times). Please help.",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1295575642235273216",
+      "created_at": "2020-08-18 04:17:58",
+      "text": "Hellblade: Senua's Sacrifice - I\u2019ve been holding off playing this game until I get a proper headset for the experience, and am now stuck in iso in Melbourne \ud83d\ude43 https://t.co/gF58cOMti4",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1293703434432962560",
+      "created_at": "2020-08-13 00:18:29",
+      "text": "@DoubleJPlays TRACK! \ud83d\ude1d\ud83d\ude4c\ud83c\udffc Can\u2019t believe this came out the year I was born \ud83d\udc40 @zanrowe thanks for brightening up my morning in Melbourne",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1289888217194328064",
+      "created_at": "2020-08-02 11:38:10",
+      "text": "@cubsportmusic @ARIA_Official Congratulations!!! It\u2019s a beautiful record. Have had the vinyl spinning all weekend in Melbourne iso \u2764\ufe0f",
+      "topic": "melbourne",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1284228321014763521",
+      "created_at": "2020-07-17 20:47:46",
+      "text": "@underthefan113 Start writing, Ivan! \ud83d\ude1c you\u2019re the one with the written English skills. I\u2019ll just try to catch some pretty shots in Melbourne \ud83d\ude43 but am open to anything!",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1279528473569013760",
+      "created_at": "2020-07-04 21:32:15",
+      "text": "@MollyInMotion_ @underthefan113 @thejezabels Ok so I don\u2019t know how to time stamp on YouTube but 35:50 is where it\u2019s at, Ivan. Sydney Opera House. Can\u2019t get a better venue than that!! \ud83d\ude0d eager to hear your thoughts https://t.co/wXHBfCUjeQ",
+      "topic": "other_cities",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1276248020716150784",
+      "created_at": "2020-06-25 20:16:54",
+      "text": "@katenash this song reminds me of young love \ud83e\udd70 #TimsTwitterListeningParty",
+      "topic": "other_cities",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1275866686252437504",
+      "created_at": "2020-06-24 19:01:37",
+      "text": "@aravosis @SavannahsTennis Heaven forbit a protective breathing apparatus protects you from a HIGHLY infectious communicable disease (which is also a global pandemic and causing every economy in the world great harm)...? I\u2019ve barely left my apartment in Melbourne for the past 3 months to protect others...",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1273271175938891776",
+      "created_at": "2020-06-17 15:07:59",
+      "text": "@bluerosepat Hahaha I have total arachnaphobia too (just the big ones) but they\u2019re honestly not that bad, especially if you live near downtown Melb or Sydney",
+      "topic": "other_cities",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1266771462251110402",
+      "created_at": "2020-05-30 16:40:26",
+      "text": "@fabiofogna Good luck Fabio and wishing you all the best for your recovery.. from Melbourne \u2764\ufe0f\ud83c\udde6\ud83c\uddfa",
+      "topic": "melbourne",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1266424606602100736",
+      "created_at": "2020-05-29 17:42:09",
+      "text": "@underthefan113 Mulholland Drive was my intro to Lynch at the tender age of 18 at an outer suburbs cinema in Melbourne (that I caught 2 trains to from the country)... and there was no going back from there. It\u2019ll always hold a special place in my heart simply for that!",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0456
+    },
+    {
+      "tweet_id": "1257600145895505921",
+      "created_at": "2020-05-05 09:16:54",
+      "text": "@ImoveCar @TwinPeaksUnwrap @ThatsOurWaldo Omg a bar in Sydney (Jakoby\u2019s Tiki Lounge) had one of those on display and I sooooooo badly wanted one!!!\n\nWhere did you find it!?",
+      "topic": "other_cities",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0457
+    },
+    {
+      "tweet_id": "1215596504737402880",
+      "created_at": "2020-01-10 11:29:26",
+      "text": "@nomatchwindyno And the humidity in Sydney is much much higher than in Perth. You could tell Rafa was exhausted.",
+      "topic": "other_cities",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04565
+    },
+    {
+      "tweet_id": "1215465480862875649",
+      "created_at": "2020-01-10 02:48:47",
+      "text": "@nomatchwindyno There has been a huge amount of hype on tv / billboards etc here in Melbourne (and I\u2019m guessing the rest of the country, too). I think they\u2019re trying to massage his image into the \u201cnice guy\u201d. Zero hype for Fed or Nadal which I find kind genuinely confusing.",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    },
+    {
+      "tweet_id": "1209816110205263872",
+      "created_at": "2019-12-25 12:40:12",
+      "text": "@hihatchie any chance we can get \u201cSecret\u201d and \u201cSleep\u201d at your Melbourne show for @AustralianOpen 2020!? \ud83d\ude4f\ud83c\udffb\ud83d\ude4f\ud83c\udffb\u2764\ufe0f\u2764\ufe0f\ud83c\udde6\ud83c\uddfa\ud83c\udde6\ud83c\uddfa\ud83c\udfbe\ud83c\udfbe",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.04555
+    },
+    {
+      "tweet_id": "1200477610674774016",
+      "created_at": "2019-11-29 18:12:20",
+      "text": "@robynkonichiwa @lukegilford @garage_magazine Stretching for Melbourne 2020!?!? \ud83d\ude4f\ud83c\udffb\ud83d\ude4f\ud83c\udffb\ud83d\ude4f\ud83c\udffb\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\ud83c\udff3\ufe0f\u200d\ud83c\udf08\ud83c\udff3\ufe0f\u200d\ud83c\udf08\ud83c\udff3\ufe0f\u200d\ud83c\udf08\u2728\u2728\u2728\u2728",
+      "topic": "melbourne",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "27633031",
+      "score": 1.0455
+    }
+  ],
+  [
+    {
+      "tweet_id": "1518442635048153088",
+      "created_at": "2022-04-25 04:11:50",
+      "text": "There was a reason Connor Nash was wrestling Monky at training. Monky is like the end of level boss for the Hawks tackle training! Nash earnt the right to take him on! #Always #AFLHawksSwans",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "56733",
+      "score": 1.22535
+    },
+    {
+      "tweet_id": "1514889087119159299",
+      "created_at": "2022-04-15 08:51:18",
+      "text": "@MarkHenry3195 &lt;Sarcasm&gt;There has never been heart issues in AFL players!!! Well, except for the players that used time machines to be vaccinated and return to the past!&lt;\\sarcasm&gt; https://t.co/HDiyxccEOD",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "56733",
+      "score": 1.22555
+    },
+    {
+      "tweet_id": "1512548809863495680",
+      "created_at": "2022-04-08 21:51:52",
+      "text": "@TonyKhan Ummmm, people that are on twitter and not just coming here to promote their own botch, I mean wrestling company! It's like claiming the Jaguars aren't run by real business people because of how badly they suck... Oh, wait... Never mind that analogy!",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "56733",
+      "score": 1.2253
+    },
+    {
+      "tweet_id": "1516933321867264001",
+      "created_at": "2022-04-21 00:14:21",
+      "text": "Jordan Lewis on Mitchell Lewis - \u201cI don\u2019t know Mitch Lewis personally so I don\u2019t know his intellect in terms of football IQ\"\n\nCondescending much?",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1515649729367273479",
+      "created_at": "2022-04-17 11:13:49",
+      "text": "Footy media. No insight, just storytelling.  Fantasy.  They can say absolutely anything without a source and so long as it drives the clicks, they get the platform. https://t.co/hzdyZM70dC",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.248154848,
+        -38.454733929
+      ],
+      "location_name": "BASS COAST",
+      "location_id": "VIC173",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1515577839822671873",
+      "created_at": "2022-04-17 06:28:09",
+      "text": "Lots of AFL CEO hot takes and editorials from people who don't know the first thing about business.  I personally couldn't give a rat's tossbag who it is.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.248154848,
+        -38.454733929
+      ],
+      "location_name": "BASS COAST",
+      "location_id": "VIC173",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1512424540919705604",
+      "created_at": "2022-04-08 13:38:04",
+      "text": "You know you're getting old when you start actually enjoying watching golf on TV.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09515
+    },
+    {
+      "tweet_id": "1512019811362304000",
+      "created_at": "2022-04-07 10:49:49",
+      "text": "Goalless in a half of footy in perfect conditions on your home ground.  Doesn't get more embarrassing than that.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1510464834575699969",
+      "created_at": "2022-04-03 03:50:54",
+      "text": "Wingard with the airborn handball to put his teammate under pressure.  Classic.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1509436357969858562",
+      "created_at": "2022-03-31 07:44:06",
+      "text": "Trying to watch the Bullants but the AFL won't let me cast the stream.  Petty fucks.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1508248437967695872",
+      "created_at": "2022-03-28 01:03:44",
+      "text": "That Swans fan who pinched the ball talks some shite, doesn't he?  \n\nOne of the more ridiculous press conferences.  He did alright for himself in the end, considering he stole AFL property.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1507215318179250178",
+      "created_at": "2022-03-25 04:38:29",
+      "text": "I've blocked most footy media, but already sick of Kane Cornes being \"staggered\", and \"concerned\" in every Fox Footy or SEN article.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1505303073841123329",
+      "created_at": "2022-03-19 21:59:54",
+      "text": "The AFL media infatuation with America continues. https://t.co/Rqd5NcFA9M",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1503942463505190917",
+      "created_at": "2022-03-16 03:53:19",
+      "text": "The old \"the footy season actually started in January\" brigade are having a busy week.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1503660245222322179",
+      "created_at": "2022-03-15 09:11:53",
+      "text": "Seriously though, this is next to useless for footy coverage, but excellent for peddling wagering ads \ud83d\ude44",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1503657609429413888",
+      "created_at": "2022-03-15 09:01:25",
+      "text": "AFL - we have the widest screen in the world.\n\nASPECT RATIO - but what about....(interrupted)\n\nAFL - .... THE WIDEST IN THE WORLD. https://t.co/RfzCYpBFsz",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1501873074765197312",
+      "created_at": "2022-03-10 10:50:19",
+      "text": "Today's prizes in the chook raffle.\n\n1) $50 Bar tab at the RSL\n2) $20 voucher at the local butcher.\n3) the Chelsea Football Club.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1501304375867691012",
+      "created_at": "2022-03-08 21:10:30",
+      "text": "A good summary of my very brief cricket career. https://t.co/a9FQQYiXNn",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1500613739804229633",
+      "created_at": "2022-03-06 23:26:10",
+      "text": "Every year one or two AFL clubs blow all expectations and rise to the top, and every year pre-season all our \"football experts\" are unable to pick it, instead just staying with the obvious choices.  \n\nThat's not insight, that's just shit analysis anyone on the street can do.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1499853198240411650",
+      "created_at": "2022-03-04 21:04:03",
+      "text": "I was a rusted-on cricket fan during Warnie's career.  The opposite now, but when Shane was bowling or batting, I was glued to the screen.  No one else for what he did, and he did it with charisma and as a quintessential Aussie larrikin.  RIP.  Gone way too soon. https://t.co/FKKmKlGq47",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09535
+    },
+    {
+      "tweet_id": "1498212013729730563",
+      "created_at": "2022-02-28 08:22:34",
+      "text": "FFS\n\n\u2018Sexy\u2019 scoreboards the latest in stadium race, QR codes still needed for footy https://t.co/grtvtYBrsO",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1496599075013394432",
+      "created_at": "2022-02-23 21:33:19",
+      "text": "Just saw my first Caroline Wilson take for the year \ud83e\udd22.  Need to further refine muting of AFL media.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1495363008092327937",
+      "created_at": "2022-02-20 11:41:38",
+      "text": "This weekend was supposed to involve 200kms of cycling and 6 hours of beerfest.  Got to 37km and 3.5 hours of each, respectively.  I'm disappointed, particularly in the lost 2.5 hours.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09505
+    },
+    {
+      "tweet_id": "1495327829185073152",
+      "created_at": "2022-02-20 09:21:50",
+      "text": "Footy season is near @NBullantsFC https://t.co/cuiW9n9DsR",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1494421611193462790",
+      "created_at": "2022-02-17 21:20:51",
+      "text": "A heinous act against one of the great things in footy - sleeves. https://t.co/BXgQjluBOS",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1493733129647173632",
+      "created_at": "2022-02-15 23:45:04",
+      "text": "I reckon the Winter Olympics should incorporate the summer sports.  I'm picturing a javelin thrower having their attempt, it landing on ice and opening up a hole, into which a waiting 3m diving attempt is made, before they surface with a ball and play water polo.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1492973203777789952",
+      "created_at": "2022-02-13 21:25:24",
+      "text": "How the hell does a professional athlete and footy player get away with not being able to run more than 2km? https://t.co/m18bTh4K6y",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1491198900791054336",
+      "created_at": "2022-02-08 23:54:57",
+      "text": "Footy media is starting to get moving and it's bloody depressing.  I hate it more than I love footy now.  \n\nClickbait stories to drive traffic to appease sponsors.  \ud83e\udd22\ud83e\udd22\ud83e\udd22",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09515
+    },
+    {
+      "tweet_id": "1486233523401146368",
+      "created_at": "2022-01-26 07:04:19",
+      "text": "@TKYC Out: Summer and cricket\nIn: Winter and footy on boggy grounds.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1484376118241423363",
+      "created_at": "2022-01-21 04:03:39",
+      "text": "The sooner the tennis fucks off, the better.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1481910849308860419",
+      "created_at": "2022-01-14 08:47:33",
+      "text": "What's the bet when the police come for Djokovic, he'll attack them with a selection of ground strokes, backhands and volleys?  And then he'll run out of tennis balls so start picking up trash and hitting it.... Right up until he runs out of stuff and throws the racquet.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1471978017509425152",
+      "created_at": "2021-12-17 22:58:02",
+      "text": "Well done to the Australian Cricket team in acknowledging that Die Hard is a Christmas Movie and selecting accordingly. https://t.co/yHRM3dmCzE",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1471796600322203652",
+      "created_at": "2021-12-17 10:57:08",
+      "text": "Onboard with this \n...\nThe joys of trawling through old photos of football stadiums https://t.co/G1TTjvWT0O",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1471768349767987200",
+      "created_at": "2021-12-17 09:04:53",
+      "text": "What level of footy did I play?\n\nI played on Grand Finals for the Hawks, kicking goals after the siren to win the flag.  Albeit the ball was a socks and the goals were a bedroom door (Banana) or the main arch (Torp). https://t.co/62ZKIx385R",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1470621458208411652",
+      "created_at": "2021-12-14 05:07:33",
+      "text": "@JRRivett @MCG I don't drink at the footy either, but mainly because I don't like the taste of piss!",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1470362339950010377",
+      "created_at": "2021-12-13 11:57:54",
+      "text": "Haha, brings back memories!  \ud83c\udfca\u200d\u2642\ufe0f https://t.co/IGZXjY40jE",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1469621500114137090",
+      "created_at": "2021-12-11 10:54:04",
+      "text": "Cairns v TAS is comfortably one of the worst games of basketball I've watched.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1456227524615147523",
+      "created_at": "2021-11-04 11:51:11",
+      "text": "All set for The Keys to open up.  \ud83c\udfb3 https://t.co/Pi9PomT1VN",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1450986470328528898",
+      "created_at": "2021-10-21 00:45:07",
+      "text": "@David_Bonnici There won't be any braces.  I'll just get her to change her footy allegiances to Collingwood.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1447695051249750016",
+      "created_at": "2021-10-11 22:46:11",
+      "text": "I miss the old days of AFL Trades.  One week, no \"trade radio\", one big-arse meeting at the start of the week at Princes Park, and everything solely reliant on the fax machine at AFL House being plugged in.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1447384418067255297",
+      "created_at": "2021-10-11 02:11:51",
+      "text": "Would have happily seen the back of Wingard.  Easy to be seduced by his skills when he's on, but those occurrences are few and far between.\n\nI hope this is the spur for some consistent footy from him.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1447309603998355456",
+      "created_at": "2021-10-10 21:14:33",
+      "text": "I'm sure cricket could have come up with a better name than \"multiformat series\".",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1445161774546763779",
+      "created_at": "2021-10-04 22:59:51",
+      "text": "Melbourne.\n\n\ud83c\udfc6 Footy\n\ud83c\udfc6 Lockdown\n\ud83c\udfc6 Daily case numbers\n\nYou can't beat that winning feeling \ud83e\udd23\ud83d\ude02\ud83e\udd23",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1442440935636303873",
+      "created_at": "2021-09-27 10:48:12",
+      "text": "Well, time to mute all AFL media until the trade period is over.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1441163849504202753",
+      "created_at": "2021-09-23 22:13:31",
+      "text": "The footy media have spent a lot of time in the last 12-18 hours analysing @MarkMcGowanMP's kicking technique.\n\nThat's what we get served up by the \"experts\".",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1434872572764561410",
+      "created_at": "2021-09-06 13:34:14",
+      "text": "The baby so wouldn't go to sleep, so I hummed to her all of the Victorian football club songs and boom, out cold.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1432931977271779328",
+      "created_at": "2021-09-01 05:03:00",
+      "text": "Football club appoints coach.  Media dramatizes it. https://t.co/xbcYBZSVni",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1432931705095000064",
+      "created_at": "2021-09-01 05:01:55",
+      "text": "Tired old footy media.  Every club goes through destabilisation, it's cyclical and temporary.  Anyone with half a brain know that Chompers. https://t.co/h849gc8UMR",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1431019544533889025",
+      "created_at": "2021-08-26 22:23:41",
+      "text": "The famous #79 footy jumper, worn by myself and @hardsy05 https://t.co/6AnnF6RyWQ",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1430296056441442304",
+      "created_at": "2021-08-24 22:28:48",
+      "text": "It's ridiculous.  You don't see it in Football over in Europe, or in American sports.  Athletes go where the opportunities are.  AFL players are so precious. https://t.co/yLcn6jRuXC",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1429372732093788160",
+      "created_at": "2021-08-22 09:19:50",
+      "text": "Thank fuck the footy season is now over.  What a stinker.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1426643669990346752",
+      "created_at": "2021-08-14 20:35:31",
+      "text": "It's good to have football back.  Saturday night prem games, Sunday morning European league games.  Perfect for the new parent routine.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1426325373428535296",
+      "created_at": "2021-08-13 23:30:43",
+      "text": "Signed up as a founding member of The Keys.  Can't wait,. \ud83c\udfb3 https://t.co/YrlXFxqNpW",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1424220422547988480",
+      "created_at": "2021-08-08 04:06:24",
+      "text": "I'm sorry, did they just introduce Hawthorn and Collingwood on Fox Footy as \"two teams in red hot form\"?",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1423603782789648384",
+      "created_at": "2021-08-06 11:16:05",
+      "text": "Oh, is the 2021 AFL season still going?",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09515
+    },
+    {
+      "tweet_id": "1423257231395475456",
+      "created_at": "2021-08-05 12:19:01",
+      "text": "AFL Club membership stat stories are the most drab content around.  Who the hell gives a rat's tossbag?",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1422480647101186049",
+      "created_at": "2021-08-03 08:53:09",
+      "text": "Track cycling is so good.  Nice to have it back in the screen.  Really should head down to Darebin Sports Centre one night to watch a few races.  #CyclingTrack",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.095
+    },
+    {
+      "tweet_id": "1420926610211962887",
+      "created_at": "2021-07-30 01:57:58",
+      "text": "Hell of a stint from Clarko, not only for Hawthorn but for football in general.  4 Flags, and fostered a production line of future coaches who've gone in to have their own success.\n\nAll from a left field appointment that everyone assumed would be Gary Ayres.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0952
+    },
+    {
+      "tweet_id": "1419456631360819204",
+      "created_at": "2021-07-26 00:36:47",
+      "text": "The Olympics have really impacted my Football Manager career.  Into my sixth season now, after leading Southampton to 7th in the EPL last season.\n\nYou do get a good buzz when your former teams get relegated, don't you!  Suck shit Newcastle.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0951
+    },
+    {
+      "tweet_id": "1419432835140657152",
+      "created_at": "2021-07-25 23:02:14",
+      "text": "@hardsy05 The 3x3 makes no sense to me at all!  Do they just ring in substandard basketball players?",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1419086140431224835",
+      "created_at": "2021-07-25 00:04:35",
+      "text": "Regular volleyball is a far greater game then beach volleyball. #Olympics",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1418911231096745985",
+      "created_at": "2021-07-24 12:29:34",
+      "text": "Today's Olympic watching has brought me to the conclusion that I need to go and try archery.  Looks awesome.  Happy to substitute with axe throwing too, which definitely should also be in the Olympics instead of 3x3 Basketball or equestrian.  #Olympics #FuckEquestrianOff",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    },
+    {
+      "tweet_id": "1418907221719584768",
+      "created_at": "2021-07-24 12:13:38",
+      "text": "Would love to see the GPS data for Olympic Table Tennis athletes. https://t.co/dajnE9eRf1",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1418903171812904960",
+      "created_at": "2021-07-24 11:57:32",
+      "text": "It's funny, Swimming used to be one of the top sports I used to follow in the Olympics, for years.  Now I just find it all incredibly dull.  \n\nStill though, that Keiran Perkins 1500m gold in 1996 is one of my all time favourite things in sport.  \n\n#Olympics",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0952
+    },
+    {
+      "tweet_id": "1418890122116755457",
+      "created_at": "2021-07-24 11:05:41",
+      "text": "Swimming was more fun in the 'Grant Hackett flipping pianos' era.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09505
+    },
+    {
+      "tweet_id": "1418741299977494531",
+      "created_at": "2021-07-24 01:14:19",
+      "text": "@AleOfATime I was trying to watch the Weightlifting but I don't think they are covering it.  On the archery now!",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.0949
+    },
+    {
+      "tweet_id": "1417256053759123458",
+      "created_at": "2021-07-19 22:52:29",
+      "text": "Kinda excited for the Olympics now that they are here.  Most looking forward to the Weightlifting, Basketball, and Track and Field.  Not as hot on the swimming as I used to be, but will be good to see some of the races.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "20625289",
+      "score": 1.09495
+    }
+  ],
+  [
+    {
+      "tweet_id": "1510784404343328772",
+      "created_at": "2022-04-04 01:00:45",
+      "text": "Doc McDonald round a big day. @ MCC Hockey Section https://t.co/RMYTmYl2mX",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.01035
+    },
+    {
+      "tweet_id": "1435736991291772928",
+      "created_at": "2021-09-08 22:49:08",
+      "text": "@SaintFrankly @LiberalAus He is Surfing that is exercise. Moonlight Surfing.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1404382379888709633",
+      "created_at": "2021-06-14 10:17:06",
+      "text": "@DarrenBeale2 @NickMcCallum7 @AFL Nick is whining about crowds at football and we are into the cold inside months down here. He wants the State Government to disregard health for unfettered possible infection. If only the Federal Government had us at the front of the queue vaccines in arm will save lockdowns.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1350593260280901632",
+      "created_at": "2021-01-16 23:58:20",
+      "text": "@jillastark @MayneReport Jill what a great Tweet so without the corporation of the Federal LNP Government Victoria smuggles in Tennis players from overseas. Why are you not calling Border Force. Bloody sneaky Dan. Who is the Relevant Federal Minister get to the bottom of this.",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1348494396",
+      "score": 1.01045
+    },
+    {
+      "tweet_id": "1350293328667951104",
+      "created_at": "2021-01-16 04:06:31",
+      "text": "@AnnPomeroy2 @gip1972 @georgiecrozier Ann please retweet the same reply you would have made for the Indian Cricket team. On the 5th of this month LNP was whining that the Tennis had to be saved.",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1348494396",
+      "score": 1.0105
+    },
+    {
+      "tweet_id": "1349938476867678208",
+      "created_at": "2021-01-15 04:36:28",
+      "text": "@3AWNeilMitchell True that is the same for the Cricket and yet we heard not a word about that even around Christmas time. So it is only now you bring this up. Poor form. Bring Australians home not sports stars. Protect us all. Not just a partisan political late call.",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1348494396",
+      "score": 1.0104
+    },
+    {
+      "tweet_id": "1243045741062500353",
+      "created_at": "2020-03-26 05:22:53",
+      "text": "The #mccgameface challange @hockeyvictoria @HockeyAustralia @englandhockey @mcchockey @ MCC Hockey Section https://t.co/C1487CFxLA",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1170282859862642688",
+      "created_at": "2019-09-07 10:29:11",
+      "text": "We came back through the door of destiny and we achieved something we had worked hard for. #mcchockey @ State Hockey Netball Centre outdoor netball courts are evil wet. https://t.co/5D5wYfo4V5",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        144.94772859,
+        -37.78543485
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1170229855209672704",
+      "created_at": "2019-09-07 06:58:33",
+      "text": "The door to destiny for those that want to achieve. @ State Hockey Centre https://t.co/ShbtWv27df",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        144.945032,
+        -37.786597
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.01045
+    },
+    {
+      "tweet_id": "1152023276547215360",
+      "created_at": "2019-07-19 01:12:07",
+      "text": "#sunset #melbourne_insta #chapelstreetprecinct @ MCC Hockey Section https://t.co/xGGTP4c7wL",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1150592534265106432",
+      "created_at": "2019-07-15 02:26:51",
+      "text": "WPL MCC V Hawthorn 0 : 0 @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/4pHJo93RTW",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1150547852294160384",
+      "created_at": "2019-07-14 23:29:18",
+      "text": "MPL MCC V Haw 0 v 0 @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/N604J8RxFt",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1147292604876361728",
+      "created_at": "2019-07-05 23:54:07",
+      "text": "WPL/MPL MCC V Southern @mcchockey @hockeyvictoria @ Southern United Hockey Club https://t.co/jiHa1U1zqG",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.08833452,
+        -37.96600142
+      ],
+      "location_name": "KINGSTON",
+      "location_id": "VIC226",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1146916073817722880",
+      "created_at": "2019-07-04 22:57:55",
+      "text": "Men\u2019s Health Round MCC vSKPH @hockeyvictoria @mcchockey @ MCC Hockey Section https://t.co/aqz4Zp9EWf",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1146776688480718849",
+      "created_at": "2019-07-04 13:44:03",
+      "text": "@mcchockey on the @mcg tour. @ Melbourne Cricket Ground (MCG) https://t.co/iMzO5dTW60",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1146727007427809281",
+      "created_at": "2019-07-04 10:26:38",
+      "text": "MCC v TEM @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/RbuFv8nsiI",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1146707802548781056",
+      "created_at": "2019-07-04 09:10:19",
+      "text": "MCC vFoots #betterlatethannever @ MCC Hockey Section https://t.co/va3NnICEes",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1133262533517692929",
+      "created_at": "2019-05-28 06:43:37",
+      "text": "MPL MCC V ESS @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/0Bb5sctS6Y",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.01035
+    },
+    {
+      "tweet_id": "1133259916574154752",
+      "created_at": "2019-05-28 06:33:13",
+      "text": "WPLR MCC V ESS @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/cNgl6sYBvI",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.01035
+    },
+    {
+      "tweet_id": "1128589989573357570",
+      "created_at": "2019-05-15 09:16:36",
+      "text": "MPL MCC V MUHC @mcchockey @hockeyvictoria @ State Hockey Netball Centre outdoor netball courts are evil wet. https://t.co/IXeMXQ4MnB",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        144.94772859,
+        -37.78543485
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1128588024588197888",
+      "created_at": "2019-05-15 09:08:47",
+      "text": "MPLR MCC VMUHC @mcchockey @hockeyvictoria @ State Hockey Netball Centre outdoor netball courts are evil wet. https://t.co/HcTaedtxeF",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        144.94772859,
+        -37.78543485
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1124108998506979328",
+      "created_at": "2019-05-03 00:30:44",
+      "text": "#melbourne #sunset #melbourne_insta @ MCC Hockey Section https://t.co/rD85VE48xo",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1122872071061512192",
+      "created_at": "2019-04-29 14:35:38",
+      "text": "MMBC MCC V TEM @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/VAoYbIayHi",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1118031130236719104",
+      "created_at": "2019-04-16 05:59:28",
+      "text": "MPLR Round 2 MCC v Mentone. @hockeyvictoria @mcchockey mentonehc @ Mentone Hockey Club https://t.co/qg0oSpp7u7",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        145.13890028,
+        -38.0009818
+      ],
+      "location_name": "KINGSTON",
+      "location_id": "VIC226",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1118011606783315970",
+      "created_at": "2019-04-16 04:41:53",
+      "text": "MPL  Round 2 MCC v Mentone @hockeyvictoria @mcchockey mentonehc @ Mentone Hockey Club https://t.co/fxZxpjMU97",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.13890028,
+        -38.0009818
+      ],
+      "location_name": "KINGSTON",
+      "location_id": "VIC226",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1118008798470270977",
+      "created_at": "2019-04-16 04:30:43",
+      "text": "WPL MCC v Mentone Round 2 3 : 3 draw @mcchockey @hockeyvictoria mentonehc @ Mentone Hockey Club https://t.co/ozD9gfY47U",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.13890028,
+        -38.0009818
+      ],
+      "location_name": "KINGSTON",
+      "location_id": "VIC226",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1117642945056796673",
+      "created_at": "2019-04-15 04:16:57",
+      "text": "WPLR MCC V Ment @hockeyvictoria @mcchockey mentonehc @ Mentone Hockey Club https://t.co/qXwhNLe0g3",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.13890028,
+        -38.0009818
+      ],
+      "location_name": "KINGSTON",
+      "location_id": "VIC226",
+      "user_id": "1348494396",
+      "score": 1.01035
+    },
+    {
+      "tweet_id": "1115761000366727171",
+      "created_at": "2019-04-09 23:38:46",
+      "text": "MPL MCC v Camb 0:5 @hockeyvictoria  @mcchockey @ MCC Hockey Section https://t.co/tzN8dCPKja",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1115758214514139137",
+      "created_at": "2019-04-09 23:27:42",
+      "text": "WPL MCC v Camb 2:2 @hockeyvictoria @mcchockey @ MCC Hockey Section https://t.co/VMdZOHdfND",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1115753514892972037",
+      "created_at": "2019-04-09 23:09:02",
+      "text": "WPLR MCC v Camb 0:4 loss @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/V2sRzxxkpZ",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1085403421040168962",
+      "created_at": "2019-01-16 05:08:36",
+      "text": "#thegrittychallenge @mcchockey @ MCC Hockey Section https://t.co/fIL8z2465T",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1085400048094060545",
+      "created_at": "2019-01-16 04:55:11",
+      "text": "#thegrittychallange @mcchockey #thelookthepain @ MCC Hockey Section https://t.co/bxNPlV85UO",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1063048284573499392",
+      "created_at": "2018-11-15 12:37:16",
+      "text": "1838- 1988 Melbourne Cricket Club Sesquicentennial Hockey Tournament. 7/10/1988 MCC Hockey Section First xi V Oxford University\u2019s  xi Part 5 @hockeyvictoria @mcg @mcchockey Photo credit\u2026 https://t.co/r1vpjkPAMS",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1063047299566198784",
+      "created_at": "2018-11-15 12:33:21",
+      "text": "1838- 1988 Melbourne Cricket Club Sesquicentennial Hockey Tournament. 7/10/1988 MCC Hockey Section First xi V Oxford University\u2019s  xi Part 4 @hockeyvictoria @mcg @mcchockey Photo credit\u2026 https://t.co/FNttHEbtig",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1063045890254880771",
+      "created_at": "2018-11-15 12:27:45",
+      "text": "1838- 1988 Melbourne Cricket Club Sesquicentennial Hockey Tournament. 7/10/1988 MCC Hockey Section First xi V Oxford University\u2019s  xi Part 2 @hockeyvictoria @mcg @mcchockey Photo credit\u2026 https://t.co/7SPjFy4uqx",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1063044134762635265",
+      "created_at": "2018-11-15 12:20:46",
+      "text": "1838- 1988 Melbourne Cricket Club Sesquicentennial Hockey Tournament. 7/10/1988 MCC Hockey Section First xi V Oxford University\u2019s  xi Part 2 @hockeyvictoria @mcg @mcchockey Photo credit\u2026 https://t.co/loCTLseuyr",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1063041336453013506",
+      "created_at": "2018-11-15 12:09:39",
+      "text": "1838- 1988 Melbourne Cricket Club Sesquicentennial Hockey Tournament. 7/10/1988 MCC Hockey Section First xi V Oxford University\u2019s  xi Part 1 @hockeyvictoria @mcg @mcchockey Photo credit\u2026 https://t.co/1I3v7soyhh",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1061577148794834944",
+      "created_at": "2018-11-11 11:11:30",
+      "text": "MCC Chairman\u2019s xi.. v VHA President\u2019s xi Venue MCG Year 1988 @mcchockey @mcg @hockeyvictoria Second half. Photo credit Gavin Hatfield. #yoursportstory @ Melbourne Cricket Ground (MCG) https://t.co/xsFe53rh0v",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1061575848019529729",
+      "created_at": "2018-11-11 11:06:19",
+      "text": "MCC Chairman\u2019s xi.. v VHA President\u2019s xi Venue MCG Year 1988 @mcchockey @mcg @hockeyvictoria first half. Photo credit Gavin Hatfield. #yoursportstory @ Melbourne Cricket Ground (MCG) https://t.co/zkTAqUc6SX",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.98346154,
+        -37.81984
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1036200124047929344",
+      "created_at": "2018-09-02 10:32:15",
+      "text": "MPL 1st Elimination Final. MCC V MUHC 8:7 win 1:1 full time 7:6 shootout.  @hockeyvictoria @mcchockey @ State Netball Hockey Centre https://t.co/Tut751Bjku",
+      "topic": "sports",
+      "sentiment": "pos",
+      "location": [
+        144.94777202,
+        -37.78536057
+      ],
+      "location_name": "MELBOURNE",
+      "location_id": "VIC132",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1033667976006983681",
+      "created_at": "2018-08-26 10:50:24",
+      "text": "More of MPL MCC V TEM @hockeyvictoria @mcchockey @ Toorak East Malvern Hockey Club - TEMHC https://t.co/DuwSJoEvtX",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        145.0413407,
+        -37.84044392
+      ],
+      "location_name": "BOROONDARA",
+      "location_id": "VIC201",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "1028875848559087617",
+      "created_at": "2018-08-13 05:28:12",
+      "text": "MPL MCC V Foots 4:3 win@mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/s0XWhSMabO",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "995597191887642629",
+      "created_at": "2018-05-13 09:30:42",
+      "text": "MPL @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/dhOjC9scsV",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "995596176752857088",
+      "created_at": "2018-05-13 09:26:40",
+      "text": "MPLR stephen.mathew.68 @mcchockey @ MCC Hockey Section https://t.co/6s4w5FFH5M",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "990859407130025984",
+      "created_at": "2018-04-30 07:44:26",
+      "text": "#sunset #melbourne #yarrarivermelbourne #riversunset @canonaustralia @ MCC Hockey Section https://t.co/l0TsOkGbAy",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "990857973437161472",
+      "created_at": "2018-04-30 07:38:44",
+      "text": "childish_chambino @mcchockey @ MCC Hockey Section https://t.co/zwvi1vnPd5",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "990856676180987905",
+      "created_at": "2018-04-30 07:33:35",
+      "text": "MPLR #MCCvMUHC 3 : 2 win @hockeyvictoria @mcchockey @ MCC Hockey Section https://t.co/PmIK8v74sw",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "990847926833364992",
+      "created_at": "2018-04-30 06:58:49",
+      "text": "MPL #MCCvMUHC 2 : 3 Loss @mcchockey @hockeyvictoria @ MCC Hockey Section https://t.co/HKTTprDIjt",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "910875402998026241",
+      "created_at": "2017-09-21 14:36:33",
+      "text": "#sunset #sthyarra #melbourne @ MCC Hockey Section https://t.co/jpEFadGZQL",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "906497309734785025",
+      "created_at": "2017-09-09 12:39:35",
+      "text": "#goalscorer #coach #MPB #clublegend @mcchockey @ MCC Hockey Section https://t.co/ismsdaYJzl",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99505073,
+        -37.83674386
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "561360729497161728",
+      "created_at": "2015-01-31 03:10:02",
+      "text": "HookIn2Hockey @ MCC Hockey Section http://t.co/SnUYlz0qRh",
+      "topic": "sports",
+      "sentiment": "neg",
+      "location": [
+        144.99502481,
+        -37.83677643
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    },
+    {
+      "tweet_id": "420084836997406720",
+      "created_at": "2014-01-06 06:50:04",
+      "text": "#TheUrnReturns @MCC_Members Boxing Day Test day 4 the end was nigh. #AllSmiles http://t.co/DbJIuShbbz",
+      "topic": "sports",
+      "sentiment": "neu",
+      "location": [
+        144.99543101,
+        -37.83702594
+      ],
+      "location_name": "STONNINGTON",
+      "location_id": "VIC203",
+      "user_id": "1348494396",
+      "score": 1.0103
+    }
+  ],
+  [
+    {
+      "tweet_id": "1514587982254440452",
+      "created_at": "2022-04-14 12:54:49",
+      "text": "@cossackgundi Lol, eat your heart out\n\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02 https://t.co/siKEQudmzu",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        143.895824,
+        -37.42083389175
+      ],
+      "location_name": "HEPBURN",
+      "location_id": "VIC94",
+      "user_id": "820018673825943552",
+      "score": 1.0293
+    },
+    {
+      "tweet_id": "1508088331812233218",
+      "created_at": "2022-03-27 14:27:31",
+      "text": "@CMChris2000 @SamRamani2 As far as vulgarities are concerned, you certainly take the cake",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        143.895824,
+        -37.42083389175
+      ],
+      "location_name": "HEPBURN",
+      "location_id": "VIC94",
+      "user_id": "820018673825943552",
+      "score": 1.0291
+    },
+    {
+      "tweet_id": "1518122850388824066",
+      "created_at": "2022-04-24 07:01:07",
+      "text": "@ana2suki \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\ud83c\udf77\ud83c\udf7a",
+      "topic": "foods",
+      "sentiment": "neg",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1518121968964300800",
+      "created_at": "2022-04-24 06:57:37",
+      "text": "@ana2suki Eat quick",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1517826330074574848",
+      "created_at": "2022-04-23 11:22:51",
+      "text": "@StellaVirgin12 Nice wine \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\ud83c\udf77",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.0163
+    },
+    {
+      "tweet_id": "1514216905271218181",
+      "created_at": "2022-04-13 12:20:17",
+      "text": "@Fisherman3331 @ComenGettit Beautiful \ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.0163
+    },
+    {
+      "tweet_id": "1514212820899942405",
+      "created_at": "2022-04-13 12:04:03",
+      "text": "@natsuki77kuzuha Good night beautiful \ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1512639851794903044",
+      "created_at": "2022-04-09 03:53:38",
+      "text": "@MaricaKudou \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83d\udc45",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1511868737741156354",
+      "created_at": "2022-04-07 00:49:30",
+      "text": "@mgm_1030 \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1511852575473033217",
+      "created_at": "2022-04-06 23:45:17",
+      "text": "@yuki_toyoda_ \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1511851889532411908",
+      "created_at": "2022-04-06 23:42:33",
+      "text": "@mgm_1030 Good morning beautiful \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1510555319239278596",
+      "created_at": "2022-04-03 09:50:27",
+      "text": "@rena_GID Looks great love fried rice \u2764\ufe0f\u2764\ufe0f",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1510432118765064192",
+      "created_at": "2022-04-03 01:40:54",
+      "text": "@Play_Femboy \ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1510320466740736001",
+      "created_at": "2022-04-02 18:17:14",
+      "text": "@leotardism Looking fantastic \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1506809384768204800",
+      "created_at": "2022-03-24 01:45:27",
+      "text": "@ruruka100 \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1504643687917096960",
+      "created_at": "2022-03-18 02:19:44",
+      "text": "@ruruka100 \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83d\udc45\ud83d\udc45\ud83d\udc45",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1504579349034332186",
+      "created_at": "2022-03-17 22:04:05",
+      "text": "@JouguuS Looking beautiful Sayaka \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.0164
+    },
+    {
+      "tweet_id": "1500613581284413442",
+      "created_at": "2022-03-06 23:25:32",
+      "text": "@JouguuS Great pics so beautiful \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1497660927797170180",
+      "created_at": "2022-02-26 19:52:45",
+      "text": "@atsuki201812 \ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\ud83c\udf38\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\ud83d\udc8b\ud83d\udc8b",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    },
+    {
+      "tweet_id": "1494102315988488194",
+      "created_at": "2022-02-17 00:12:05",
+      "text": "@luna67_cd_ver2 Beautiful Luna can\u2019t wait to see you dressing up again \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\ud83c\udf39",
+      "topic": "foods",
+      "sentiment": "pos",
+      "location": [
+        145.053135344,
+        -37.972566514250005
+      ],
+      "location_name": "BAYSIDE",
+      "location_id": "VIC182",
+      "user_id": "1264385409754132480",
+      "score": 1.01635
+    }
+  ]
+]
