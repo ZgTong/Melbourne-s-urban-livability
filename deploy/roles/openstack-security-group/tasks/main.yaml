@@ -1,14 +1,16 @@
+
 ---
+
 # Create a security group
 - name: Create a security group
-  openstack.cloud.security_group:
+  os_security_group:
     name: '{{ item.name }}'
     description: '{{ item.description }}'
     state: present
   loop: '{{ security_groups }}'
 
 - name: Create a list of security group names
-  ansible.builtin.set_fact:
+  set_fact:
     sg_names: '{{ sg_names|default([]) + [ item.name ] }}'
   loop: '{{ security_groups }}'
 

@@ -1,15 +1,8 @@
----
-# # Delete all instances
-# - name: Remove all instances
-#   openstack.cloud.server:
-#     name: '{{ item.name }}'
-#     state: absent
-#     delete_fip: yes
-#   loop: '{{ instances }}'
 
+---
 # Create an instance on NeCTAR
 - name: Create an instance
-  openstack.cloud.server:
+  os_server:
     name: '{{ item.name }}'
     image: '{{ instance_image }}'
     key_name: '{{ instance_key_name }}'
@@ -30,7 +23,7 @@
   when: item.openstack is defined
 
 - name: Wait for connection
-  ansible.builtin.wait_for:
+  wait_for:
     host: "{{ item.openstack.public_v4 }}"
     port: 22
     timeout: 120
@@ -40,8 +33,8 @@
 
 # Add hosts to Ansible in-memory inventory
 - name: Add host
-  ansible.builtin.add_host:
+  add_host:
     name: '{{ item.openstack.public_v4 }}'
-    groups: COMP90024
+    groups: TwitterMining
   loop: '{{ os_instance.results }}'
   when: item.openstack is defined
