@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 class TweetAnalyzer():
     
     def __init__(self, keywords):
-        with open('data/keywords.json', 'r') as f:
+        with open('tweet_harvesting/data/keywords.json', 'r') as f:
             self.full_keyword_dict = json.load(f)
             
         # topic: city, food, sport, traffic_weather

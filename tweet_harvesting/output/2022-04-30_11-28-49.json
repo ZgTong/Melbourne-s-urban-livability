@@ -12,7 +12,9 @@
     "location_name": "LATROBE",
     "location_id": "VIC219",
     "user_id": "3975878773",
-    "score": 1.0009
+    "score": 1.0009,
+    "loc_pid": "VIC1763",
+    "vic_loca_2": "MORWELL"
   },
   {
     "_id": "1507264237663490050",
@@ -27,7 +29,9 @@
     "location_name": "LATROBE",
     "location_id": "VIC219",
     "user_id": "3975878773",
-    "score": 1.0009
+    "score": 1.0009,
+    "loc_pid": "VIC1763",
+    "vic_loca_2": "MORWELL"
   },
   {
     "_id": "1355816433070956548",
@@ -42,7 +46,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "2263550550",
-    "score": 1.02875
+    "score": 1.02875,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1355034023282634753",
@@ -57,7 +63,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "2263550550",
-    "score": 1.02845
+    "score": 1.02845,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1213722878417334273",
@@ -72,7 +80,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "2263550550",
-    "score": 1.0284
+    "score": 1.0284,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1173351209681346560",
@@ -87,7 +97,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "2263550550",
-    "score": 1.0284
+    "score": 1.0284,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1173180879918657536",
@@ -102,7 +114,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "2263550550",
-    "score": 1.0284
+    "score": 1.0284,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1173144017078370304",
@@ -117,7 +131,9 @@
     "location_name": "MELBOURNE",
     "location_id": "VIC132",
     "user_id": "2263550550",
-    "score": 1.0285
+    "score": 1.0285,
+    "loc_pid": "VIC1634",
+    "vic_loca_2": "MELBOURNE"
   },
   {
     "_id": "1517988241885999104",
@@ -132,7 +148,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1517394620459614208",
@@ -147,7 +165,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2775
+    "score": 1.2775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1517106248071581697",
@@ -162,7 +182,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2777
+    "score": 1.2777,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1516539959473098757",
@@ -177,7 +199,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27765
+    "score": 1.27765,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1515963053132509186",
@@ -192,7 +216,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27775
+    "score": 1.27775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1515938780200718338",
@@ -207,7 +233,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27765
+    "score": 1.27765,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1513058062742872068",
@@ -222,7 +250,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1512794941948268545",
@@ -237,7 +267,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2775
+    "score": 1.2775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1510359354309894145",
@@ -252,7 +284,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1506735239661383682",
@@ -267,7 +301,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2775
+    "score": 1.2775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1504204576517353476",
@@ -282,7 +318,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27765
+    "score": 1.27765,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1502377654393008128",
@@ -297,7 +335,9 @@
     "location_name": "SOUTH GIPPSLAND",
     "location_id": "VIC178",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC2240",
+    "vic_loca_2": "SANDY POINT"
   },
   {
     "_id": "1497086461803253760",
@@ -312,7 +352,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2775
+    "score": 1.2775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1496747280744865794",
@@ -327,7 +369,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1496082973598556162",
@@ -342,7 +386,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2776
+    "score": 1.2776,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1495254533521371136",
@@ -357,7 +403,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.27755
+    "score": 1.27755,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1492291664630538240",
@@ -372,7 +420,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2775
+    "score": 1.2775,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1492288987934781440",
@@ -387,7 +437,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "21552376",
-    "score": 1.2778
+    "score": 1.2778,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1518850771680256000",
@@ -402,7 +454,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.654
+    "score": 1.654,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1518000536968400896",
@@ -417,7 +471,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6546500000000002
+    "score": 1.6546500000000002,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1516993113113341953",
@@ -432,7 +488,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6569500000000001
+    "score": 1.6569500000000001,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1511940678032715777",
@@ -447,7 +505,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65475
+    "score": 1.65475,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1511261052851617794",
@@ -462,7 +522,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65365
+    "score": 1.65365,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1506525034046980101",
@@ -477,7 +539,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6543999999999999
+    "score": 1.6543999999999999,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1505028407612297216",
@@ -492,7 +556,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65395
+    "score": 1.65395,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1504303423646478336",
@@ -507,7 +573,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65365
+    "score": 1.65365,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1503225663171743751",
@@ -522,7 +590,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65375
+    "score": 1.65375,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1503096869748342784",
@@ -537,7 +607,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6560000000000001
+    "score": 1.6560000000000001,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1499509264150577152",
@@ -552,7 +624,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6598000000000002
+    "score": 1.6598000000000002,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1499323204661555205",
@@ -567,7 +641,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6564
+    "score": 1.6564,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1493012049898905601",
@@ -582,7 +658,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6548500000000002
+    "score": 1.6548500000000002,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1488602060291334148",
@@ -597,7 +675,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6547
+    "score": 1.6547,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1484311975715020803",
@@ -612,7 +692,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6543
+    "score": 1.6543,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1481330845831274496",
@@ -627,7 +709,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.65385
+    "score": 1.65385,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1479653776810151936",
@@ -642,7 +726,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "27202206",
-    "score": 1.6536
+    "score": 1.6536,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1473390489311141893",
@@ -657,7 +743,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6560000000000001
+    "score": 1.6560000000000001,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1473380441004462081",
@@ -672,7 +760,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.654
+    "score": 1.654,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1469055844511731713",
@@ -687,7 +777,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6551
+    "score": 1.6551,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1467726974659411969",
@@ -702,7 +794,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.65455
+    "score": 1.65455,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1462926536772784131",
@@ -717,7 +811,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6588500000000002
+    "score": 1.6588500000000002,
+    "loc_pid": "VIC1841",
+    "vic_loca_2": "MURRAYVILLE"
   },
   {
     "_id": "1460528259783794688",
@@ -732,7 +828,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.65635
+    "score": 1.65635,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1459113703371014152",
@@ -747,7 +845,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.65405
+    "score": 1.65405,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1456189927436132352",
@@ -762,7 +862,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6538
+    "score": 1.6538,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1456189924655321092",
@@ -777,7 +879,9 @@
     "location_name": "MILDURA",
     "location_id": "VIC222",
     "user_id": "27202206",
-    "score": 1.6561
+    "score": 1.6561,
+    "loc_pid": "VIC1676",
+    "vic_loca_2": "MILDURA"
   },
   {
     "_id": "1453231893059706880",
@@ -792,7 +896,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6537000000000002
+    "score": 1.6537000000000002,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1451324798664003589",
@@ -807,7 +913,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65385
+    "score": 1.65385,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1447340745342402561",
@@ -822,7 +930,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65365
+    "score": 1.65365,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1444275098572115968",
@@ -837,7 +947,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6537000000000002
+    "score": 1.6537000000000002,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1442247189346996225",
@@ -852,7 +964,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6539000000000001
+    "score": 1.6539000000000001,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1441741940064600075",
@@ -867,7 +981,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6541000000000001
+    "score": 1.6541000000000001,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1436879169338503176",
@@ -882,7 +998,9 @@
     "location_name": "MOIRA",
     "location_id": "VIC190",
     "user_id": "27202206",
-    "score": 1.65645
+    "score": 1.65645,
+    "loc_pid": "VIC2920",
+    "vic_loca_2": "YARRAWONGA"
   },
   {
     "_id": "1436518653223075840",
@@ -897,7 +1015,9 @@
     "location_name": "STRATHBOGIE",
     "location_id": "VIC110",
     "user_id": "27202206",
-    "score": 1.65375
+    "score": 1.65375,
+    "loc_pid": "VIC1673",
+    "vic_loca_2": "MIEPOLL"
   },
   {
     "_id": "1436305079053668355",
@@ -912,7 +1032,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6536
+    "score": 1.6536,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1435846611096068101",
@@ -927,7 +1049,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65385
+    "score": 1.65385,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1434770078197682177",
@@ -942,7 +1066,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6536
+    "score": 1.6536,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1431174160416325637",
@@ -957,7 +1083,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6554
+    "score": 1.6554,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1431016864738467849",
@@ -972,7 +1100,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65975
+    "score": 1.65975,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1428881623597019140",
@@ -987,7 +1117,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65455
+    "score": 1.65455,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1428604092805357574",
@@ -1002,7 +1134,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65365
+    "score": 1.65365,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1428464344359084036",
@@ -1017,7 +1151,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65875
+    "score": 1.65875,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1427528729677287426",
@@ -1032,7 +1168,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6537000000000002
+    "score": 1.6537000000000002,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1426027662556864517",
@@ -1047,7 +1185,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.6910500000000002
+    "score": 1.6910500000000002,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1413638185213587456",
@@ -1062,7 +1202,9 @@
     "location_name": "GREATER BENDIGO",
     "location_id": "VIC193",
     "user_id": "27202206",
-    "score": 1.65475
+    "score": 1.65475,
+    "loc_pid": "VIC1959",
+    "vic_loca_2": "NORTH BENDIGO"
   },
   {
     "_id": "1516719547641831428",
@@ -1077,7 +1219,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "598984997",
-    "score": 1.03555
+    "score": 1.03555,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1513811133433802754",
@@ -1092,7 +1236,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1056
+    "score": 1.1056,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1512756754870050817",
@@ -1107,7 +1253,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1058
+    "score": 1.1058,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1512735942016401415",
@@ -1122,7 +1270,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1055
+    "score": 1.1055,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1512728302829858817",
@@ -1137,7 +1287,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1055
+    "score": 1.1055,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1512550643042746370",
@@ -1152,7 +1304,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1059
+    "score": 1.1059,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1510202869777301507",
@@ -1167,7 +1321,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.10555
+    "score": 1.10555,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1492382391834333184",
@@ -1182,7 +1338,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1056
+    "score": 1.1056,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1490166375629070336",
@@ -1197,7 +1355,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.10555
+    "score": 1.10555,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1490142180769693699",
@@ -1212,7 +1372,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.10555
+    "score": 1.10555,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1490086513069391872",
@@ -1227,7 +1389,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1055
+    "score": 1.1055,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1489923593048059909",
@@ -1242,7 +1406,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.10565
+    "score": 1.10565,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1487544402474319875",
@@ -1257,7 +1423,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1059
+    "score": 1.1059,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1475288194111270913",
@@ -1272,7 +1440,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "23572940",
-    "score": 1.1055
+    "score": 1.1055,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1475216188485431298",
@@ -1287,7 +1457,9 @@
     "location_name": "BENALLA",
     "location_id": "VIC199",
     "user_id": "23572940",
-    "score": 1.106
+    "score": 1.106,
+    "loc_pid": "VIC1747",
+    "vic_loca_2": "MOORNGAG"
   },
   {
     "_id": "1520217906566807552",
@@ -1302,7 +1474,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1496462298151456769",
@@ -1317,7 +1491,9 @@
     "location_name": "MARIBYRNONG",
     "location_id": "VIC234",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC1360",
+    "vic_loca_2": "KINGSVILLE"
   },
   {
     "_id": "1487440636832006148",
@@ -1332,7 +1508,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0067
+    "score": 1.0067,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1448909144279289861",
@@ -1347,7 +1525,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1441737436183158787",
@@ -1362,7 +1542,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1432930909645279239",
@@ -1377,7 +1559,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0067
+    "score": 1.0067,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1432927630156722186",
@@ -1392,7 +1576,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00695
+    "score": 1.00695,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1431972741310078977",
@@ -1407,7 +1593,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0067
+    "score": 1.0067,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1428028104950259716",
@@ -1422,7 +1610,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00685
+    "score": 1.00685,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1419678807686934532",
@@ -1437,7 +1627,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00685
+    "score": 1.00685,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1413677167502786562",
@@ -1452,7 +1644,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1381638268119179264",
@@ -1467,7 +1661,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1380103480434565125",
@@ -1482,7 +1678,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1377252235063619585",
@@ -1497,7 +1695,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1377248771382276099",
@@ -1512,7 +1712,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1374341410611101701",
@@ -1527,7 +1729,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1374333366154096644",
@@ -1542,7 +1746,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1374329914187411456",
@@ -1557,7 +1763,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.00675
+    "score": 1.00675,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1374326390686765060",
@@ -1572,7 +1780,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0067
+    "score": 1.0067,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1374325135323275267",
@@ -1587,7 +1797,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0068
+    "score": 1.0068,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1371057897451311107",
@@ -1602,7 +1814,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0067
+    "score": 1.0067,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1347536111438942218",
@@ -1617,7 +1831,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "1242039886783246337",
-    "score": 1.0069
+    "score": 1.0069,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1513436961939529734",
@@ -1632,7 +1848,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1513432894353862657",
@@ -1647,7 +1865,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118999999999999
+    "score": 1.1118999999999999,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1511278759923838981",
@@ -1662,7 +1882,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11215
+    "score": 1.11215,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1511086509184917505",
@@ -1677,7 +1899,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1507605038591791107",
@@ -1692,7 +1916,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1503836313166168064",
@@ -1707,7 +1933,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118999999999999
+    "score": 1.1118999999999999,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1496772123322425350",
@@ -1722,7 +1950,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1122
+    "score": 1.1122,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1492047780843782144",
@@ -1737,7 +1967,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1487603986253611009",
@@ -1752,7 +1984,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1480002360290152452",
@@ -1767,7 +2001,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1478883523234725891",
@@ -1782,7 +2018,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1478655755741921281",
@@ -1797,7 +2035,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1478609638912184320",
@@ -1812,7 +2052,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11195
+    "score": 1.11195,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1478180261808394241",
@@ -1827,7 +2069,9 @@
     "location_name": "YARRA",
     "location_id": "VIC202",
     "user_id": "297148960",
-    "score": 1.11225
+    "score": 1.11225,
+    "loc_pid": "VIC2167",
+    "vic_loca_2": "RICHMOND"
   },
   {
     "_id": "1477167138829844480",
@@ -1842,7 +2086,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11205
+    "score": 1.11205,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1472771194050867204",
@@ -1857,7 +2103,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118999999999999
+    "score": 1.1118999999999999,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1466930935287320576",
@@ -1872,7 +2120,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1462599077237977088",
@@ -1887,7 +2137,9 @@
     "location_name": "YARRA",
     "location_id": "VIC202",
     "user_id": "297148960",
-    "score": 1.1152
+    "score": 1.1152,
+    "loc_pid": "VIC613",
+    "vic_loca_2": "COLLINGWOOD"
   },
   {
     "_id": "1444478269449900032",
@@ -1902,7 +2154,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1443510819128426497",
@@ -1917,7 +2171,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1440977809074122761",
@@ -1932,7 +2188,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1435527733757419522",
@@ -1947,7 +2205,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1434394935814332417",
@@ -1962,7 +2222,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1431755407194607616",
@@ -1977,7 +2239,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1431748260364898304",
@@ -1992,7 +2256,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1431728366210588678",
@@ -2007,7 +2273,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1428333443746713604",
@@ -2022,7 +2290,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1427578745448140806",
@@ -2037,7 +2307,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1423786007988604932",
@@ -2052,7 +2324,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1418756322523107328",
@@ -2067,7 +2341,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1416650942523404288",
@@ -2082,7 +2358,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1416319387477311490",
@@ -2097,7 +2375,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1415839517064384515",
@@ -2112,7 +2392,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1411437844124471296",
@@ -2127,7 +2409,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1410882208533925889",
@@ -2142,7 +2426,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1409118975573725190",
@@ -2157,7 +2443,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1409115307550011394",
@@ -2172,7 +2460,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1409085910814130180",
@@ -2187,7 +2477,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1408669589202870276",
@@ -2202,7 +2494,9 @@
     "location_name": "MELBOURNE",
     "location_id": "VIC132",
     "user_id": "297148960",
-    "score": 1.11215
+    "score": 1.11215,
+    "loc_pid": "VIC2760",
+    "vic_loca_2": "WEST MELBOURNE"
   },
   {
     "_id": "1407203761861271553",
@@ -2217,7 +2511,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11185
+    "score": 1.11185,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1405085464298618882",
@@ -2232,7 +2528,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1400767399347986435",
@@ -2247,7 +2545,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118999999999999
+    "score": 1.1118999999999999,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1400765043394838529",
@@ -2262,7 +2562,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1400763234999672837",
@@ -2277,7 +2579,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1396374834624434180",
@@ -2292,7 +2596,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1396360975335313415",
@@ -2307,7 +2613,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1395685574166474753",
@@ -2322,7 +2630,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1395291249427374085",
@@ -2337,7 +2647,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1394767561347125249",
@@ -2352,7 +2664,9 @@
     "location_name": "YARRA",
     "location_id": "VIC202",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC2",
+    "vic_loca_2": "ABBOTSFORD"
   },
   {
     "_id": "1392586615533432832",
@@ -2367,7 +2681,9 @@
     "location_name": "YARRA",
     "location_id": "VIC202",
     "user_id": "297148960",
-    "score": 1.11195
+    "score": 1.11195,
+    "loc_pid": "VIC2167",
+    "vic_loca_2": "RICHMOND"
   },
   {
     "_id": "1384796745889042432",
@@ -2382,7 +2698,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1379392747799465984",
@@ -2397,7 +2715,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1377398988169637896",
@@ -2412,7 +2732,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11195
+    "score": 1.11195,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1375189939504050178",
@@ -2427,7 +2749,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1372479929548296193",
@@ -2442,7 +2766,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1367433142001299458",
@@ -2457,7 +2783,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118999999999999
+    "score": 1.1118999999999999,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1362916722236301312",
@@ -2472,7 +2800,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.112
+    "score": 1.112,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1357250068080824321",
@@ -2487,7 +2817,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1356201535047229444",
@@ -2502,7 +2834,9 @@
     "location_name": "MELBOURNE",
     "location_id": "VIC132",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC1634",
+    "vic_loca_2": "MELBOURNE"
   },
   {
     "_id": "1353536973835653120",
@@ -2517,7 +2851,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1353086859451146240",
@@ -2532,7 +2868,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1351069527627468801",
@@ -2547,7 +2885,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11185
+    "score": 1.11185,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1346296757693550593",
@@ -2562,7 +2902,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1344784890852593664",
@@ -2577,7 +2919,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1344224219245150209",
@@ -2592,7 +2936,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1344214275489861634",
@@ -2607,7 +2953,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1340607295101706240",
@@ -2622,7 +2970,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1340561818658304000",
@@ -2637,7 +2987,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1338791077470334977",
@@ -2652,7 +3004,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1338023514352222208",
@@ -2667,7 +3021,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1336273132357709825",
@@ -2682,7 +3038,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1335387759171620865",
@@ -2697,7 +3055,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1334040051626373120",
@@ -2712,7 +3072,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1330439264031555585",
@@ -2727,7 +3089,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1118000000000001
+    "score": 1.1118000000000001,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1330422643053506566",
@@ -2742,7 +3106,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.11175
+    "score": 1.11175,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1330242710033272835",
@@ -2757,7 +3123,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "297148960",
-    "score": 1.1117
+    "score": 1.1117,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1498265674686545923",
@@ -2772,7 +3140,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1496676617816776707",
@@ -2787,7 +3157,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1477900483612217344",
@@ -2802,7 +3174,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.0196
+    "score": 1.0196,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1406102996962791424",
@@ -2817,7 +3191,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1401431426533261312",
@@ -2832,7 +3208,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1401401422101368834",
@@ -2847,7 +3225,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1400702030520324098",
@@ -2862,7 +3242,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1399646741868158981",
@@ -2877,7 +3259,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1382124481473224706",
@@ -2892,7 +3276,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1373875965235892225",
@@ -2907,7 +3293,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1370864084791427072",
@@ -2922,7 +3310,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.0191
+    "score": 1.0191,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1362207202912559105",
@@ -2937,7 +3327,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1338284846892765184",
@@ -2952,7 +3344,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1335722585800097792",
@@ -2967,7 +3361,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1333341657329147904",
@@ -2982,7 +3378,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1329276872870412290",
@@ -2997,7 +3395,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1328232843932094465",
@@ -3012,7 +3412,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1327506085687615489",
@@ -3027,7 +3429,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.0191
+    "score": 1.0191,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1325310299323314176",
@@ -3042,7 +3446,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1323472897583669249",
@@ -3057,7 +3463,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1323151120668090370",
@@ -3072,7 +3480,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1322839836676423681",
@@ -3087,7 +3497,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1320604888452067328",
@@ -3102,7 +3514,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1320135486527029248",
@@ -3117,7 +3531,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.0191
+    "score": 1.0191,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1319937087794147328",
@@ -3132,7 +3548,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1319503992540442625",
@@ -3147,7 +3565,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1315484202901487617",
@@ -3162,7 +3582,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1315234139994419201",
@@ -3177,7 +3599,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1301869987305381888",
@@ -3192,7 +3616,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1299282065821634560",
@@ -3207,7 +3633,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1295230481848389632",
@@ -3222,7 +3650,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1282168684731981825",
@@ -3237,7 +3667,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1282165257415188480",
@@ -3252,7 +3684,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.01905
+    "score": 1.01905,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1281437909132795905",
@@ -3267,7 +3701,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1280392247788240897",
@@ -3282,7 +3718,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1276755278789107725",
@@ -3297,7 +3735,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1275780771798605825",
@@ -3312,7 +3752,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1274937695224033280",
@@ -3327,7 +3769,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1268463332245139459",
@@ -3342,7 +3786,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1262950658879172614",
@@ -3357,7 +3803,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1260074739915091968",
@@ -3372,7 +3820,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1256443795060649984",
@@ -3387,7 +3837,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1253473111665553408",
@@ -3402,7 +3854,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1251436502304714752",
@@ -3417,7 +3871,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1251435583471104001",
@@ -3432,7 +3888,9 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   },
   {
     "_id": "1251050947523952641",
@@ -3447,6 +3905,8 @@
     "location_name": "BAYSIDE",
     "location_id": "VIC182",
     "user_id": "852393509860421632",
-    "score": 1.019
+    "score": 1.019,
+    "loc_pid": "VIC537",
+    "vic_loca_2": "CHELTENHAM"
   }
 ]
