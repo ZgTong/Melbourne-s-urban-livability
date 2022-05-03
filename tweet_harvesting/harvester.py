@@ -284,14 +284,14 @@ def main():
                "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-    # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-    #                     url=DATABASE_URL, connect=True)
-    # print(str(db_client.all_dbs()))
+    db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+                        url=DATABASE_URL, connect=True)
+    print(str(db_client.all_dbs()))
 
-    # if 'tweets' not in db_client.all_dbs():
-    #     db_client.create_database('tweets')
-    # if 'users' not in db_client.all_dbs():
-    #     db_client.create_database('users')
+    if 'tweets' not in db_client.all_dbs():
+        db_client.create_database('tweets')
+    if 'users' not in db_client.all_dbs():
+        db_client.create_database('users')
         
     db_client = None
 
@@ -303,7 +303,7 @@ def main():
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword)
 
     i = 0
-    while i < 5:
+    while True:
         print(f'Search starts on topic {stream_tweet.keywords}')
 
         stream_tweet.filter(languages=["en"],
@@ -328,4 +328,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # db_client.disconnect()
