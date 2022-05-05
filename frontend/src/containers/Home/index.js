@@ -2,14 +2,11 @@ import React, {useEffect} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './index.scss'
 import MapPage from "../../containers/MapPage"
-import { GetSports } from '../../api/index'
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
     useEffect(()=>{
-        GetSports().then((res)=>{
-            console.log("request res: ", res)
-        })
+
     }, [])
     return (
         <div className='homeContainer'>

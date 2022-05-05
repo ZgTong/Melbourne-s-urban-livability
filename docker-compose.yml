@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  frontend:
+    container_name: "ccc-frontend"
+    build:
+      context: ./frontend
+      dockerfile: prod.Dockerfile
+    env_file:
+      - ./frontend/.env.production
+    ports:
+      - "8082:8082"
+
+#    container_name: "ccc-frontend"
+#    build:
+#      context: ./frontend
+#      dockerfile: dev.Dockerfile
+#    env_file:
+#      - ./frontend/.env.development
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - /app/node_modules
+#      - ./frontend/src:/app/src
+#    stdin_open: true
+#    tty: true
+

@@ -7,7 +7,7 @@ const timeout = 100000
 const serviceInstance = axios.create({
     timeout,
     baseURL,
-    withCredentials: true,
+    withCredentials: false,
 })
 
 serviceInstance.interceptors.request.use(
@@ -75,22 +75,7 @@ const requestHandler = (
         response
             .then((res) => {
                 const { data } = res
-                console.log('haha', data)
-                // if (data.code !== 200) {
-                //     if (data.code === 401) {
-                //         message.warn(
-                //             'Your account has been logged out or timed out and will be logged out soon...'
-                //         )
-                //         console.log('Abnormal login...')
-                //     }
-                //
-                //     const e = JSON.stringify(data)
-                //     message.warn(`Request Error：${e}`)
-                //     console.log(`Request Error：${e}`)
-                //     reject(data)
-                // } else {
-                //     resolve(data.data)
-                // }
+                resolve(data)
             })
             .catch((error) => {
                 const e = JSON.stringify(error)
