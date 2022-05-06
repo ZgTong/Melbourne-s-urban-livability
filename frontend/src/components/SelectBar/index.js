@@ -1,15 +1,18 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux'
 import './index.scss'
+import { selectVariableRange } from '../../store/reducers/selectBar'
 
 const SelectBar = () => {
+    const range = useSelector(selectVariableRange);
     return (
         <div id="controls" className="nicebox">
             <div>
                 <select id="livability-variable">
                     <option
-                        value="https://storage.googleapis.com/mapsdevsite/json/DP02_0066PE"
+                        value="sports"
                     >
-                        Percent of population over 25 that completed high school
+                        Sports
                     </option>
                     <option
                         value="https://storage.googleapis.com/mapsdevsite/json/DP05_0017E"
@@ -34,9 +37,9 @@ const SelectBar = () => {
                 </select>
             </div>
             <div id="legend">
-                <div id="livability-min">min</div>
+                <div id="livability-min">{range.variableMin.toFixed(2).toLocaleString()}</div>
                 <div className="color-key"><span id="data-caret">&#x25c6;</span></div>
-                <div id="livability-max">max</div>
+                <div id="livability-max">{range.variableMax.toFixed(2).toLocaleString()}</div>
             </div>
         </div>
     );

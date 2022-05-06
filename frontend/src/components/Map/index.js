@@ -1,5 +1,8 @@
 import React, { memo, useRef, useEffect, useState } from 'react';
 import useDeepCompareEffectForMaps from "use-deep-compare-effect";
+import { useSelector, useDispatch } from "react-redux";
+import { selectVariableRange, setVariableRange } from '../../store/reducers/selectBar'
+import { readyFlagSelector, setReadyFlag } from '../../store/reducers/map'
 import './index.scss';
 import mapStyle from "../../asset/map_style";
 import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
@@ -14,20 +17,40 @@ const Map = ({
                     console.log("idle:", e)},
                 ...options
              }) => {
+    const range = useSelector(selectVariableRange);
+    const readyFlag = useSelector(readyFlagSelector);
+    const dispatch = useDispatch()
     const ref = useRef(null)
-    const [zoom, setZoom] = React.useState(6); // initial zoom
-    const [center, setCenter] = React.useState({
+    const [zoom, setZoom] = useState(7); // initial zoom
+    const [center, setCenter] = useState({
         lat: -37.7998,
         lng: 144.9460,
     });
     const [map, setMap] = useState(null)
     const [livabilityValMin, setLivabilityValMin] = useState(Number.MAX_VALUE)
     const [livabilityValMax, setLivabilityValMax] = useState(-Number.MAX_VALUE)
-    const [infoBox] = useState(new window.google.maps.InfoWindow({content: "hello"}))
+    // const [readyFlag, setReadyFlag] = useState(false)
+    const [infoBox] = useState(new window.google.maps.InfoWindow({content: ''}))
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
+        const percent =
+            ((e.feature.getProperty("livability_variable") - livabilityValMin) /
+                (livabilityValMax - livabilityValMin)) *
+            100;
+        document.getElementById("data-caret").style.display = "block";
+        document.getElementById("data-caret").style.paddingLeft = percent + "%";
         infoBox.setPosition(e.latLng)
-        infoBox.setContent(e["feature"]["j"]["vic_lga__2"])
+        let content = (
+            `
+                <div>
+                    location: ${e.feature.getProperty("vic_lga__2")}
+                </div>
+                <div>
+                    score: ${e.feature.getProperty("livability_variable").toFixed(2)}
+                </div>
+            `
+        )
+        infoBox.setContent(content)
         infoBox.open(map)
     }
     const mouseOutOfRegion = (e) => {
@@ -75,19 +98,16 @@ const Map = ({
             if (livabilityVariable < min) {
                 min = livabilityVariable
             }
-            if (livabilityVariable > livabilityValMax) {
+            if (livabilityVariable > max) {
                 max = livabilityVariable
             }
             // update the existing row with the new data
             map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
         });
-        setLivabilityValMin(min)
-        setLivabilityValMax(max)
-        // update and display the legend
-        document.getElementById('livability-min').textContent =
-            livabilityValMin.toLocaleString();
-        document.getElementById('livability-max').textContent =
-            livabilityValMax.toLocaleString();
+        setLivabilityValMin(prev => min)
+        setLivabilityValMax(prev => max)
+        // setReadyFlag(true)
+        dispatch(setReadyFlag({flag: true}))
     }
     const clearData = () => {
         setLivabilityValMin(Number.MAX_VALUE);
@@ -95,34 +115,42 @@ const Map = ({
         map.data.forEach((row) => {
             row.setProperty("livability_variable", undefined);
         });
+        document.getElementById("data-caret").style.display = "none";
     }
 
-    useDeepCompareEffectForMaps(() => {
-        if (map) {
-            map.setOptions(options);
-        }
-    }, [map, options]);
-
+    //init map
     useEffect(() => {
-        // init map
         if (ref.current && !map) {
+            console.log("init Map hook")
             setMap(new window.google.maps.Map(ref.current,{ styles: mapStyle, zoom, center }))
         }
-        if(map){
-            map.data.setStyle(styleFeature);
-            map.data.addListener("mouseover", mouseInToRegion);
-            map.data.addListener("mouseout", mouseOutOfRegion);
-            // wire up the button
+    },[ref])
+    useEffect(() => {
+        if(map && sportsData.length > 0){
+            console.log("load property hook")
             const selectBox = document.getElementById("livability-variable");
             window.google.maps.event.addDomListener(selectBox, "change", () => {
+                dispatch(setReadyFlag({flag: false}))
+                // setReadyFlag(false)
                 clearData();
                 loadData(selectBox.options[selectBox.selectedIndex].value);
             });
         }
-    },[ref, map, sportsData])
-    
+    },[map, sportsData])
+    useEffect(()=>{
+        if(readyFlag){
+            let rangeState = {
+                'variableMin': livabilityValMin,
+                'variableMax': livabilityValMax
+            }
+            console.log("on ready set legend hook", rangeState)
+            dispatch(setVariableRange(rangeState))
+        }
+    },[readyFlag, livabilityValMin, livabilityValMax])
+    // load geo data ,and trigger change
     useEffect(() => {
         if(map){
+            console.log("load geojson hook")
             map.data.loadGeoJson(
                 VIC_STATE_BOUNDARIES_JSON_PATH,
                 { idPropertyName: "lga_pid" },
@@ -135,7 +163,15 @@ const Map = ({
             );
         }
     },[map])
-
+    useEffect(() => {
+        if(map){
+            console.log("mouseEvent hook")
+            map.data.setStyle(styleFeature);
+            map.data.addListener("mouseover", mouseInToRegion);
+            map.data.addListener("mouseout", mouseOutOfRegion);
+        }
+    },[range])
+    // regi listener
     useEffect(() => {
         if (map) {
             ["click", "idle"].forEach((eventName) =>
@@ -150,6 +186,11 @@ const Map = ({
             }
         }
     }, [map, onClick, onIdle])
+    useDeepCompareEffectForMaps(() => {
+        if (map) {
+            map.setOptions(options);
+        }
+    }, [map, options]);
     return <div ref={ref} style={style}/>
 };
 

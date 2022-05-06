@@ -1,16 +1,18 @@
 import React, {useEffect} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { useSelector } from "react-redux";
+import { readyFlagSelector } from '../../store/reducers/map'
 import './index.scss'
 import MapPage from "../../containers/MapPage"
+import { Spin } from "antd";
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
-    useEffect(()=>{
-
-    }, [])
+    const readyFlag = useSelector(readyFlagSelector);
     return (
         <div className='homeContainer'>
-            <Parallax pages={3}>
+            <Spin spinning={ !readyFlag } size="large" tip="Data is Loading, Please Wait Patiently...." />
+            <Parallax style={{display: readyFlag? "block" : "none"}} pages={3}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className={"banner"}>
                         <div className="author">
