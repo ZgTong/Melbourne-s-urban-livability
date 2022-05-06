@@ -1,6 +1,5 @@
 import json
 import random
-import re
 import time
 from datetime import datetime
 
@@ -85,12 +84,12 @@ class MyListener(tweepy.Stream):
         if t_id not in self.tweet_ids:
             location = self.get_location(tweet)
             location_res = self.get_lga(location)
-            if len(location_res) == 4:
-                location_id, location_name = location_res[0], location_res[1]
-                loc_pid, vic_loca_2 = location_res[2], location_res[3]
-            elif len(location_res) == 2:
-                location_id, location_name = location_res[0], location_res[1]
-                loc_pid, vic_loca_2 = None, None
+            if len(location_res) == 6:
+                location_id, location_name, id_city = location_res[0], location_res[1], location_res[2]
+                loc_pid, vic_loca_2, id_suburb = location_res[3], location_res[4], location_res[5]
+            elif len(location_res) == 3:
+                location_id, location_name, id_city = location_res[0], location_res[1], location_res[2]
+                loc_pid, vic_loca_2, id_suburb = None, None, None
 
             try:
                 text = tweet['full_text']
@@ -128,7 +127,9 @@ class MyListener(tweepy.Stream):
                 "user_id": user_id,
                 "score": score,
                 "loc_pid": loc_pid,
-                "vic_loca_2": vic_loca_2
+                "vic_loca_2": vic_loca_2,
+                "id_city": id_city,
+                "id_suburb": id_suburb
             }
 
             return info
@@ -141,7 +142,7 @@ class MyListener(tweepy.Stream):
             bound = shape(feature['geometry'])
 
             if bound.contains(point):
-                res = [feature['properties']["lga_pid"], feature['properties']['vic_lga__3']]
+                res = [feature['properties']["lga_pid"], feature['properties']['vic_lga__3'], feature["id"]]
 
         for feature in self.geo_info_small['features']:
             bound = shape(feature['geometry'])
@@ -149,11 +150,12 @@ class MyListener(tweepy.Stream):
             if bound.contains(point):
                 res.append(feature['properties']["loc_pid"])
                 res.append(feature['properties']["vic_loca_2"])
+                res.append(feature["id"])
         
         if res:
             return res
         else:
-            return None, None, None, None
+            return None, None, None, None, None, None
 
     def check_location(self, tweet: dict):
         location = self.get_location(tweet)
@@ -284,14 +286,14 @@ def main():
                "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-    db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=DATABASE_URL, connect=True)
-    print(str(db_client.all_dbs()))
+    # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+    #                     url=DATABASE_URL, connect=True)
+    # print(str(db_client.all_dbs()))
 
-    if 'tweets' not in db_client.all_dbs():
-        db_client.create_database('tweets')
-    if 'users' not in db_client.all_dbs():
-        db_client.create_database('users')
+    # if 'tweets' not in db_client.all_dbs():
+    #     db_client.create_database('tweets')
+    # if 'users' not in db_client.all_dbs():
+    #     db_client.create_database('users')
         
     db_client = None
 
@@ -303,7 +305,7 @@ def main():
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword)
 
     i = 0
-    while True:
+    while i < 5:
         print(f'Search starts on topic {stream_tweet.keywords}')
 
         stream_tweet.filter(languages=["en"],

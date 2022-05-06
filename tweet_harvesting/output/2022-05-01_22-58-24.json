@@ -14,7 +14,9 @@
     "user_id": "3300789416",
     "score": 1.1669,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1493740056883838979",
@@ -31,7 +33,9 @@
     "user_id": "3300789416",
     "score": 1.1655,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487196997111382016",
@@ -48,7 +52,9 @@
     "user_id": "3300789416",
     "score": 1.1645,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520297429924728832",
@@ -65,7 +71,9 @@
     "user_id": "2298704174",
     "score": 1.57895,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520297121303654400",
@@ -82,7 +90,9 @@
     "user_id": "2298704174",
     "score": 1.57885,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520296702171041793",
@@ -99,7 +109,9 @@
     "user_id": "2298704174",
     "score": 1.5788,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520171415110287361",
@@ -116,7 +128,9 @@
     "user_id": "2298704174",
     "score": 1.5789,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518922082176086016",
@@ -133,7 +147,9 @@
     "user_id": "2298704174",
     "score": 1.57885,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1511806762512715776",
@@ -150,7 +166,9 @@
     "user_id": "2298704174",
     "score": 1.5787,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519217191186743297",
@@ -167,7 +185,9 @@
     "user_id": "726344245586452480",
     "score": 1.0028,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1495158223195684866",
@@ -184,7 +204,9 @@
     "user_id": "726344245586452480",
     "score": 1.0029,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1493551403352346624",
@@ -201,7 +223,9 @@
     "user_id": "726344245586452480",
     "score": 1.0028,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1492221067238461440",
@@ -218,7 +242,9 @@
     "user_id": "726344245586452480",
     "score": 1.0028,
     "loc_pid": "VIC656",
-    "vic_loca_2": "COWES"
+    "vic_loca_2": "COWES",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.877",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.29"
   },
   {
     "_id": "1486135527737016322",
@@ -235,7 +261,9 @@
     "user_id": "726344245586452480",
     "score": 1.0028,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1512049473677316102",
@@ -252,7 +280,9 @@
     "user_id": "1101676442167869440",
     "score": 1.01205,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1509481248095305730",
@@ -269,7 +299,9 @@
     "user_id": "1101676442167869440",
     "score": 1.01175,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506156254972215298",
@@ -286,7 +318,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0115,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506156232159428608",
@@ -303,7 +337,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0115,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1502888204713984008",
@@ -320,7 +356,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0116,
     "loc_pid": "VIC1634",
-    "vic_loca_2": "MELBOURNE"
+    "vic_loca_2": "MELBOURNE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.549",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1491787367262601218",
@@ -337,7 +375,9 @@
     "user_id": "1101676442167869440",
     "score": 1.01345,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1460812566356054021",
@@ -354,7 +394,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0116,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1458942847164379139",
@@ -371,7 +413,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0115,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1457278154150604801",
@@ -388,7 +432,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0115,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1450451747273469953",
@@ -405,7 +451,9 @@
     "user_id": "1101676442167869440",
     "score": 1.01155,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1440703203822030859",
@@ -422,7 +470,9 @@
     "user_id": "1101676442167869440",
     "score": 1.0128,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1373243919979356160",
@@ -439,7 +489,9 @@
     "user_id": "1101676442167869440",
     "score": 1.01145,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519863718259339264",
@@ -456,7 +508,9 @@
     "user_id": "151543415",
     "score": 1.2236500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519093793580253185",
@@ -473,7 +527,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1512758111714811905",
@@ -490,7 +546,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1510582770325921792",
@@ -507,7 +565,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1509323016639217666",
@@ -524,7 +584,9 @@
     "user_id": "151543415",
     "score": 1.2231,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1508739502613086208",
@@ -541,7 +603,9 @@
     "user_id": "151543415",
     "score": 1.2244,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1508729928212414465",
@@ -558,7 +622,9 @@
     "user_id": "151543415",
     "score": 1.2232,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1508640365360074752",
@@ -575,7 +641,9 @@
     "user_id": "151543415",
     "score": 1.22335,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1504222222621511682",
@@ -592,7 +660,9 @@
     "user_id": "151543415",
     "score": 1.2236,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1502522961416564744",
@@ -609,7 +679,9 @@
     "user_id": "151543415",
     "score": 1.2233,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1498397500868558848",
@@ -626,7 +698,9 @@
     "user_id": "151543415",
     "score": 1.4086,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1495523976181063682",
@@ -643,7 +717,9 @@
     "user_id": "151543415",
     "score": 1.2233,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1494955866474553347",
@@ -660,7 +736,9 @@
     "user_id": "151543415",
     "score": 1.22335,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1494257958909526017",
@@ -677,7 +755,9 @@
     "user_id": "151543415",
     "score": 1.22415,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1493030317992845314",
@@ -694,7 +774,9 @@
     "user_id": "151543415",
     "score": 1.2231,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1491250998278782976",
@@ -711,7 +793,9 @@
     "user_id": "151543415",
     "score": 1.2236,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1489067913755922433",
@@ -728,7 +812,9 @@
     "user_id": "151543415",
     "score": 1.225,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1488339588603006979",
@@ -745,7 +831,9 @@
     "user_id": "151543415",
     "score": 1.22385,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1488328943052951552",
@@ -762,7 +850,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487777479352004608",
@@ -779,7 +869,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1485489932022206464",
@@ -796,7 +888,9 @@
     "user_id": "151543415",
     "score": 1.2242,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1484800597945905153",
@@ -813,7 +907,9 @@
     "user_id": "151543415",
     "score": 1.22315,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1484462487634276354",
@@ -830,7 +926,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1483383189855178755",
@@ -847,7 +945,9 @@
     "user_id": "151543415",
     "score": 1.2233,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1482612085305806855",
@@ -864,7 +964,9 @@
     "user_id": "151543415",
     "score": 1.22325,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1482610668109197312",
@@ -881,7 +983,9 @@
     "user_id": "151543415",
     "score": 1.22475,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1481155304964648961",
@@ -898,7 +1002,9 @@
     "user_id": "151543415",
     "score": 1.22345,
     "loc_pid": "VIC656",
-    "vic_loca_2": "COWES"
+    "vic_loca_2": "COWES",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.877",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.29"
   },
   {
     "_id": "1479301350466863109",
@@ -915,7 +1021,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1478202191970127872",
@@ -932,7 +1040,9 @@
     "user_id": "151543415",
     "score": 1.22525,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476849934175334402",
@@ -949,7 +1059,9 @@
     "user_id": "151543415",
     "score": 1.2233,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381223257731072",
@@ -966,7 +1078,9 @@
     "user_id": "151543415",
     "score": 1.223,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381221663903745",
@@ -983,7 +1097,9 @@
     "user_id": "151543415",
     "score": 1.22305,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381220053258240",
@@ -1000,7 +1116,9 @@
     "user_id": "151543415",
     "score": 1.223,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381209999527940",
@@ -1017,7 +1135,9 @@
     "user_id": "151543415",
     "score": 1.2231,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381207667507200",
@@ -1034,7 +1154,9 @@
     "user_id": "151543415",
     "score": 1.22315,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1476381202940522501",
@@ -1051,7 +1173,9 @@
     "user_id": "151543415",
     "score": 1.22345,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475419115724492802",
@@ -1068,7 +1192,9 @@
     "user_id": "151543415",
     "score": 1.2234,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475414624753225731",
@@ -1085,7 +1211,9 @@
     "user_id": "151543415",
     "score": 1.2232,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475326376425115648",
@@ -1102,7 +1230,9 @@
     "user_id": "151543415",
     "score": 1.22345,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475045390592270338",
@@ -1119,7 +1249,9 @@
     "user_id": "151543415",
     "score": 1.22335,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520550126137323527",
@@ -1136,7 +1268,9 @@
     "user_id": "406345546",
     "score": 1.7671999999999999,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520308213291311104",
@@ -1153,7 +1287,9 @@
     "user_id": "406345546",
     "score": 1.7681499999999999,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518001316215554048",
@@ -1170,7 +1306,9 @@
     "user_id": "1916853872",
     "score": 1.0612,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515158926270296064",
@@ -1187,7 +1325,9 @@
     "user_id": "1916853872",
     "score": 1.0612,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1514568142181507072",
@@ -1204,7 +1344,9 @@
     "user_id": "1916853872",
     "score": 1.0612,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1514224248214401029",
@@ -1221,7 +1363,9 @@
     "user_id": "1916853872",
     "score": 1.06165,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518450386054438912",
@@ -1238,7 +1382,9 @@
     "user_id": "2320525034",
     "score": 1.4210500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1514767085083058185",
@@ -1255,7 +1401,9 @@
     "user_id": "2320525034",
     "score": 1.4184,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1512781686244749315",
@@ -1272,7 +1420,9 @@
     "user_id": "2320525034",
     "score": 1.4177,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1512764288099778561",
@@ -1289,7 +1439,9 @@
     "user_id": "2320525034",
     "score": 1.4177,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1507279503797620736",
@@ -1306,7 +1458,9 @@
     "user_id": "2320525034",
     "score": 1.4184,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1501181397255409665",
@@ -1323,7 +1477,9 @@
     "user_id": "2320525034",
     "score": 1.41785,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1492343660347752451",
@@ -1340,7 +1496,9 @@
     "user_id": "2320525034",
     "score": 1.4178,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487753812634861570",
@@ -1357,7 +1515,9 @@
     "user_id": "2320525034",
     "score": 1.4181,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487302623917084674",
@@ -1374,7 +1534,9 @@
     "user_id": "2320525034",
     "score": 1.41775,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475711486647365634",
@@ -1391,7 +1553,9 @@
     "user_id": "2320525034",
     "score": 1.4180000000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1472137535480471554",
@@ -1408,7 +1572,9 @@
     "user_id": "2320525034",
     "score": 1.4177,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1471409403223891973",
@@ -1425,7 +1591,9 @@
     "user_id": "2320525034",
     "score": 1.41785,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1453968049057386502",
@@ -1442,7 +1610,9 @@
     "user_id": "2320525034",
     "score": 1.42015,
     "loc_pid": "VIC215",
-    "vic_loca_2": "BENTLEIGH EAST"
+    "vic_loca_2": "BENTLEIGH EAST",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1348",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.74"
   },
   {
     "_id": "1448642740393164810",
@@ -1459,7 +1629,9 @@
     "user_id": "2320525034",
     "score": 1.4183,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1447189143486808067",
@@ -1476,7 +1648,9 @@
     "user_id": "2320525034",
     "score": 1.41785,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1439116646807863302",
@@ -1493,7 +1667,9 @@
     "user_id": "2320525034",
     "score": 1.41775,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1438630820856672257",
@@ -1510,7 +1686,9 @@
     "user_id": "2320525034",
     "score": 1.4178,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1437632536503410693",
@@ -1527,7 +1705,9 @@
     "user_id": "2320525034",
     "score": 1.41775,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1433815258452295680",
@@ -1544,7 +1724,9 @@
     "user_id": "2320525034",
     "score": 1.41775,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1426216103773032449",
@@ -1561,7 +1743,9 @@
     "user_id": "2320525034",
     "score": 1.4177,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1424317331161817092",
@@ -1578,7 +1762,9 @@
     "user_id": "2320525034",
     "score": 1.41855,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1423198166288003075",
@@ -1595,7 +1781,9 @@
     "user_id": "2320525034",
     "score": 1.4195,
     "loc_pid": "VIC2550",
-    "vic_loca_2": "TOORAK"
+    "vic_loca_2": "TOORAK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1972",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.21"
   },
   {
     "_id": "1423073917812412418",
@@ -1612,7 +1800,9 @@
     "user_id": "2320525034",
     "score": 1.4180000000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1422151922740457475",
@@ -1629,7 +1819,9 @@
     "user_id": "2320525034",
     "score": 1.41775,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518005018107985920",
@@ -1646,7 +1838,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1510905011886346243",
@@ -1663,7 +1857,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2034",
-    "vic_loca_2": "PARKVILLE"
+    "vic_loca_2": "PARKVILLE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1403",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1510557385638748163",
@@ -1680,7 +1876,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC362",
-    "vic_loca_2": "BRUNSWICK EAST"
+    "vic_loca_2": "BRUNSWICK EAST",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2628",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1501765447611523073",
@@ -1697,7 +1895,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC460",
-    "vic_loca_2": "CAMPERDOWN"
+    "vic_loca_2": "CAMPERDOWN",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.523",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.3"
   },
   {
     "_id": "1500331269078536198",
@@ -1714,7 +1914,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC361",
-    "vic_loca_2": "BRUNSWICK"
+    "vic_loca_2": "BRUNSWICK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2675",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1498615316364021766",
@@ -1731,7 +1933,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1498500643182551041",
@@ -1748,7 +1952,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1557",
-    "vic_loca_2": "MACEDON"
+    "vic_loca_2": "MACEDON",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2671",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.57"
   },
   {
     "_id": "1494960583225053185",
@@ -1765,7 +1971,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC2760",
-    "vic_loca_2": "WEST MELBOURNE"
+    "vic_loca_2": "WEST MELBOURNE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.928",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1480802028637065218",
@@ -1782,7 +1990,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1476280421952344068",
@@ -1799,7 +2009,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1473975411738439683",
@@ -1816,7 +2028,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1472432687264772100",
@@ -1833,7 +2047,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1471943643476881408",
@@ -1850,7 +2066,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1471820399264600066",
@@ -1867,7 +2085,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1462016036560060428",
@@ -1884,7 +2104,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC927",
-    "vic_loca_2": "FOOTSCRAY"
+    "vic_loca_2": "FOOTSCRAY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.491",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.13"
   },
   {
     "_id": "1457503624247103491",
@@ -1901,7 +2123,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC361",
-    "vic_loca_2": "BRUNSWICK"
+    "vic_loca_2": "BRUNSWICK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2675",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1440944766363975689",
@@ -1918,7 +2142,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1429362437849976841",
@@ -1935,7 +2161,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1425319260671385603",
@@ -1952,7 +2180,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2034",
-    "vic_loca_2": "PARKVILLE"
+    "vic_loca_2": "PARKVILLE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1403",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1412689371912937473",
@@ -1969,7 +2199,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC362",
-    "vic_loca_2": "BRUNSWICK EAST"
+    "vic_loca_2": "BRUNSWICK EAST",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2628",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1405034957572128769",
@@ -1986,7 +2218,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1405034718400241671",
@@ -2003,7 +2237,9 @@
     "user_id": "2231897220",
     "score": 1.03475,
     "loc_pid": "VIC593",
-    "vic_loca_2": "COBURG"
+    "vic_loca_2": "COBURG",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2753",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1403574455125823490",
@@ -2020,7 +2256,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2760",
-    "vic_loca_2": "WEST MELBOURNE"
+    "vic_loca_2": "WEST MELBOURNE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.928",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1396460511697543173",
@@ -2037,7 +2275,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC361",
-    "vic_loca_2": "BRUNSWICK"
+    "vic_loca_2": "BRUNSWICK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2675",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1396427161674948609",
@@ -2054,7 +2294,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC361",
-    "vic_loca_2": "BRUNSWICK"
+    "vic_loca_2": "BRUNSWICK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2675",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1392447106556874754",
@@ -2071,7 +2313,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1443",
-    "vic_loca_2": "LAKES ENTRANCE"
+    "vic_loca_2": "LAKES ENTRANCE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.475",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.63"
   },
   {
     "_id": "1391006968115044358",
@@ -2088,7 +2332,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC916",
-    "vic_loca_2": "FITZROY"
+    "vic_loca_2": "FITZROY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.505",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.20"
   },
   {
     "_id": "1390923289665622016",
@@ -2105,7 +2351,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC916",
-    "vic_loca_2": "FITZROY"
+    "vic_loca_2": "FITZROY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.505",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.20"
   },
   {
     "_id": "1390917572648898561",
@@ -2122,7 +2370,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC916",
-    "vic_loca_2": "FITZROY"
+    "vic_loca_2": "FITZROY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.505",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.20"
   },
   {
     "_id": "1388754100477595656",
@@ -2139,7 +2389,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2794",
-    "vic_loca_2": "WILLIAMSTOWN"
+    "vic_loca_2": "WILLIAMSTOWN",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2777",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.14"
   },
   {
     "_id": "1387189383711784961",
@@ -2156,7 +2408,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC900",
-    "vic_loca_2": "FAWKNER"
+    "vic_loca_2": "FAWKNER",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.941",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1383270946954375168",
@@ -2173,7 +2427,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC545",
-    "vic_loca_2": "CHEWTON"
+    "vic_loca_2": "CHEWTON",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1243",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.31"
   },
   {
     "_id": "1383270942491635716",
@@ -2190,7 +2446,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC545",
-    "vic_loca_2": "CHEWTON"
+    "vic_loca_2": "CHEWTON",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1243",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.31"
   },
   {
     "_id": "1373086498778677253",
@@ -2207,7 +2465,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC858",
-    "vic_loca_2": "ELTHAM"
+    "vic_loca_2": "ELTHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1854",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.72"
   },
   {
     "_id": "1373047680809730056",
@@ -2224,7 +2484,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2511",
-    "vic_loca_2": "THORNBURY"
+    "vic_loca_2": "THORNBURY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1211",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.10"
   },
   {
     "_id": "1370150775016460288",
@@ -2241,7 +2503,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1634",
-    "vic_loca_2": "MELBOURNE"
+    "vic_loca_2": "MELBOURNE",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.549",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.82"
   },
   {
     "_id": "1367835796498219020",
@@ -2258,7 +2522,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2511",
-    "vic_loca_2": "THORNBURY"
+    "vic_loca_2": "THORNBURY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1211",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.10"
   },
   {
     "_id": "1367178400188669953",
@@ -2275,7 +2541,9 @@
     "user_id": "2231897220",
     "score": 1.0348,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1366333508868657159",
@@ -2292,7 +2560,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC1557",
-    "vic_loca_2": "MACEDON"
+    "vic_loca_2": "MACEDON",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2671",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.57"
   },
   {
     "_id": "1361515605841518596",
@@ -2309,7 +2579,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1360064982851977219",
@@ -2326,7 +2598,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC917",
-    "vic_loca_2": "FITZROY NORTH"
+    "vic_loca_2": "FITZROY NORTH",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.635",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.20"
   },
   {
     "_id": "1360046727491973121",
@@ -2343,7 +2617,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC917",
-    "vic_loca_2": "FITZROY NORTH"
+    "vic_loca_2": "FITZROY NORTH",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.635",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.20"
   },
   {
     "_id": "1359638020870311936",
@@ -2360,7 +2636,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC361",
-    "vic_loca_2": "BRUNSWICK"
+    "vic_loca_2": "BRUNSWICK",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2675",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.41"
   },
   {
     "_id": "1357192905354432512",
@@ -2377,7 +2655,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1352724903439572994",
@@ -2394,7 +2674,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2511",
-    "vic_loca_2": "THORNBURY"
+    "vic_loca_2": "THORNBURY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1211",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.10"
   },
   {
     "_id": "1352722910360825856",
@@ -2411,7 +2693,9 @@
     "user_id": "2231897220",
     "score": 1.0347,
     "loc_pid": "VIC2511",
-    "vic_loca_2": "THORNBURY"
+    "vic_loca_2": "THORNBURY",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1211",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.10"
   },
   {
     "_id": "1512856729230319618",
@@ -2428,7 +2712,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1509164098189103106",
@@ -2445,7 +2731,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1508627546618793986",
@@ -2462,7 +2750,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1507023624883998721",
@@ -2479,7 +2769,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1504824359680061443",
@@ -2496,7 +2788,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1504399669220167683",
@@ -2513,7 +2807,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1496738701690302467",
@@ -2530,7 +2826,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1491409248689229831",
@@ -2547,7 +2845,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1490645015533535235",
@@ -2564,7 +2864,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1490634867595300866",
@@ -2581,7 +2883,9 @@
     "user_id": "108268413",
     "score": 1.0796000000000001,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1489957642412109829",
@@ -2598,7 +2902,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1318528317297885185",
@@ -2615,7 +2921,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1305022173745086466",
@@ -2632,7 +2940,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1301858479078948864",
@@ -2649,7 +2959,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1301851341577306114",
@@ -2666,7 +2978,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1301841011925114880",
@@ -2683,7 +2997,9 @@
     "user_id": "108268413",
     "score": 1.07965,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1298589941878857728",
@@ -2700,7 +3016,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1298584432887046149",
@@ -2717,7 +3035,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1298573085516341249",
@@ -2734,7 +3054,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1297926275906940928",
@@ -2751,7 +3073,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1297920481413144582",
@@ -2768,7 +3092,9 @@
     "user_id": "108268413",
     "score": 1.07965,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1297823876232093697",
@@ -2785,7 +3111,9 @@
     "user_id": "108268413",
     "score": 1.07965,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1287309484512051200",
@@ -2802,7 +3130,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1272641793293643776",
@@ -2819,7 +3149,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1242494528201711621",
@@ -2836,7 +3168,9 @@
     "user_id": "108268413",
     "score": 1.0795,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1242081310237057029",
@@ -2853,7 +3187,9 @@
     "user_id": "108268413",
     "score": 1.07955,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1519911046353661958",
@@ -2870,7 +3206,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0482,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518927647417696256",
@@ -2887,7 +3225,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0484,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517782839584264193",
@@ -2904,7 +3244,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04885,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1516640946141933569",
@@ -2921,7 +3263,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04825,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1516003798174793731",
@@ -2938,7 +3282,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0482,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515242163541770243",
@@ -2955,7 +3301,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515233152192888835",
@@ -2972,7 +3320,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04825,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1514821982172610560",
@@ -2989,7 +3339,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04865,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1513695294474829825",
@@ -3006,7 +3358,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0482,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1513071236699795458",
@@ -3023,7 +3377,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0484,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1513041849296261121",
@@ -3040,7 +3396,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1510220120567984129",
@@ -3057,7 +3415,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0484,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1510127970836697094",
@@ -3074,7 +3434,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0486,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1508366200861995015",
@@ -3091,7 +3453,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0489,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1507936909955563520",
@@ -3108,7 +3472,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04845,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506942899820249092",
@@ -3125,7 +3491,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04845,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506149580370751497",
@@ -3142,7 +3510,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1504888707970920449",
@@ -3159,7 +3529,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0482,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1504303783974965251",
@@ -3176,7 +3548,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1504020890123894787",
@@ -3193,7 +3567,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04825,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1503747968289148938",
@@ -3210,7 +3586,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0489,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1503346620163047428",
@@ -3227,7 +3605,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04825,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1499956101126967297",
@@ -3244,7 +3624,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04875,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1499311162533761026",
@@ -3261,7 +3643,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1496671931193769987",
@@ -3278,7 +3662,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04845,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1491996198877954048",
@@ -3295,7 +3681,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0484,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1491942856684347395",
@@ -3312,7 +3700,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0486,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487712009411911681",
@@ -3329,7 +3719,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04825,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1487659714536415232",
@@ -3346,7 +3738,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1486201026365751301",
@@ -3363,7 +3757,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1483342718806147072",
@@ -3380,7 +3776,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0483500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1482639704399163393",
@@ -3397,7 +3795,9 @@
     "user_id": "1434818425474347014",
     "score": 1.0486,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1481465119121219587",
@@ -3414,7 +3814,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04895,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1480781518775611394",
@@ -3431,7 +3833,9 @@
     "user_id": "1434818425474347014",
     "score": 1.04845,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520390018514432001",
@@ -3448,7 +3852,9 @@
     "user_id": "46292189",
     "score": 2.04005,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518108369344933888",
@@ -3465,7 +3871,9 @@
     "user_id": "46292189",
     "score": 2.04115,
     "loc_pid": "VIC1673",
-    "vic_loca_2": "MIEPOLL"
+    "vic_loca_2": "MIEPOLL",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.1799",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.36"
   },
   {
     "_id": "1515102267359522816",
@@ -3482,7 +3890,9 @@
     "user_id": "46292189",
     "score": 2.03995,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1510130217683423234",
@@ -3499,7 +3909,9 @@
     "user_id": "46292189",
     "score": 2.03945,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475598236991721472",
@@ -3516,7 +3928,9 @@
     "user_id": "46292189",
     "score": 2.0394,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1453179610720395268",
@@ -3533,7 +3947,9 @@
     "user_id": "46292189",
     "score": 2.0397499999999997,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1443175794616926210",
@@ -3550,7 +3966,9 @@
     "user_id": "46292189",
     "score": 2.03925,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1443161743186792448",
@@ -3567,7 +3985,9 @@
     "user_id": "46292189",
     "score": 2.0392,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1441688215304347653",
@@ -3584,7 +4004,9 @@
     "user_id": "46292189",
     "score": 2.0404,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1433280678787903489",
@@ -3601,7 +4023,9 @@
     "user_id": "46292189",
     "score": 2.0393499999999998,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1429083545880784897",
@@ -3618,7 +4042,9 @@
     "user_id": "46292189",
     "score": 2.0393,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1420177493802188806",
@@ -3635,7 +4061,9 @@
     "user_id": "46292189",
     "score": 2.0395000000000003,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1420171315256782852",
@@ -3652,7 +4080,9 @@
     "user_id": "46292189",
     "score": 2.04075,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1405803649318625294",
@@ -3669,7 +4099,9 @@
     "user_id": "46292189",
     "score": 2.0398,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519150220625739776",
@@ -3686,7 +4118,9 @@
     "user_id": "415525288",
     "score": 1.0492,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517005686387122176",
@@ -3703,7 +4137,9 @@
     "user_id": "415525288",
     "score": 1.04915,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1513674155925082114",
@@ -3720,7 +4156,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1512308074186301445",
@@ -3737,7 +4175,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506465207316807680",
@@ -3754,7 +4194,9 @@
     "user_id": "415525288",
     "score": 1.04935,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506206951960887298",
@@ -3771,7 +4213,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1475519557213179906",
@@ -3788,7 +4232,9 @@
     "user_id": "415525288",
     "score": 1.04915,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1474519182674857987",
@@ -3805,7 +4251,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1471365102775406596",
@@ -3822,7 +4270,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1469426638064537602",
@@ -3839,7 +4289,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1468825364684099584",
@@ -3856,7 +4308,9 @@
     "user_id": "415525288",
     "score": 1.0491,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1465675064418848768",
@@ -3873,7 +4327,9 @@
     "user_id": "415525288",
     "score": 1.04915,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1465289542391402496",
@@ -3890,7 +4346,9 @@
     "user_id": "415525288",
     "score": 1.04915,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1506156768032079876",
@@ -3907,7 +4365,9 @@
     "user_id": "2658672901",
     "score": 1.0091,
     "loc_pid": "VIC1959",
-    "vic_loca_2": "NORTH BENDIGO"
+    "vic_loca_2": "NORTH BENDIGO",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.437",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.70"
   },
   {
     "_id": "1488301784062099458",
@@ -3924,7 +4384,9 @@
     "user_id": "2658672901",
     "score": 1.0085,
     "loc_pid": "VIC1959",
-    "vic_loca_2": "NORTH BENDIGO"
+    "vic_loca_2": "NORTH BENDIGO",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.437",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.70"
   },
   {
     "_id": "1485509096669605889",
@@ -3941,7 +4403,9 @@
     "user_id": "2658672901",
     "score": 1.00865,
     "loc_pid": "VIC1959",
-    "vic_loca_2": "NORTH BENDIGO"
+    "vic_loca_2": "NORTH BENDIGO",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.437",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.70"
   },
   {
     "_id": "1481021779426803713",
@@ -3958,7 +4422,9 @@
     "user_id": "2658672901",
     "score": 1.0088,
     "loc_pid": "VIC1959",
-    "vic_loca_2": "NORTH BENDIGO"
+    "vic_loca_2": "NORTH BENDIGO",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.437",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.70"
   },
   {
     "_id": "1479902197798236160",
@@ -3975,7 +4441,9 @@
     "user_id": "2658672901",
     "score": 1.0086,
     "loc_pid": "VIC1959",
-    "vic_loca_2": "NORTH BENDIGO"
+    "vic_loca_2": "NORTH BENDIGO",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.437",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.70"
   },
   {
     "_id": "1519878508436406272",
@@ -3992,7 +4460,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519810615602458624",
@@ -4009,7 +4479,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519333294823079937",
@@ -4026,7 +4498,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519274043845005313",
@@ -4043,7 +4517,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518937690766704640",
@@ -4060,7 +4536,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518848230691606528",
@@ -4077,7 +4555,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517963352622116864",
@@ -4094,7 +4574,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517960970353901568",
@@ -4111,7 +4593,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517766993042341888",
@@ -4128,7 +4612,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517761227229122560",
@@ -4145,7 +4631,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517739002216206336",
@@ -4162,7 +4650,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517616047679246336",
@@ -4179,7 +4669,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1516987035046883328",
@@ -4196,7 +4688,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515793196642897920",
@@ -4213,7 +4707,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515789627533459456",
@@ -4230,7 +4726,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515617854699491329",
@@ -4247,7 +4745,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515613639746932736",
@@ -4264,7 +4764,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515460195983446024",
@@ -4281,7 +4783,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515443864404111362",
@@ -4298,7 +4802,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515052986984464384",
@@ -4315,7 +4821,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1515019142558285824",
@@ -4332,7 +4840,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1514005934808645632",
@@ -4349,7 +4859,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1513814825868361731",
@@ -4366,7 +4878,9 @@
     "user_id": "1225473612167016449",
     "score": 1.0007,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1520251946447548416",
@@ -4383,7 +4897,9 @@
     "user_id": "961128374751125505",
     "score": 1.14005,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519785445177323520",
@@ -4400,7 +4916,9 @@
     "user_id": "961128374751125505",
     "score": 1.14005,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519414024471212032",
@@ -4417,7 +4935,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1519200143832416257",
@@ -4434,7 +4954,9 @@
     "user_id": "961128374751125505",
     "score": 1.1390500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518038559714082818",
@@ -4451,7 +4973,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1518036479448354816",
@@ -4468,7 +4992,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517992851015352320",
@@ -4485,7 +5011,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517781028953534464",
@@ -4502,7 +5030,9 @@
     "user_id": "961128374751125505",
     "score": 1.1390500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517695393496461312",
@@ -4519,7 +5049,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517640658601017344",
@@ -4536,7 +5068,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517469456959930368",
@@ -4553,7 +5087,9 @@
     "user_id": "961128374751125505",
     "score": 1.139,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517333471202803714",
@@ -4570,7 +5106,9 @@
     "user_id": "961128374751125505",
     "score": 1.1390500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1517312650711285760",
@@ -4587,7 +5125,9 @@
     "user_id": "961128374751125505",
     "score": 1.1390500000000001,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   },
   {
     "_id": "1516692895432318978",
@@ -4604,6 +5144,8 @@
     "user_id": "961128374751125505",
     "score": 1.142,
     "loc_pid": "VIC537",
-    "vic_loca_2": "CHELTENHAM"
+    "vic_loca_2": "CHELTENHAM",
+    "id_suburb": "ckan_af33dd8c_0534_4e18_9245_fc64440f742e.2666",
+    "id_city": "ckan_bdf92691_c6fe_42b9_a0e2_a4cd716fa811.77"
   }
 ]

@@ -43,7 +43,7 @@ class TweetAnalyzer():
             for key, value in self.keywords.items():
                 for v in value:
                     if v in cleaned_text:
-                        if key in ["NSW", "VIC", "QLD", "TAS", "WA", "SA", "NT"]:
+                        if key in ["NSW", "VIC", "QLD", "TAS", "WA", "SA", "NT", "ACT"]:
                             return "melbourne" if key == "VIC" else "other_cities"
                         
                         return key
