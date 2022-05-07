@@ -1,12 +1,12 @@
 import emoji
 import json
-from textblob import Blobber
-from textblob import TextBlob
-from textblob.sentiments import NaiveBayesAnalyzer
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import re
 import nltk
 nltk.download("stopwords")
 from nltk.corpus import stopwords
+import nltk.data
+
 
 class TweetAnalyzer():
     
@@ -18,6 +18,7 @@ class TweetAnalyzer():
         self.topic = list(self.full_keyword_dict[keywords].keys())[0]
         # dictionary type
         self.keywords = self.full_keyword_dict[keywords]
+        self.tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
     
     
     def clean_text(self, text):
@@ -54,24 +55,27 @@ class TweetAnalyzer():
     def classify_text(self, text):
         
         cleaned_text = self.clean_text(text)
-
-        blobber = Blobber(analyzer=NaiveBayesAnalyzer())
-        sentences = TextBlob(cleaned_text).sentences
-        pos, neg = 0, 0
-        for s in sentences:
-            blob = blobber(str(s))
-
-            if blob.sentiment.classification == "pos":
-                pos += 1
-            else:
-                neg += 1
+        sid_obj = SentimentIntensityAnalyzer()
+        sentences = self.tokenizer.tokenize(cleaned_text)
+        pos, neg, neu = 0, 0, 0
         
-        if pos == neg:
-            res = "neu"
-        elif pos > neg:
-            res = "pos"
+        for s in sentences:
+            sentiment_dict = sid_obj.polarity_scores(s)
+
+            if sentiment_dict['compound'] >= 0.05:
+                pos += 1
+            elif sentiment_dict['compound'] <= - 0.05:
+                neg += 1
+            else:
+                neu += 1
+        
+        max_score = max([pos, neg, neu])
+        if pos == max_score:
+            res = 'pos'
+        elif neg == max_score:
+            res = 'neg'
         else:
-            res = "neg"
+            res = 'neu'
             
         return res
     
