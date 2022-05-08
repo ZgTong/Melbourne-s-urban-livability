@@ -27,10 +27,10 @@ class MyListener(tweepy.Stream):
                              150.2020069979, -33.9807673149]
         with open('tweet_harvesting/data/vic_geo.json') as f:
             self.geo_info = json.load(f)
-            
+
         with open('tweet_harvesting/data/vic_geo_small.json') as fp:
             self.geo_info_small = json.load(fp)
-            
+
         self.api = self.set_api()
         self.checked_tweet = 0
         self.collected_tweet = 0
@@ -47,16 +47,18 @@ class MyListener(tweepy.Stream):
         auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
         auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
         return tweepy.API(auth)
-    
 
     def get_tweetDB(self, document):
+        '''
+        Get the database name for current keywords
+        '''
         if document['topic'] in ['melbourne', 'other_cities']:
             db_name = 'city'
-        else: 
+        else:
             db_name = document['topic']
-        
+
         return db_name
-        
+
     def on_data(self, data):
         '''
         If a Tweet is received from the stream, the raw data is sent to Stream.on_data().
@@ -95,6 +97,15 @@ class MyListener(tweepy.Stream):
         return self.user_ids
 
     def extract_info(self, tweet: dict):
+        '''
+        Extracts information that are of interest to analysis. 
+        The information inclues:
+        - tweet's id, tweet text
+        - user id
+        - point location, suburb name & id, city name & id
+        - sentiment of tweet
+        - weighted score of the tweet, calculated by likes, retweets and number of followers
+        '''
 
         t_id = tweet['id_str']
 
@@ -121,8 +132,9 @@ class MyListener(tweepy.Stream):
 
             sentiment = self.tweetAnalyzer.classify_text(text)
 
-            created_at = datetime.strftime(datetime.strptime(tweet['created_at'], 
-                                                             '%a %b %d %H:%M:%S +0000 %Y'), '%Y-%m-%d %H:%M:%S')
+            created_at = datetime.strftime(datetime.strptime(tweet['created_at'],
+                                                             '%a %b %d %H:%M:%S +0000 %Y'), 
+                                           '%Y-%m-%d %H:%M:%S')
             favorite_count = tweet['favorite_count']
             retweet_count = tweet['retweet_count']
 
@@ -152,29 +164,37 @@ class MyListener(tweepy.Stream):
             return info
 
     def get_lga(self, location: list):
+        '''
+        Using GeoJSON files from the Australian Government, find the corresponding 
+        suburb/city name and id for that location.
+        '''
         point = Point(location[0], location[1])
-        
+
         res = list()
         for feature in self.geo_info['features']:
             bound = shape(feature['geometry'])
 
             if bound.contains(point):
-                res = [feature['properties']["lga_pid"], feature['properties']['vic_lga__3'], feature["id"]]
+                res = [feature['properties']["lga_pid"],
+                       feature['properties']['vic_lga__3'], feature["id"]]
 
         for feature in self.geo_info_small['features']:
             bound = shape(feature['geometry'])
-            
+
             if bound.contains(point):
                 res.append(feature['properties']["loc_pid"])
                 res.append(feature['properties']["vic_loca_2"])
                 res.append(feature["id"])
-        
+
         if res:
             return res
         else:
             return None, None, None, None, None, None
 
     def check_location(self, tweet: dict):
+        '''
+        Check if location is in Victoria
+        '''
         location = self.get_location(tweet)
 
         if location:
@@ -187,6 +207,11 @@ class MyListener(tweepy.Stream):
         return False
 
     def get_location(self, tweet: dict):
+        '''
+        Using the location information from the tweet dictionary, return a point location.
+        If point location is not given in the data, then calculate using bounding_box by 
+        taking averages of longitude and latitude.
+        '''
 
         if tweet['coordinates']:
             return tweet['coordinates']['coordinates']
@@ -231,6 +256,13 @@ class MyListener(tweepy.Stream):
                 json.dump(new_data, file, indent=2)
 
     def save_to_local(self, tweet: dict):
+        '''
+        Tweet will only be saved if in the valid geolocation, i.e. in VIC, with valid listed keywords.
+        If the fetched tweet is not valid, then it will still stream through 
+        the corresponding user timeline.
+        Cleaned tweets will be send to a list, the list will be written to a JSON file 
+        if the size exceeds limit (200).
+        '''
         if self.check_location(tweet) and tweet['id_str'] not in self.tweet_ids:
             obj = self.extract_info(tweet)
 
@@ -242,12 +274,20 @@ class MyListener(tweepy.Stream):
             if tweet["user"]["id_str"] not in self.user_ids:
                 self.stream_user(tweet["user"]["id_str"], on_db=False)
                 print(
-                    f'(local mode) user: {tweet["user"]["id_str"]} completed, collected {self.collected_tweet} tweets in total.')
+                    f'(local mode) user: {tweet["user"]["id_str"]} completed, \
+                        collected {self.collected_tweet} tweets in total.')
             else:
                 print(
                     f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
 
     def save_to_db(self, tweet: dict):
+        '''
+        Tweet will only be saved if in the valid geolocation, 
+        i.e. in VIC, with valid listed keywords.
+        If the fetched tweet is not valid, then it will still stream through 
+        the corresponding user timeline.
+        Cleaned tweets will be send to database immediately.
+        '''
         if self.check_location(tweet):
             doc = self.extract_info(tweet)
 
@@ -255,7 +295,7 @@ class MyListener(tweepy.Stream):
                 db_name = self.get_tweetDB(doc)
                 if db_name not in self.db_client.all_dbs():
                     self.db_client.create_database(db_name)
-                    
+
                 self.tweets_db = self.db_client[db_name]
                 if doc['_id'] not in self.tweets_db:
                     succ = self.tweets_db.create_document(doc)
@@ -265,7 +305,8 @@ class MyListener(tweepy.Stream):
             if tweet["user"]["id_str"] not in self.users_db:
                 self.stream_user(tweet["user"]["id_str"], on_db=True)
                 print(
-                    f'(db mode) user: {tweet["user"]["id_str"]} completed, collected {self.collected_tweet} tweets in total.')
+                    f'(db mode) user: {tweet["user"]["id_str"]} completed, \
+                    collected {self.collected_tweet} tweets in total.')
 
             else:
                 print(
@@ -275,13 +316,13 @@ class MyListener(tweepy.Stream):
         '''
         Stream throu a specific user's timeline, extract information and collect.
         Supports both save to local and send to database, the method of duplicates detection differs.
-        
+
         - Local: check if tweet's id is in self.tweets_ids, only make sure no duplicates for 
                  one file. Need to handle duplicates while sending to database later
-                 
+
         - Database: check if tweet's id is in database, save if not, send to corresponding database. 
                     Can make sure no duplicates for the database
-        
+
         '''
         total_streamed = 0
         collected = 0
@@ -300,14 +341,15 @@ class MyListener(tweepy.Stream):
                         db_name = self.get_tweetDB(user_doc)
                         if db_name not in self.db_client.all_dbs():
                             self.db_client.create_database(db_name)
-                        
+
                         self.tweets_db = self.db_client[db_name]
                         if user_doc['_id'] not in self.tweets_db:
                             succ = self.tweets_db.create_document(user_doc)
                             if not succ.exists():
                                 print("Cannot add tweet: {doc['_id]}")
-                            
-                    elif not on_db and user_doc['_id'] not in self.tweet_ids and user_id not in self.user_ids:
+
+                    elif not on_db and user_doc['_id'] not in self.tweet_ids \
+                    and user_id not in self.user_ids:
                         self.data.append(user_doc)
                         self.tweet_ids.add(user_doc['_id'])
 
@@ -327,6 +369,10 @@ class MyListener(tweepy.Stream):
 
 
 def main():
+    '''
+    Main function to start the tweet harvesting process.
+    Keyword searched will be changed every 200 tweets saved and sent successfully.
+    '''
     keyword = ["city", "food", "sport",
                "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -337,7 +383,7 @@ def main():
 
     if 'user' not in db_client.all_dbs():
         db_client.create_database('user')
-        
+
     # db_client = None
 
     if db_client is not None:
@@ -352,21 +398,25 @@ def main():
         print(f'Search starts on topic {stream_tweet.keywords}')
 
         stream_tweet.filter(languages=["en"],
-                            locations=[140.9637383263, -39.1701944869, 150.2020069979, -33.9807673149])
+                            locations=[140.9637383263, -39.1701944869, 
+                                       150.2020069979, -33.9807673149])
 
         print(
-            f'{stream_tweet.checked_tweet} tweets checked for topic {stream_tweet.keywords}, change to the next topic.')
+            f'{stream_tweet.checked_tweet} tweets checked for topic {stream_tweet.keywords}, \
+            change to the next topic.')
         stream_tweet.checked_tweet = 0
 
-        stream_tweet.write_json(stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
+        stream_tweet.write_json(
+            stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
         stream_tweet.data = list()
         stream_tweet.collected_tweet = 0
 
         stream_tweet.keywords = [x for x in ["city", "food", "sport", "traffic_weather"]
                                  if x != stream_tweet.keywords][random.randint(0, 2)]
-        stream_tweet.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer(stream_tweet.keywords)
+        stream_tweet.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer(
+            stream_tweet.keywords)
         i += 1
-        
+
     if db_client:
         db_client.disconnect()
 
