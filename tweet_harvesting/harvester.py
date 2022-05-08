@@ -37,15 +37,32 @@ class MyListener(tweepy.Stream):
         self.keywords = keywords
         self.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer(keywords)
         self.db_client = db_client
-        self.tweets_db = self.db_client['tweets'] if self.db_client else None
-        self.users_db = self.db_client['users'] if self.db_client else None
+        self.tweets_db = None
+        self.users_db = self.db_client['user'] if self.db_client is not None else None
 
     def set_api(self):
+        '''
+        Set the Twitter API for streaming tweets
+        '''
         auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
         auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
         return tweepy.API(auth)
+    
 
+    def get_tweetDB(self, document):
+        if document['topic'] in ['melbourne', 'other_cities']:
+            db_name = 'city'
+        else: 
+            db_name = document['topic']
+        
+        return db_name
+        
     def on_data(self, data):
+        '''
+        If a Tweet is received from the stream, the raw data is sent to Stream.on_data().
+        This method is override from the parent class Tweepy.Stream in order to store/send the 
+        customized document for each tweet to local/database.
+        '''
         tweet = json.loads(data)
         self.checked_tweet += 1
         # print(self.checked_tweet)
@@ -53,7 +70,7 @@ class MyListener(tweepy.Stream):
             if not tweet['place']:
                 return False
 
-            if self.db_client:
+            if self.db_client is not None:
                 self.save_to_db(tweet)
             else:
                 self.save_to_local(tweet)
@@ -231,11 +248,19 @@ class MyListener(tweepy.Stream):
                     f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
 
     def save_to_db(self, tweet: dict):
-        if self.check_location(tweet) and tweet['id_str'] not in self.tweets_db:
+        if self.check_location(tweet):
             doc = self.extract_info(tweet)
 
             if doc:
-                self.tweets_db.create_document(doc)
+                db_name = self.get_tweetDB(doc)
+                if db_name not in self.db_client.all_dbs():
+                    self.db_client.create_database(db_name)
+                    
+                self.tweets_db = self.db_client[db_name]
+                if doc['_id'] not in self.tweets_db:
+                    succ = self.tweets_db.create_document(doc)
+                    if not succ.exists():
+                        print("Cannot add tweet: {doc['_id]}")
 
             if tweet["user"]["id_str"] not in self.users_db:
                 self.stream_user(tweet["user"]["id_str"], on_db=True)
@@ -247,6 +272,17 @@ class MyListener(tweepy.Stream):
                     f'(db mode) user: {tweet["user"]["id_str"]} already completed')
 
     def stream_user(self, user_id: str, on_db: bool):
+        '''
+        Stream throu a specific user's timeline, extract information and collect.
+        Supports both save to local and send to database, the method of duplicates detection differs.
+        
+        - Local: check if tweet's id is in self.tweets_ids, only make sure no duplicates for 
+                 one file. Need to handle duplicates while sending to database later
+                 
+        - Database: check if tweet's id is in database, save if not, send to corresponding database. 
+                    Can make sure no duplicates for the database
+        
+        '''
         total_streamed = 0
         collected = 0
 
@@ -260,8 +296,17 @@ class MyListener(tweepy.Stream):
 
                 if user_doc:
 
-                    if on_db and user_doc['_id'] not in self.tweets_db and user_id not in self.users_db:
-                        self.tweets_db.create_document(user_doc)
+                    if on_db and user_id not in self.users_db:
+                        db_name = self.get_tweetDB(user_doc)
+                        if db_name not in self.db_client.all_dbs():
+                            self.db_client.create_database(db_name)
+                        
+                        self.tweets_db = self.db_client[db_name]
+                        if user_doc['_id'] not in self.tweets_db:
+                            succ = self.tweets_db.create_document(user_doc)
+                            if not succ.exists():
+                                print("Cannot add tweet: {doc['_id]}")
+                            
                     elif not on_db and user_doc['_id'] not in self.tweet_ids and user_id not in self.user_ids:
                         self.data.append(user_doc)
                         self.tweet_ids.add(user_doc['_id'])
@@ -286,18 +331,16 @@ def main():
                "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-    # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-    #                     url=DATABASE_URL, connect=True)
-    # print(str(db_client.all_dbs()))
+    db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+                        url=DATABASE_URL, connect=True)
+    print(str(db_client.all_dbs()))
 
-    # if 'tweets' not in db_client.all_dbs():
-    #     db_client.create_database('tweets')
-    # if 'users' not in db_client.all_dbs():
-    #     db_client.create_database('users')
+    if 'user' not in db_client.all_dbs():
+        db_client.create_database('user')
         
-    db_client = None
+    # db_client = None
 
-    if db_client:
+    if db_client is not None:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword, db_client=db_client)
     else:
@@ -305,7 +348,7 @@ def main():
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword)
 
     i = 0
-    while i < 5:
+    while True:
         print(f'Search starts on topic {stream_tweet.keywords}')
 
         stream_tweet.filter(languages=["en"],

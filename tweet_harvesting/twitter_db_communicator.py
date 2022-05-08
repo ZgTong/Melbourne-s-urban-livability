@@ -1,6 +1,5 @@
 import json
 from cloudant.client import CouchDB
-from matplotlib.pyplot import connect
 from harvester import *
 
 
@@ -31,10 +30,9 @@ class CouchDBClient(CouchDB):
 
 
 def main():
-    files = ["tweet_harvesting/output/historical_tweets_6.json",
-             "tweet_harvesting/output/historical_tweets_7.json",
-             "tweet_harvesting/output/historical_tweets_8.json",
-             "tweet_harvesting/output/historical_tweets_9.json"]
+    files = ["tweet_harvesting/output/2022-05-08_13-09-30.json",
+             "tweet_harvesting/output/2022-05-07_23-06-13.json",
+             "tweet_harvesting/output/2022-05-07_11-34-50.json"]
     
     for file in files:
         with open(file, 'r') as f:
@@ -69,7 +67,7 @@ def main():
                 doc = my_db.create_document(tweet)
                 if not doc.exists():
                     print("Cannot add tweet: {tweet['_id]}")
-                time.sleep(random.randint(0, 2))
+                time.sleep(random.randint(0, 1))
             else:
                 print(f"document {tweet['_id']} already exists.")
             
@@ -77,7 +75,7 @@ def main():
                 user_doc = user_db.create_document({"_id": tweet['user_id'], "status": "complete"})
                 if user_doc.exists():
                     print("user added")
-                time.sleep(random.randint(0, 4))
+                time.sleep(random.randint(0, 1))
                 
             if saved_count % 100 == 0:
                 print(f"Progress: {saved_count}/{total_count}, file :{file}")
@@ -90,21 +88,13 @@ def main():
 
             
 if __name__ == '__main__':
-    main()
-    # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD, url=DATABASE_URL, connect=True)
+    # main()
+    db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD, url=DATABASE_URL, connect=True)
     
-    # session = db_client.session()
-    # print('Username: {0}'.format(session['userCtx']['name']))
-    # print('Databases: {0}'.format(db_client.all_dbs()))
+    session = db_client.session()
+    print('Username: {0}'.format(session['userCtx']['name']))
+    print('Databases: {0}'.format(db_client.all_dbs()))
 
-    # my_db = db_client['tweets']
-    # user_db = db_client['users']
+    for db in db_client.all_dbs():
+        print(f"{db}: {db_client[db].doc_count()}")
     
-    # end_point = '{0}/{1}'.format(db_client.server_url, 'tweets/_all_docs')
-    # params = {'include_docs': 'true'}
-
-    # # Issue the request
-    # response = db_client.r_session.get(end_point, params=params)
-
-    # # Display the response content
-    # print(response.json())
