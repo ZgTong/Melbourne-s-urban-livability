@@ -16,7 +16,7 @@ KEYWORD_LIST = ["city", "food", "sport", "traffic_weather"]
 class MyListener(tweepy.Stream):
 
     def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret,
-                 keywords, db_client=None, **kwargs):
+                 db_client=None, **kwargs):
         super().__init__(consumer_key, consumer_secret,
                          access_token, access_token_secret, **kwargs)
         self.data = list()
@@ -34,8 +34,8 @@ class MyListener(tweepy.Stream):
         self.api = self.set_api()
         self.checked_tweet = 0
         self.collected_tweet = 0
-        self.keywords = keywords
-        self.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer(keywords)
+        # self.keywords = keywords
+        self.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer()
         self.db_client = db_client
         self.tweets_db = None
         self.users_db = self.db_client['user'] if self.db_client is not None else None
@@ -273,9 +273,8 @@ class MyListener(tweepy.Stream):
 
             if tweet["user"]["id_str"] not in self.user_ids:
                 self.stream_user(tweet["user"]["id_str"], on_db=False)
-                print(
-                    f'(local mode) user: {tweet["user"]["id_str"]} completed, \
-                        collected {self.collected_tweet} tweets in total.')
+                print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
+                      ' completed, collected' + str(self.collected_tweet) + ' tweets in total.')
             else:
                 print(
                     f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
@@ -304,9 +303,8 @@ class MyListener(tweepy.Stream):
 
             if tweet["user"]["id_str"] not in self.users_db:
                 self.stream_user(tweet["user"]["id_str"], on_db=True)
-                print(
-                    f'(db mode) user: {tweet["user"]["id_str"]} completed, \
-                    collected {self.collected_tweet} tweets in total.')
+                print('(db mode) user: ' + str(tweet["user"]["id_str"]) 
+                      + ' completed, collected' + str(self.collected_tweet) + ' tweets in total.')
 
             else:
                 print(
@@ -325,7 +323,6 @@ class MyListener(tweepy.Stream):
 
         '''
         total_streamed = 0
-        collected = 0
 
         for status in tweepy.Cursor(self.api.user_timeline,
                                     user_id=user_id,
@@ -373,8 +370,8 @@ def main():
     Main function to start the tweet harvesting process.
     Keyword searched will be changed every 200 tweets saved and sent successfully.
     '''
-    keyword = ["city", "food", "sport",
-               "traffic_weather"][random.randint(0, 3)]
+    # keyword = ["city", "food", "sport",
+    #            "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
     db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
@@ -388,22 +385,20 @@ def main():
 
     if db_client is not None:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
-                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword, db_client=db_client)
+                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
     else:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
-                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, keyword)
+                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
-    i = 0
+    # i = 0
     while True:
-        print(f'Search starts on topic {stream_tweet.keywords}')
+        print(f'Search starts')
 
         stream_tweet.filter(languages=["en"],
                             locations=[140.9637383263, -39.1701944869, 
                                        150.2020069979, -33.9807673149])
 
-        print(
-            f'{stream_tweet.checked_tweet} tweets checked for topic {stream_tweet.keywords}, \
-            change to the next topic.')
+        print( f'{stream_tweet.checked_tweet} tweets checked, refresh harvester.')
         stream_tweet.checked_tweet = 0
 
         stream_tweet.write_json(
@@ -411,11 +406,10 @@ def main():
         stream_tweet.data = list()
         stream_tweet.collected_tweet = 0
 
-        stream_tweet.keywords = [x for x in ["city", "food", "sport", "traffic_weather"]
-                                 if x != stream_tweet.keywords][random.randint(0, 2)]
-        stream_tweet.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer(
-            stream_tweet.keywords)
-        i += 1
+        # stream_tweet.keywords = [x for x in ["city", "food", "sport", "traffic_weather"]
+                                #  if x != stream_tweet.keywords][random.randint(0, 2)]
+        stream_tweet.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer()
+        # i += 1
 
     if db_client:
         db_client.disconnect()

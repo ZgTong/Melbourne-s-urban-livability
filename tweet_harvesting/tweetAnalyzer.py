@@ -10,14 +10,15 @@ import nltk.data
 
 class TweetAnalyzer():
     
-    def __init__(self, keywords):
+    def __init__(self):
         with open('tweet_harvesting/data/keywords.json', 'r') as f:
             self.full_keyword_dict = json.load(f)
+            self.keyword_list = list(self.full_keyword_dict.values())
             
         # topic: city, food, sport, traffic_weather
-        self.topic = list(self.full_keyword_dict[keywords].keys())[0]
-        # dictionary type
-        self.keywords = self.full_keyword_dict[keywords]
+        # self.topic = list(self.full_keyword_dict[keywords].keys())[0]
+        # # dictionary type
+        # self.keywords = self.full_keyword_dict[keywords]
         self.tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
     
     
@@ -40,14 +41,23 @@ class TweetAnalyzer():
         
         cleaned_text = self.clean_text(text).split()
         
-        if type(self.keywords) is dict:
-            for key, value in self.keywords.items():
+        for item in self.keyword_list:
+            for key, value in item.items():
                 for v in value:
                     if v in cleaned_text:
                         if key in ["NSW", "VIC", "QLD", "TAS", "WA", "SA", "NT", "ACT"]:
                             return "melbourne" if key == "VIC" else "other_cities"
                         
                         return key
+        
+        # if type(self.keywords) is dict:
+        #     for key, value in self.keywords.items():
+        #         for v in value:
+        #             if v in cleaned_text:
+        #                 if key in ["NSW", "VIC", "QLD", "TAS", "WA", "SA", "NT", "ACT"]:
+        #                     return "melbourne" if key == "VIC" else "other_cities"
+                        
+        #                 return key
                 
         return None
     
@@ -83,9 +93,9 @@ class TweetAnalyzer():
     
 if __name__ == "__main__":
     
-    txt = "@dan_buchner @ScottMorrisonMP Didn't Morrison, as one of the troika that took over the NSW party, just endorse her as the candidate? \n\n 👍 He can hardly bin someone when he is almost completely responsible for putting forward  and for the lack of vetting."
+    txt = "@dan_buchner @ScottMorrisonMP rain Didn't Morrison, as one of the troika that took over the party, just endorse her as the candidate? \n\n 👍 He can hardly bin someone when he is almost completely responsible for putting forward  and for the lack of vetting."
     
-    classifier = TweetAnalyzer("city")
+    classifier = TweetAnalyzer()
     print(classifier.extract_topic(txt))
     res = classifier.classify_text(txt)
     print(res)

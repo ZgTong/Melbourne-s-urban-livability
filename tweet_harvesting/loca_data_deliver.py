@@ -30,9 +30,7 @@ class CouchDBClient(CouchDB):
 
 
 def main():
-    files = ["tweet_harvesting/output/2022-05-08_13-09-30.json",
-             "tweet_harvesting/output/2022-05-07_23-06-13.json",
-             "tweet_harvesting/output/2022-05-07_11-34-50.json"]
+    files = ["tweet_harvesting/output/2022-05-09_03-21-45.json"]
     
     for file in files:
         with open(file, 'r') as f:
@@ -78,7 +76,7 @@ def main():
                 time.sleep(random.randint(0, 1))
                 
             if saved_count % 100 == 0:
-                print(f"Progress: {saved_count}/{total_count}, file :{file}")
+                print(f"Progress: {saved_count}/{total_count}, file: {file}")
             
         # for document in my_db:
         #     print(document)    
@@ -88,13 +86,13 @@ def main():
 
             
 if __name__ == '__main__':
-    # main()
-    db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD, url=DATABASE_URL, connect=True)
+    main()
+    # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD, url=DATABASE_URL, connect=True)
     
-    session = db_client.session()
-    print('Username: {0}'.format(session['userCtx']['name']))
-    print('Databases: {0}'.format(db_client.all_dbs()))
+    # session = db_client.session()
+    # print('Username: {0}'.format(session['userCtx']['name']))
+    # print('Databases: {0}'.format(db_client.all_dbs()))
 
-    for db in db_client.all_dbs():
-        print(f"{db}: {db_client[db].doc_count()}")
+    # for db in db_client.all_dbs():
+    #     print(f"{db}: {db_client[db].doc_count()}")
     
