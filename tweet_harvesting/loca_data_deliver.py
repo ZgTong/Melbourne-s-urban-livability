@@ -1,6 +1,7 @@
 import json
 from cloudant.client import CouchDB
 from harvester import *
+import pandas as pd
 
 
 class CouchDBClient(CouchDB):
@@ -92,7 +93,28 @@ if __name__ == '__main__':
     # session = db_client.session()
     # print('Username: {0}'.format(session['userCtx']['name']))
     # print('Databases: {0}'.format(db_client.all_dbs()))
+    # res_dict = dict()
 
-    # for db in db_client.all_dbs():
-    #     print(f"{db}: {db_client[db].doc_count()}")
+    # weather_db = db_client['weather']
+    
+    # response = weather_db.all_docs(include_docs = True)
+    # rows = response['rows']
+    # for r in rows:
+    #     doc = r['doc']
+    #     date = doc['created_at'][:7]
+    #     if date not in res_dict:
+    #         res_dict[date] = dict()
+    #         res_dict[date]['pos'] = 0
+    #         res_dict[date]['neg'] = 0
+    #         res_dict[date]['neu'] = 0
+            
+    #     sentiment = doc['sentiment']
+    #     res_dict[date][sentiment] += 1
+    
+    # df = pd.DataFrame.from_dict(res_dict,orient='index')
+    # df['total'] = df['pos'] + df['neg']
+    # df['month'] = list(res_dict.keys())
+    # df = df.sort_values(by = 'month')
+    # df.to_csv('weather_sent.csv', encoding='utf-8', index=False)
+    # print('Response: {0}'.format(response.keys()))
     

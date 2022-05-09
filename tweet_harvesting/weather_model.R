@@ -2,75 +2,100 @@ library(tidyverse)
 library(ggplot2)
 library(reshape2)
 
-data <- read.csv('tweet_harvesting/output/weather.csv', header = TRUE)
+data <- read.csv('tweet_harvesting/output/weather_sent.csv', header = TRUE)
 weather <- read.csv('tweet_harvesting/output/weather_past10years.csv', header = TRUE)
+month_df <- as.data.frame(weather)
+month_df$date <- format(as.Date(month_df$date), "%Y-%m")
 
-df <- merge(data, weather, by = c('date'))
+agg_by_month <- do.call(data.frame, aggregate(. ~ date, month_df,FUN = function(x){ c(min = min(x), 
+                                                                 avg = mean(x),
+                                                                 max = max(x),
+                                                                 sum = sum(x))}))
+agg_by_month <- agg_by_month %>% select(date, temperature_min.min, temperature_avg.avg, 
+                                        temperature_max.max, uv_max.max, rain_sum.sum,
+                                        humidity_avg.avg, wind_max.max, wind_avg.avg)
+colnames(agg_by_month) <- c("date", "temperature_min", "temperature_avg", "temperature_max",
+                            "uv_max", "rain_sum", "humidity_avg", "wind_max", "wind_avg")
+df <- merge(data, agg_by_month, by = c('date'))
 
-mod <- glm(pos ~ temperature_min + temperature_avg + temperature_max + uv_max 
-           + rain_sum + humidity_avg + wind_max + wind_avg, 
+mod <- glm(pos ~ .-neg - neu - date - total, 
            family = poisson, data = df)
 summary(mod)
 anova(mod, test="Chi")
 mod1 <- step(mod, trace = FALSE)
 summary(mod1)
+anova(mod1, test = "Chi")
+mod2 <- glm(pos ~ temperature_avg + uv_max + humidity_avg + wind_avg, 
+           family = poisson, data = df)
 
-logit_mod <- glm(pos/total ~ temperature_min + temperature_avg + temperature_max + uv_max 
-                 + rain_sum + humidity_avg + wind_max + wind_avg, 
-                 family = binomial, data = df, weight=total)
-mod2 <- step(logit_mod, trace = FALSE)
-summary(mod2)
+exp(mod2$coef) / sum(exp(mod2$coef))
 
-res_df <- df %>% select(date, temperature_min, temperature_avg, uv_max, rain_sum, pos, total)
-plot_df <- melt(res_df ,  id.vars = 'date', variable.name = 'series')
 
-# plot on same grid, each series colored differently -- 
-# good if the series have same scale
-ggplot(plot_df, aes(date,value)) + geom_line(aes(colour = series))
-ggplot(plot_df, aes(date,value)) + geom_line() + facet_grid(series ~ .)
-ggplot(df_wide, aes(x = date, y = val, color = colname, group = 1)) + geom_line()
+res_df <- df %>% select(date, temperature_avg, uv_max, humidity_avg, wind_avg, pos, total)
 
-df_wide <- res_df %>% pivot_longer(c(temperature_min, temperature_avg, uv_max, rain_sum, pos, total), names_to = "colname", values_to = "val")
-
-month_df <- as.data.frame(res_df)
-month_df$date <- format(as.Date(month_df$date), "%Y-%m")
-
-agg_by_month <- do.call(data.frame, aggregate(. ~ date,month_df,FUN = function(x){ c(min = min(x), 
-                                                                 avg = mean(x),
-                                                                 max = max(x),
-                                                                 sum = sum(x))}))
-agg_by_month <- agg_by_month %>% select(date, temperature_min.min, temperature_avg.avg, uv_max.max, rain_sum.sum,
-                                        pos.sum, total.sum)
-scaled.dat <- agg_by_month[, -c(1)]
+scaled.dat <- res_df[, -c(1)]
 scaled.dat$ratio <- scaled.dat$pos / scaled.dat$total
 scaled.dat$pos <- NULL
 scaled.dat$total <- NULL
-scaled.dat <- as.data.frame(scale(scaled.dat))
-scaled.dat$date <- agg_by_month$date
-df_wide <- scaled.dat %>% pivot_longer(c(temperature_min.min, temperature_avg.avg, uv_max.max, rain_sum.sum,
-                                           pos.sum, total.sum), names_to = "colname", values_to = "val")
-colnames(agg_by_month) <- c("date", "temperature_min", "temperature_avg", "uv_max", "rain_sum", "pos", "total")
-colnames(scaled.dat) <- c("temperature_min", "temperature_avg", "uv_max", "rain_sum", "pos", "total", "ratio", "date")
+scaled.dat <- sapply(scaled.dat, function(x) (x - min(x, na.rm = T)) / (max(x, na.rm = T) - min(x, na.rm=T)))
+scaled.dat <- as.data.frame(scaled.dat)
+scaled.dat$date <- df$date
 
-ggplot(scaled.dat, aes(date)) + 
-    geom_line(aes(y = temperature_min, colour = "temperature_min", group=1)) + 
-    geom_line(aes(y = ratio, colour = "positive ratio", group=1))
-ggplot(scaled.dat, aes(date)) + 
-    geom_line(aes(y = temperature_avg, colour = "temperature_avg", group=1)) + 
-    geom_line(aes(y = ratio, colour = "positive ratio", group=1))
-ggplot(scaled.dat, aes(date)) + 
-    geom_line(aes(y = uv_max, colour = "uv_max", group=1)) + 
-    geom_line(aes(y = ratio, colour = "positive ratio", group=1))
-ggplot(scaled.dat, aes(date)) + 
-    geom_line(aes(y = rain_sum, colour = "rain_sum", group=1)) + 
-    geom_line(aes(y = ratio, colour = "positive ratio", group=1))
+p_1 <- ggplot(scaled.dat, aes(date)) + 
+    geom_line(aes(y = temperature_avg, colour = "Avg. temperature", group=1)) + 
+    geom_line(aes(y = ratio, colour = "Positive ratio", group=1)) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4)) +
+    ggtitle("Relationship between Positive Tweets and Average Temperature") +
+    xlab("Month") + ylab("Avg. temp/Pos ratio")
+png("tweet_harvesting/output/weather_figures/tempavg_vs_ratio.png", 
+        width = 7, height = 3, units = "in", res = 1200)
+print(p_1)
+dev.off()
 
-ggplot(scaled.dat, aes(date)) + 
-    geom_line(aes(y = rain_sum, colour = "rain_sum", group=1)) + 
-    geom_line(aes(y = ratio, colour = "positive ratio", group=1), size = 2) +
-    geom_line(aes(y = uv_max, colour = "uv_max", group=1)) +
-    geom_line(aes(y = temperature_avg, colour = "temperature_avg", group=1)) +
-    geom_line(aes(y = temperature_min, colour = "temperature_min", group=1))
-    
-    
+p_2 <- ggplot(scaled.dat, aes(date)) + 
+    geom_line(aes(y = wind_avg, colour = "Avg. wind", group=1)) + 
+    geom_line(aes(y = ratio, colour = "Positive ratio", group=1)) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4)) +
+    ggtitle("Relationship between Positive Tweets and Average Wind") +
+    xlab("Month") + ylab("Avg. wind/Pos ratio")
+png("tweet_harvesting/output/weather_figures/windavg_vs_ratio.png", 
+        width = 7, height = 3, units = "in", res = 1200)
+print(p_2)
+dev.off()
+
+p_3 <- ggplot(scaled.dat, aes(date)) + 
+    geom_line(aes(y = uv_max, colour = "Max UV", group=1)) + 
+    geom_line(aes(y = ratio, colour = "Positive ratio", group=1)) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4)) +
+    ggtitle("Relationship between Positive Tweets and Maximum UV") +
+    xlab("Month") + ylab("Max UV/pos ratio")
+png("tweet_harvesting/output/weather_figures/uvmax_vs_ratio.png", 
+        width = 7, height = 3, units = "in", res = 1200)
+print(p_3)
+dev.off()
+
+p_4 <- ggplot(scaled.dat, aes(date)) + 
+    geom_line(aes(y = humidity_avg, colour = "Avg. humidity", group=1)) + 
+    geom_line(aes(y = ratio, colour = "Positive ratio", group=1)) + 
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4)) +
+    ggtitle("Relationship between Positive Tweets and Average Humidity") +
+    xlab("Month") + ylab("Avg. humidity/Pos ratio")
+png("tweet_harvesting/output/weather_figures/humidityavg_vs_ratio.png", 
+        width = 7, height = 3, units = "in", res = 1200)
+print(p_4)
+dev.off()
+
+p_5 <- ggplot(scaled.dat, aes(date)) + 
+    geom_line(aes(y = wind_avg, colour = "Avg. wind", group=1)) + 
+    geom_line(aes(y = ratio, colour = "Positive ratio", group=1), size = 1) +
+    geom_line(aes(y = uv_max, colour = "Max UV", group=1)) +
+    geom_line(aes(y = temperature_avg, colour = "Avg. temperature", group=1)) +
+    geom_line(aes(y = humidity_avg, colour = "Avg. humidity", group=1)) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4)) +
+    ggtitle("Relationship between Positive tweets and All Variables") +
+    xlab("Month") + ylab("Overall/Pos ratio")
+png("tweet_harvesting/output/weather_figures/overall_vs_ratio.png", 
+        width = 7, height = 3, units = "in", res = 1200)
+print(p_5)
+dev.off()
     
