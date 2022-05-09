@@ -2,8 +2,8 @@ library(tidyverse)
 library(ggplot2)
 library(reshape2)
 
-data <- read.csv('/Users/tangxuanjin/Desktop/2022-s1/COMP90024-CCC/twitter_harvester/output/weather.csv', header = TRUE)
-weather <- read.csv('/Users/tangxuanjin/Desktop/2022-s1/COMP90024-CCC/twitter_harvester/output/weather_past10years.csv', header = TRUE)
+data <- read.csv('tweet_harvesting/output/weather.csv', header = TRUE)
+weather <- read.csv('tweet_harvesting/output/weather_past10years.csv', header = TRUE)
 
 df <- merge(data, weather, by = c('date'))
 
@@ -50,6 +50,8 @@ scaled.dat$date <- agg_by_month$date
 df_wide <- scaled.dat %>% pivot_longer(c(temperature_min.min, temperature_avg.avg, uv_max.max, rain_sum.sum,
                                            pos.sum, total.sum), names_to = "colname", values_to = "val")
 colnames(agg_by_month) <- c("date", "temperature_min", "temperature_avg", "uv_max", "rain_sum", "pos", "total")
+colnames(scaled.dat) <- c("temperature_min", "temperature_avg", "uv_max", "rain_sum", "pos", "total", "ratio", "date")
+
 ggplot(scaled.dat, aes(date)) + 
     geom_line(aes(y = temperature_min, colour = "temperature_min", group=1)) + 
     geom_line(aes(y = ratio, colour = "positive ratio", group=1))
