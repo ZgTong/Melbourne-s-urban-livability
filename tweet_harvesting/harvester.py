@@ -274,7 +274,7 @@ class MyListener(tweepy.Stream):
             if tweet["user"]["id_str"] not in self.user_ids:
                 self.stream_user(tweet["user"]["id_str"], on_db=False)
                 print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
-                      ' completed, collected' + str(self.collected_tweet) + ' tweets in total.')
+                      ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
             else:
                 print(
                     f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
@@ -304,7 +304,7 @@ class MyListener(tweepy.Stream):
             if tweet["user"]["id_str"] not in self.users_db:
                 self.stream_user(tweet["user"]["id_str"], on_db=True)
                 print('(db mode) user: ' + str(tweet["user"]["id_str"]) 
-                      + ' completed, collected' + str(self.collected_tweet) + ' tweets in total.')
+                      + ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
 
             else:
                 print(
@@ -401,14 +401,19 @@ def main():
         print( f'{stream_tweet.checked_tweet} tweets checked, refresh harvester.')
         stream_tweet.checked_tweet = 0
 
-        stream_tweet.write_json(
-            stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
+        if db_client is None:
+            stream_tweet.write_json(
+                stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
+            db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+                        url=DATABASE_URL, connect=True)
+            stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
+                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
+            
         stream_tweet.data = list()
         stream_tweet.collected_tweet = 0
 
         # stream_tweet.keywords = [x for x in ["city", "food", "sport", "traffic_weather"]
                                 #  if x != stream_tweet.keywords][random.randint(0, 2)]
-        stream_tweet.tweetAnalyzer = tweetAnalyzer.TweetAnalyzer()
         # i += 1
 
     if db_client:
