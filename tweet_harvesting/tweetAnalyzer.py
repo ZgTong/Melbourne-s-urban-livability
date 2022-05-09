@@ -4,6 +4,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import re
 import nltk
 nltk.download("stopwords")
+nltk.download("punkt")
 from nltk.corpus import stopwords
 import nltk.data
 
@@ -11,7 +12,7 @@ import nltk.data
 class TweetAnalyzer():
     
     def __init__(self):
-        with open('tweet_harvesting/data/keywords.json', 'r') as f:
+        with open('/Users/yuan/Dev/CCC-comp90024/Melbourne-s-urban-livability/tweet_harvesting/data/keywords.json', 'r') as f:
             self.full_keyword_dict = json.load(f)
             self.keyword_list = list(self.full_keyword_dict.values())
             
@@ -63,7 +64,6 @@ class TweetAnalyzer():
     
     
     def classify_text(self, text):
-        
         cleaned_text = self.clean_text(text)
         sid_obj = SentimentIntensityAnalyzer()
         sentences = self.tokenizer.tokenize(cleaned_text)

@@ -1,4 +1,5 @@
 import json
+import os
 import random
 import time
 from datetime import datetime
@@ -25,11 +26,15 @@ class MyListener(tweepy.Stream):
         self.tweet_ids = set()
         self.bounding_box = [140.9637383263, -39.1701944869,
                              150.2020069979, -33.9807673149]
-        with open('tweet_harvesting/data/vic_geo.json') as f:
+        with open('data/vic_geo.json') as f:
             self.geo_info = json.load(f)
 
-        with open('tweet_harvesting/data/vic_geo_small.json') as fp:
+        with open('data/vic_geo.json') as fp:
             self.geo_info_small = json.load(fp)
+
+
+        print(self.geo_info)
+        print(self.geo_info_small)
 
         self.api = self.set_api()
         self.checked_tweet = 0
@@ -130,7 +135,7 @@ class MyListener(tweepy.Stream):
             if not location_name or not topic:
                 return None
 
-            sentiment = self.tweetAnalyzer.classify_text(text)
+            # sentiment = self.tweetAnalyzer.classify_text(text)
 
             created_at = datetime.strftime(datetime.strptime(tweet['created_at'],
                                                              '%a %b %d %H:%M:%S +0000 %Y'), 
@@ -149,7 +154,7 @@ class MyListener(tweepy.Stream):
                 "created_at": created_at,
                 "text": text,
                 "topic": topic,
-                "sentiment": sentiment,
+                # "sentiment": sentiment,
                 "location": location,
                 "location_name": location_name,
                 "location_id": location_id,
@@ -421,4 +426,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main()    
