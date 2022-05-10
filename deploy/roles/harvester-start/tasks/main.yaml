@@ -13,7 +13,7 @@
 - name: check database config directory
   become: yes
   file:
-    path: "/home/ubuntu/project/tweet_harvesting/dbconfig"
+    path: "/home/ubuntu/project/tweet_harvesting/config"
     recurse: yes
     state: directory
 
@@ -21,14 +21,21 @@
 - name: Copy database configuration to project repo
   become: yes
   copy:
-    src: "config/dbconfig.py"
-    dest: "/home/ubuntu/project/tweet_harvesting/dbconfig/dbconfig.py"
+    src: "config/dbconfig0.py"
+    dest: "/home/ubuntu/project/tweet_harvesting/config/dbconfig.py"
 
 # Clear running harvester container
 - name: Clear harvester container
   docker_container:
     name: harvester
     state: absent
+  become: yes
+
+# Clear exsiting harvester image
+- name: Remove image
+  docker_image:
+    state: absent
+    name: grp28/harvester
   become: yes
 
 # Create harvester docker image 
@@ -50,4 +57,3 @@
     recreate: true
   become: yes
   
-
