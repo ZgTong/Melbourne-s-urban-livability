@@ -109,7 +109,12 @@ const Map = ({
                     max = livabilityVariable
                 }
                 // update the existing row with the new data
-                map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
+                // map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
+                map.data.forEach((feat) => {
+                    if(feat.getProperty("lga_pid") == locId){
+                        feat.setProperty('livability_variable', livabilityVariable);
+                    }
+                })
             });
             if(data.length===0){
                 min = 0
@@ -167,8 +172,10 @@ const Map = ({
             });
             map.data.loadGeoJson(
                 VIC_STATE_BOUNDARIES_JSON_PATH,
-                { idPropertyName: "lga_pid" },
+                { idPropertyName: "lg_ply_pid" },
+                // { idPropertyName: "lga_pid" },
                 (feat)=>{
+                    console.log("length:", feat.length)
                     window.google.maps.event.trigger(
                         document.getElementById("livability-variable"),
                         "change"
