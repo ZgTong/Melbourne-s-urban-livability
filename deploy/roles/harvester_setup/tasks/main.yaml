@@ -1,0 +1,56 @@
+
+
+
+
+# https://github.com/Jeremy-Shang/Test-repo-pri.git
+# git@github.com:Jeremy-Shang/Test-repo-pri.git
+
+# Clone harvester branch repo
+- name: Git clone from remote public repo
+  git:
+    repo: "https://github.com/Jeremy-Shang/Test-Repo.git"
+    dest: "/home/ubuntu/project"
+  become: true
+
+# Create a database configure directory
+- name: check database config directory
+  become: yes
+  file:
+    path: "/home/ubuntu/project/dbconfig"
+    recurse: yes
+    state: directory
+
+# Copy database configuration
+- name: Copy database configuration to project repo
+  become: yes
+  copy:
+    src: "config/dbconfig.py"
+    dest: "/home/ubuntu/project/dbconfig/dbconfig.py"
+
+# Clear running harvester container
+- name: Clear harvester container
+  docker_container:
+    name: harvester
+    state: absent
+  become: yes
+
+# Create harvester docker image 
+- name: Create harvester docker image 
+  docker_image:
+    build:
+      path: "/home/ubuntu/project"
+      pull: yes
+    name: grp28/twitter_harvester
+    source: build
+  become: yes
+
+# Run Harvester
+- name: Run harvester
+  docker_container:
+    name: harvester
+    image: grp28/twitter_harvester
+    state: started
+    recreate: true
+  become: yes
+  
+

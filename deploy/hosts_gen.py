@@ -28,6 +28,16 @@ def gen_hosts(hosts):
     with open("roles/couchdb-make-cluster/defaults/main.yaml", 'w') as f:
         f.write("masternode: " + "\""+couchdbNodes[0]+"\"")
 
+    with open("config/dbconfig.py", 'w') as f:
+        f.write("DATABASE_USERNAME = " + '\"admin\"\n' 
+                + "DATABASE_PASSWORD = " + "\"admin\"\n" 
+                + "DATABASE_MASTER = " + "\""+couchdbNodes[0]+"\"\n"
+                + "DATABASE_SLAVE0 = " + "\""+couchdbNodes[1]+"\"\n"
+                + "DATABASE_SLAVE1 = " + "\""+couchdbNodes[2]+"\"\n"
+                + "DATABASE_VERSION = " + "'3.0.0'\n"
+                + "DATABASE_COOKIE = " + "'gQ7wygusPdkybBsmMr4uwGXq'\n")
+            
+
 def recur_parse(meta, hosts):
 
     for key in meta.keys():
