@@ -4,19 +4,21 @@
 
 # https://github.com/Jeremy-Shang/Test-repo-pri.git
 # git@github.com:Jeremy-Shang/Test-repo-pri.git
+# https://github.com/Jeremy-Shang/Test-Repo.git
 
 # Clone harvester branch repo
 - name: Git clone from remote public repo
   git:
-    repo: "https://github.com/Jeremy-Shang/Test-Repo.git"
+    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
     dest: "/home/ubuntu/project"
+    version: "data/ruoyig"
   become: true
 
 # Create a database configure directory
 - name: check database config directory
   become: yes
   file:
-    path: "/home/ubuntu/project/dbconfig"
+    path: "/home/ubuntu/project/tweet_harvesting/dbconfig"
     recurse: yes
     state: directory
 
@@ -25,7 +27,7 @@
   become: yes
   copy:
     src: "config/dbconfig.py"
-    dest: "/home/ubuntu/project/dbconfig/dbconfig.py"
+    dest: "/home/ubuntu/project/tweet_harvesting/dbconfig/dbconfig.py"
 
 # Clear running harvester container
 - name: Clear harvester container
@@ -38,9 +40,9 @@
 - name: Create harvester docker image 
   docker_image:
     build:
-      path: "/home/ubuntu/project"
+      path: "/home/ubuntu/project/tweet_harvesting/"
       pull: yes
-    name: grp28/twitter_harvester
+    name: grp28/harvester
     source: build
   become: yes
 
@@ -48,7 +50,7 @@
 - name: Run harvester
   docker_container:
     name: harvester
-    image: grp28/twitter_harvester
+    image: grp28/harvester
     state: started
     recreate: true
   become: yes
