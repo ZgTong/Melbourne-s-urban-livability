@@ -3,6 +3,9 @@ import random
 from cloudant.client import CouchDB
 from harvester import *
 import pandas as pd
+import socket
+import random
+from requests import get
 
 
 class CouchDBClient(CouchDB):
@@ -88,7 +91,7 @@ def main():
 
             
 if __name__ == '__main__':
-    main()
+    # main()
     # db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD, url=DATABASE_URL, connect=True)
     
     # session = db_client.session()
@@ -119,3 +122,5 @@ if __name__ == '__main__':
     # df.to_csv('weather_sent.csv', encoding='utf-8', index=False)
     # print('Response: {0}'.format(response.keys()))
     
+    print(socket.gethostname())
+    print(get('https://api.ipify.org').content.decode('utf8'))

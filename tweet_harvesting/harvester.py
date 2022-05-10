@@ -26,10 +26,10 @@ class MyListener(tweepy.Stream):
         self.tweet_ids = set()
         self.bounding_box = [140.9637383263, -39.1701944869,
                              150.2020069979, -33.9807673149]
-        with open('tweet_harvesting/data/vic_geo.json') as f:
+        with open('data/vic_geo.json') as f:
             self.geo_info = json.load(f)
 
-        with open('tweet_harvesting/data/vic_geo_small.json') as fp:
+        with open('data/vic_geo_small.json') as fp:
             self.geo_info_small = json.load(fp)
 
         self.api = self.set_api()
@@ -80,6 +80,10 @@ class MyListener(tweepy.Stream):
 
         except KeyError as e:
             print("exception: {}".format(e))
+            pass
+        
+        except Exception as e1:
+            print("exception: {}".format(e1))
             pass
 
         if self.collected_tweet >= self.limit:
@@ -274,11 +278,11 @@ class MyListener(tweepy.Stream):
 
             if tweet["user"]["id_str"] not in self.user_ids:
                 self.stream_user(tweet["user"]["id_str"], on_db=False)
-                print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
-                      ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
-            else:
-                print(
-                    f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
+                # print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
+                #       ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
+            # else:
+            #     print(
+            #         f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
 
     def save_to_db(self, tweet: dict):
         '''
@@ -307,9 +311,9 @@ class MyListener(tweepy.Stream):
                 print('(db mode) user: ' + str(tweet["user"]["id_str"]) 
                       + ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
 
-            else:
-                print(
-                    f'(db mode) user: {tweet["user"]["id_str"]} already completed')
+            # else:
+            #     print(
+            #         f'(db mode) user: {tweet["user"]["id_str"]} already completed')
 
     def stream_user(self, user_id: str, on_db: bool):
         '''

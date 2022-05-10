@@ -2,6 +2,10 @@ cloudant==2.15.0
 emoji==1.7.0
 nltk==3.6.7
 pandas==1.1.5
+<<<<<<< HEAD
+=======
+requests==2.27.1
+>>>>>>> 0385608cd5a1aed386357f563819ce03a1152ab8
 Shapely==1.8.1.post1
 tweepy==4.6.0
 vaderSentiment==3.3.2
