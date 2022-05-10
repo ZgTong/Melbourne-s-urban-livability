@@ -273,11 +273,11 @@ class MyListener(tweepy.Stream):
 
             if tweet["user"]["id_str"] not in self.user_ids:
                 self.stream_user(tweet["user"]["id_str"], on_db=False)
-                print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
-                      ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
-            else:
-                print(
-                    f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
+                # print('(local mode) user: ' + str(tweet["user"]["id_str"]) + 
+                #       ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
+            # else:
+            #     print(
+            #         f'(local mode) user: {tweet["user"]["id_str"]} already completed.')
 
     def save_to_db(self, tweet: dict):
         '''
@@ -306,9 +306,9 @@ class MyListener(tweepy.Stream):
                 print('(db mode) user: ' + str(tweet["user"]["id_str"]) 
                       + ' completed, collected ' + str(self.collected_tweet) + ' tweets in total.')
 
-            else:
-                print(
-                    f'(db mode) user: {tweet["user"]["id_str"]} already completed')
+            # else:
+            #     print(
+            #         f'(db mode) user: {tweet["user"]["id_str"]} already completed')
 
     def stream_user(self, user_id: str, on_db: bool):
         '''
@@ -383,6 +383,7 @@ def main():
     db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
                         url=database_url, connect=True)
     print(str(db_client.all_dbs()))
+    print(f'Current IP address is: {ip_address}')
 
     if 'user' not in db_client.all_dbs():
         db_client.create_database('user')
