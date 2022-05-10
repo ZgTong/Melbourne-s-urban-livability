@@ -80,6 +80,10 @@ class MyListener(tweepy.Stream):
         except KeyError as e:
             print("exception: {}".format(e))
             pass
+        
+        except Exception as e1:
+            print("exception: {}".format(e1))
+            pass
 
         if self.collected_tweet >= self.limit:
             self.disconnect()
