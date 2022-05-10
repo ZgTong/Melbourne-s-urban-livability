@@ -1,7 +1,6 @@
 import json
-import os
-import random
 import time
+import socket
 from datetime import datetime
 
 import tweepy
@@ -32,10 +31,6 @@ class MyListener(tweepy.Stream):
         with open('data/vic_geo.json') as fp:
             self.geo_info_small = json.load(fp)
 
-
-        print(self.geo_info)
-        print(self.geo_info_small)
-
         self.api = self.set_api()
         self.checked_tweet = 0
         self.collected_tweet = 0
@@ -49,8 +44,8 @@ class MyListener(tweepy.Stream):
         '''
         Set the Twitter API for streaming tweets
         '''
-        auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
-        auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+        auth = tweepy.OAuthHandler(self.consumer_key, self.consumer_ecret)
+        auth.set_access_token(self.access_token, self.access_token_secret)
         return tweepy.API(auth)
 
     def get_tweetDB(self, document):
@@ -378,9 +373,15 @@ def main():
     # keyword = ["city", "food", "sport",
     #            "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    ip_address = socket.gethostbyname(socket.gethostname())
+    database_url = f'http://{ip_address}:5984/'
+    api_key = credential_dict[ip_address]['api_key']
+    api_key_secret = credential_dict[ip_address]['api_key_secret']
+    access_token = credential_dict[ip_address]['access_token']
+    access_token_secret = credential_dict[ip_address]['access_token_secret']
 
     db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=DATABASE_URL, connect=True)
+                        url=database_url, connect=True)
     print(str(db_client.all_dbs()))
 
     if 'user' not in db_client.all_dbs():
@@ -389,11 +390,11 @@ def main():
     # db_client = None
 
     if db_client is not None:
-        stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
-                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
+        stream_tweet = MyListener(api_key, api_key_secret,
+                                  access_token, access_token_secret, db_client=db_client)
     else:
-        stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
-                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+        stream_tweet = MyListener(api_key, api_key_secret,
+                                  access_token, access_token_secret)
 
     # i = 0
     while True:
@@ -410,9 +411,9 @@ def main():
             stream_tweet.write_json(
                 stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
             db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=DATABASE_URL, connect=True)
-            stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
-                                  ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
+                        url=database_url, connect=True)
+            stream_tweet = MyListener(api_key, api_key_secret,
+                                  access_token, access_token_secret, db_client=db_client)
             
         stream_tweet.data = list()
         stream_tweet.collected_tweet = 0
