@@ -1,6 +1,6 @@
 import json
 import time
-import socket
+from requests import get
 from datetime import datetime
 
 import tweepy
@@ -373,7 +373,7 @@ def main():
     # keyword = ["city", "food", "sport",
     #            "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    ip_address = socket.gethostbyname(socket.gethostname())
+    ip_address = get('https://api.ipify.org').content.decode('utf8')
     database_url = f'http://{ip_address}:5984/'
     api_key = credential_dict[ip_address]['api_key']
     api_key_secret = credential_dict[ip_address]['api_key_secret']

@@ -4,6 +4,7 @@ from harvester import *
 import pandas as pd
 import socket
 import random
+from requests import get
 
 
 class CouchDBClient(CouchDB):
@@ -121,4 +122,4 @@ if __name__ == '__main__':
     # print('Response: {0}'.format(response.keys()))
     
     print(socket.gethostname())
-    print(socket.gethostbyname(socket.gethostname()))
+    print(get('https://api.ipify.org').content.decode('utf8'))
