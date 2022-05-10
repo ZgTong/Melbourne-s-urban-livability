@@ -4,21 +4,6 @@
   width: 100%;
   height: 100%;
   position: relative;
-  .ant-spin-spinning{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    .ant-spin-dot-spin{
-      .ant-spin-dot-item{
-        background: antiquewhite;
-      }
-    }
-    .ant-spin-text{
-      color: antiquewhite;
-      font-weight: bold;
-    }
-  }
   .banner {
     display: flex;
     justify-content: space-around;
@@ -32,15 +17,35 @@
     .author{
       width: 40%;
       padding: 60px;
-      .authorList{
-        padding-left: 30px;
-        li{
-          height: 40px;
-          line-height: 40px;
-          padding-left: 60px;
-          list-style: circle;
-          text-align: left;
-          font-size: 30px;
+      .title{
+        height: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+      }
+      .ant-carousel{
+        height: 90%;
+        .slick-slider{
+          height: 100%;
+          .slick-list{
+            height: 100%;
+            .carousel_card{
+              height: 100%;
+              text-align: left;
+              .name{
+                color: white;
+                font-size: 30px;
+              }
+              .role{
+                color: white;
+                font-size: 26px;
+              }
+              .description{
+                color: white;
+                font-size: 24px;
+              }
+            }
+          }
         }
 
       }
@@ -48,6 +53,7 @@
     .intro{
       padding: 60px;
       width: 60%;
+      font-size: 30px;
       .content{
         font-size: 30px;
         text-align: left;
@@ -81,12 +87,6 @@
     background-color: rgba(0,0,0,.3);
   }
 
-}
-
-.title{
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
 }
 
 .blue {

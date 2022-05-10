@@ -1,32 +1,48 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { useSelector } from "react-redux";
-import { readyFlagSelector } from '../../store/reducers/map'
 import './index.scss'
 import MapPage from "../../containers/MapPage"
-import { Spin } from "antd";
+import { Carousel } from "antd";
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
-    const readyFlag = useSelector(readyFlagSelector);
     return (
         <div className='homeContainer'>
-            <Spin spinning={ !readyFlag } size="large" tip="Data is Loading, Please Wait Patiently...." />
-            <Parallax style={{display: readyFlag? "block" : "none"}} pages={3}>
+            <Parallax pages={3}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className={"banner"}>
                         <div className="author">
                             <h1 className='title'>Team 28 Info: </h1>
-                            <ul className='authorList'>
-                                <li>Zuguang Tong</li>
-                                <li>Yuanzhi Shang</li>
-                                <li>Jinyu Tan</li>
-                                <li>Zixuan Guo</li>
-                                <li>Ruoyi Gan</li>
-                            </ul>
+                            <Carousel autoplay autoplaySpeed={3000}>
+                                <div className='carousel_card'>
+                                    <h3 className='name'>Jinyu Tan</h3>
+                                    <p className='role'>Role: Backend Developer</p>
+                                    <p className='description'>Job description.</p>
+                                </div>
+                                <div className='carousel_card'>
+                                    <h3 className='name'>Ruoyi Gan</h3>
+                                    <p className='role'>Role: Data analyst</p>
+                                    <p className='description'>Job description.</p>
+                                </div>
+                                <div className='carousel_card'>
+                                    <h3 className='name'>Yuanzhi Shang</h3>
+                                    <p className='role'>Role: Operations</p>
+                                    <p className='description'>Job description.</p>
+                                </div>
+                                <div className='carousel_card'>
+                                    <h3 className='name'>Zixuan Guo</h3>
+                                    <p className='role'>Role: Data analyst</p>
+                                    <p className='description'>Job description.</p>
+                                </div>
+                                <div className='carousel_card'>
+                                    <h3 className='name'>Zuguang Tong</h3>
+                                    <p className='role'>Role: Frontend Developer</p>
+                                    <p className='description'>Built a front-end app that uses React as a framework, Google Maps API and Ant Design as a visualization tool.</p>
+                                </div>
+                            </Carousel>
                         </div>
                         <div className="intro">
-                            <div className="title">Here is Introduction !!!</div>
+                            <div className="title">About this</div>
                             <div className="content">
                                 <p>Here is Content !!!</p>
                                 <p>Here is Content !!!</p>

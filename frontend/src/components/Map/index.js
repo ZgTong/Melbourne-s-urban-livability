@@ -1,14 +1,15 @@
 import React, { memo, useRef, useEffect, useState } from 'react';
 import useDeepCompareEffectForMaps from "use-deep-compare-effect";
 import { useSelector, useDispatch } from "react-redux";
-import { selectVariableRange, setVariableRange } from '../../store/reducers/selectBar'
-import { readyFlagSelector, setReadyFlag } from '../../store/reducers/map'
+import { selectVariableRange, selectSelectedTopic, setVariableRange, setSelectedTopic } from '../../store/reducers/selectBar'
+import { readyFlagSelector, sceneDataSelector, setReadyFlag } from '../../store/reducers/map'
 import './index.scss';
 import mapStyle from "../../asset/map_style";
 import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
+import { GetScene } from "../../api";
 
 const Map = ({
-                sportsData,
+                // sportsData,
                 style,
                 children,
                 onClick = (e)=>{
@@ -19,6 +20,8 @@ const Map = ({
              }) => {
     const range = useSelector(selectVariableRange);
     const readyFlag = useSelector(readyFlagSelector);
+    const sceneData = useSelector(sceneDataSelector);
+    const selectedTopic = useSelector(selectSelectedTopic);
     const dispatch = useDispatch()
     const ref = useRef(null)
     const [zoom, setZoom] = useState(7); // initial zoom
@@ -29,19 +32,19 @@ const Map = ({
     const [map, setMap] = useState(null)
     const [livabilityValMin, setLivabilityValMin] = useState(Number.MAX_VALUE)
     const [livabilityValMax, setLivabilityValMax] = useState(-Number.MAX_VALUE)
-    // const [readyFlag, setReadyFlag] = useState(false)
     const [infoBox] = useState(new window.google.maps.InfoWindow({content: ''}))
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
-        const percent =
-            ((e.feature.getProperty("livability_variable") - livabilityValMin) /
-                (livabilityValMax - livabilityValMin)) *
-            100;
-        document.getElementById("data-caret").style.display = "block";
-        document.getElementById("data-caret").style.paddingLeft = percent + "%";
-        infoBox.setPosition(e.latLng)
-        let content = (
-            `
+        if (e.feature.getProperty("livability_variable")){
+            const percent =
+                ((e.feature.getProperty("livability_variable") - livabilityValMin) /
+                    (livabilityValMax - livabilityValMin)) *
+                100;
+            document.getElementById("data-caret").style.display = "block";
+            document.getElementById("data-caret").style.paddingLeft = percent + "%";
+            infoBox.setPosition(e.latLng)
+            let content = (
+                `
                 <div>
                     location: ${e.feature.getProperty("vic_lga__2")}
                 </div>
@@ -49,9 +52,10 @@ const Map = ({
                     score: ${e.feature.getProperty("livability_variable").toFixed(2)}
                 </div>
             `
-        )
-        infoBox.setContent(content)
-        infoBox.open(map)
+            )
+            infoBox.setContent(content)
+            infoBox.open(map)
+        }
     }
     const mouseOutOfRegion = (e) => {
         e.feature.setProperty("state", "normal");
@@ -72,7 +76,7 @@ const Map = ({
         let showRow = true
         if (feature.getProperty('livability_variable') == null ||
             isNaN(feature.getProperty('livability_variable'))) {
-            showRow = false;
+            color=[0, 0, 50]
         }
         let outlineWeight = 0.5,
             zIndex = 1;
@@ -90,24 +94,32 @@ const Map = ({
         };
     }
     const loadData = (variable) => {
+        console.log("select: ", variable)
         let min = Number.MAX_VALUE, max = -Number.MAX_VALUE
-        sportsData.forEach(function(row) {
-            let livabilityVariable = parseFloat(row.metrics);
-            let locId = row.location;
-            // keep track of min and max values.
-            if (livabilityVariable < min) {
-                min = livabilityVariable
+        GetScene(variable).then((res) => {
+            let data = res['Metrics']
+            data.forEach(function(row) {
+                let livabilityVariable = parseFloat(row.totalMetrics);
+                let locId = row.location;
+                // keep track of min and max values.
+                if (livabilityVariable < min) {
+                    min = livabilityVariable
+                }
+                if (livabilityVariable > max) {
+                    max = livabilityVariable
+                }
+                // update the existing row with the new data
+                map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
+            });
+            if(data.length===0){
+                min = 0
+                max = 0
             }
-            if (livabilityVariable > max) {
-                max = livabilityVariable
-            }
-            // update the existing row with the new data
-            map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
-        });
-        setLivabilityValMin(prev => min)
-        setLivabilityValMax(prev => max)
-        // setReadyFlag(true)
-        dispatch(setReadyFlag({flag: true}))
+            setLivabilityValMin(prev => min)
+            setLivabilityValMax(prev => max)
+            dispatch(setReadyFlag({flag: true}))
+        })
+
     }
     const clearData = () => {
         setLivabilityValMin(Number.MAX_VALUE);
@@ -125,18 +137,12 @@ const Map = ({
             setMap(new window.google.maps.Map(ref.current,{ styles: mapStyle, zoom, center }))
         }
     },[ref])
-    useEffect(() => {
-        if(map && sportsData.length > 0){
-            console.log("load property hook")
-            const selectBox = document.getElementById("livability-variable");
-            window.google.maps.event.addDomListener(selectBox, "change", () => {
-                dispatch(setReadyFlag({flag: false}))
-                // setReadyFlag(false)
-                clearData();
-                loadData(selectBox.options[selectBox.selectedIndex].value);
-            });
-        }
-    },[map, sportsData])
+    // useEffect(() => {
+    //     if(map){
+    //         console.log("load property hook")
+    //
+    //     }
+    // },[map])
     useEffect(()=>{
         if(readyFlag){
             let rangeState = {
@@ -151,6 +157,14 @@ const Map = ({
     useEffect(() => {
         if(map){
             console.log("load geojson hook")
+            const selectBox = document.getElementById("livability-variable");
+            window.google.maps.event.addDomListener(selectBox, "change", () => {
+                dispatch(setReadyFlag({flag: false}))
+                dispatch(setSelectedTopic(selectBox.options[selectBox.selectedIndex].value))
+                clearData();
+                console.log("looklook:", selectedTopic)
+                loadData(selectBox.options[selectBox.selectedIndex].value);
+            });
             map.data.loadGeoJson(
                 VIC_STATE_BOUNDARIES_JSON_PATH,
                 { idPropertyName: "lga_pid" },

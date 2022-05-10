@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import './index.scss'
-import { selectVariableRange } from '../../store/reducers/selectBar'
+import { selectVariableRange, setSelectedTopic } from '../../store/reducers/selectBar'
 
 const SelectBar = () => {
     const range = useSelector(selectVariableRange);
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        const selectBox = document.getElementById("livability-variable");
+        dispatch(setSelectedTopic(selectBox.options[selectBox.selectedIndex].value))
+    },[])
     return (
         <div id="controls" className="nicebox">
             <div>
@@ -15,24 +20,14 @@ const SelectBar = () => {
                         Sports
                     </option>
                     <option
-                        value="https://storage.googleapis.com/mapsdevsite/json/DP05_0017E"
+                        value="foods"
                     >
-                        Median age
+                        Foods
                     </option>
                     <option
-                        value="https://storage.googleapis.com/mapsdevsite/json/DP05_0001E"
+                        value="weather"
                     >
-                        Total population
-                    </option>
-                    <option
-                        value="https://storage.googleapis.com/mapsdevsite/json/DP02_0016E"
-                    >
-                        Average family size
-                    </option>
-                    <option
-                        value="https://storage.googleapis.com/mapsdevsite/json/DP03_0088E"
-                    >
-                        Per-capita income
+                        Weather
                     </option>
                 </select>
             </div>
