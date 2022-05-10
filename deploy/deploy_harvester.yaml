@@ -1,6 +1,6 @@
 
 
-- hosts: CouchdbMaster
+- hosts: CouchdbAllNodes
   vars_files:
     - host_vars/all_hosts.yaml
   gather_facts: true

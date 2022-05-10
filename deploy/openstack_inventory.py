@@ -16,6 +16,10 @@ from openstack.config import loader as cloud_config
 
 CONFIG_FILES = ['/etc/ansible/openstack.yaml', '/etc/ansible/openstack.yml']
 
+'''
+The program from openstackoffical 
+    is aimed to obtain remote server details
+'''
 
 def get_groups_from_server(server_vars, namegroup=True):
     groups = []

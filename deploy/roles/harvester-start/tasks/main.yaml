@@ -1,11 +1,6 @@
 
 
 
-
-# https://github.com/Jeremy-Shang/Test-repo-pri.git
-# git@github.com:Jeremy-Shang/Test-repo-pri.git
-# https://github.com/Jeremy-Shang/Test-Repo.git
-
 # Clone harvester branch repo
 - name: Git clone from remote public repo
   git:
