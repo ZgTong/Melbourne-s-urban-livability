@@ -7,7 +7,7 @@ COPY . .
 # Install dependencies
 RUN pip install -r requirements.txt
 
-CMD [ "python", "./harvester.py"]
+CMD [ "python", "-u", "./harvester.py"]
 
 
 
