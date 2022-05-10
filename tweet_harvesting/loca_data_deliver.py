@@ -1,4 +1,5 @@
 import json
+import random
 from cloudant.client import CouchDB
 from harvester import *
 import pandas as pd

@@ -1,15 +1,15 @@
 import json
-import os
-import random
 import time
 from datetime import datetime
 
 import tweepy
 from cloudant.client import CouchDB
 from shapely.geometry import Point, shape
+from config.credential import *
+from config.dbconfig import *
 
 import tweetAnalyzer
-from credential import *
+# from credential import *
 
 KEYWORD_LIST = ["city", "food", "sport", "traffic_weather"]
 
@@ -26,15 +26,11 @@ class MyListener(tweepy.Stream):
         self.tweet_ids = set()
         self.bounding_box = [140.9637383263, -39.1701944869,
                              150.2020069979, -33.9807673149]
-        with open('data/vic_geo.json') as f:
+        with open('tweet_harvesting/data/vic_geo.json') as f:
             self.geo_info = json.load(f)
 
-        with open('data/vic_geo.json') as fp:
+        with open('tweet_harvesting/data/vic_geo_small.json') as fp:
             self.geo_info_small = json.load(fp)
-
-
-        print(self.geo_info)
-        print(self.geo_info_small)
 
         self.api = self.set_api()
         self.checked_tweet = 0
