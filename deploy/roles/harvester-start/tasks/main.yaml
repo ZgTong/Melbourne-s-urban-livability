@@ -1,6 +1,14 @@
 
 
 
+
+# Delete project directory
+- name: Delete content & directory
+  file:
+    state: absent
+    path: "/home/ubuntu/project"
+  become: yes
+
 # Clone harvester branch repo
 - name: Git clone from remote public repo
   git:
@@ -21,8 +29,15 @@
 - name: Copy database configuration to project repo
   become: yes
   copy:
-    src: "config/dbconfig0.py"
+    src: "config/{{inventory_hostname}}/dbconfig.py"
     dest: "/home/ubuntu/project/tweet_harvesting/config/dbconfig.py"
+
+# Copy Twitter api token
+- name: Copy Twitter api token to project repo
+  become: yes
+  copy:
+    src: "config/{{inventory_hostname}}/credential.py"
+    dest: "/home/ubuntu/project/tweet_harvesting/config/credential.py"
 
 # Clear running harvester container
 - name: Clear harvester container
@@ -55,5 +70,7 @@
     image: grp28/harvester
     state: started
     recreate: true
+    ports:
+      - "80:80"
   become: yes
   
