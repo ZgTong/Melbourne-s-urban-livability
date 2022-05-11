@@ -135,7 +135,7 @@ class MyListener(tweepy.Stream):
             if not location_name or not topic:
                 return None
 
-            # sentiment = self.tweetAnalyzer.classify_text(text)
+            sentiment = self.tweetAnalyzer.classify_text(text)
 
             created_at = datetime.strftime(datetime.strptime(tweet['created_at'],
                                                              '%a %b %d %H:%M:%S +0000 %Y'), 
@@ -154,7 +154,7 @@ class MyListener(tweepy.Stream):
                 "created_at": created_at,
                 "text": text,
                 "topic": topic,
-                # "sentiment": sentiment,
+                "sentiment": sentiment,
                 "location": location,
                 "location_name": location_name,
                 "location_id": location_id,
@@ -394,6 +394,9 @@ def main():
     else:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+    
+    if stream_tweet is not None:
+        print("Connected to Twitter API!")
 
     # i = 0
     while True:
