@@ -1,3 +1,4 @@
+from ipaddress import ip_address
 import json
 import time
 from datetime import datetime
@@ -359,7 +360,7 @@ class MyListener(tweepy.Stream):
 
             total_streamed += 1
             if total_streamed % 100 == 0:
-                time.sleep(5)
+                time.sleep(10)
 
         self.checked_tweet += total_streamed
 
@@ -378,9 +379,10 @@ def main():
     # keyword = ["city", "food", "sport",
     #            "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    db_url = f'http://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_URL[7:]}'
 
     db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=DATABASE_URL, connect=True)
+                        url=db_url, connect=True)
     print(str(db_client.all_dbs()))
 
     if 'user' not in db_client.all_dbs():
