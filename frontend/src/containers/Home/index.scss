@@ -1,9 +1,58 @@
+@keyframes slide-down{
+  0%{transform:scale(1,0);}
+  100%{transform:scale(1,1);}
+}
+
+@-webkit-keyframes slide-down{
+  0%{-webkit-transform:scale(1,0);}
+  100%{-webkit-transform:scale(1,1);}
+}
+
+.show {
+  max-height: 114px;
+  transition: max-height .3s ease-in;
+  transform-origin: 50% 0;
+  animation: slide-down 0.3s ease-in;
+  -webkit-animation: slide-down 0.3s ease-in;
+}
+
+.hidden {
+  max-height: 0px;
+  overflow: auto;
+  transition: max-height .3s ease-out;
+}
 .homeContainer{
   font-size: 24px;
   color: azure;
   width: 100%;
   height: 100%;
   position: relative;
+  .slideUp {
+    position: fixed;
+    bottom: -37vh;
+    width: 100%;
+    height: 40vh;
+    box-sizing: border-box;
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    .arrow{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      transform: translateX(-50%);
+      color: #5b65ad;
+      opacity: 1;
+    }
+    .content{
+      position: absolute;
+      top: 30px;
+    }
+  }
   .banner {
     display: flex;
     justify-content: space-around;
@@ -23,49 +72,56 @@
         font-weight: bold;
         color: white;
       }
-      .ant-carousel{
-        height: 90%;
-        .slick-slider{
-          height: 100%;
-          .slick-list{
-            height: 100%;
-            .carousel_card{
-              height: 100%;
-              text-align: left;
-              .name{
-                color: white;
-                font-size: 30px;
-              }
-              .role{
-                color: white;
-                font-size: 26px;
-              }
-              .description{
-                color: white;
-                font-size: 24px;
-              }
-            }
-          }
-        }
-
-      }
     }
     .intro{
       padding: 60px;
       width: 60%;
       font-size: 30px;
+      position: relative;
       .content{
         font-size: 30px;
         text-align: left;
       }
+      .explore{
+        position: absolute;
+        bottom: 20px;
+      }
+    }
+  }
+  .ant-spin-spinning{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    .ant-spin-dot-spin{
+      .ant-spin-dot-item{
+        background: antiquewhite;
+      }
+    }
+    .ant-spin-text{
+      color: antiquewhite;
+      font-weight: bold;
     }
   }
   .mapCard {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1.25rem;
     height: 80%;
-    width: 60%;
+    width: 90%;
     border-radius: 10px;
     margin-right: 20px;
+  }
+  .charts{
+    width: 50%;
+    margin-right: 8%;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    .title{
+      text-align: left;
+      font-weight: bold;
+    }
   }
 
   .card {
@@ -96,6 +152,10 @@
 
 .greenyellow {
   background-color: greenyellow;
+}
+
+.white {
+  background-color: white;
 }
 
 .purple {

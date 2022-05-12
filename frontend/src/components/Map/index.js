@@ -1,4 +1,4 @@
-import React, { memo, useRef, useEffect, useState } from 'react';
+import React, {memo, useRef, useEffect, useState } from 'react';
 import useDeepCompareEffectForMaps from "use-deep-compare-effect";
 import { useSelector, useDispatch } from "react-redux";
 import { selectVariableRange, selectSelectedTopic, setVariableRange, setSelectedTopic } from '../../store/reducers/selectBar'
@@ -7,9 +7,9 @@ import './index.scss';
 import mapStyle from "../../asset/map_style";
 import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
 import { GetScene } from "../../api";
+import useGoogleCharts from "../../utils/useGoogleCharts";
 
 const Map = ({
-                // sportsData,
                 style,
                 children,
                 onClick = (e)=>{
@@ -24,17 +24,35 @@ const Map = ({
     const selectedTopic = useSelector(selectSelectedTopic);
     const dispatch = useDispatch()
     const ref = useRef(null)
-    const [zoom, setZoom] = useState(7); // initial zoom
+    const [zoom, setZoom] = useState(9); // initial zoom
     const [center, setCenter] = useState({
         lat: -37.7998,
         lng: 144.9460,
     });
+    const googleChart = useGoogleCharts()
     const [map, setMap] = useState(null)
     const [livabilityValMin, setLivabilityValMin] = useState(Number.MAX_VALUE)
     const [livabilityValMax, setLivabilityValMax] = useState(-Number.MAX_VALUE)
     const [infoBox] = useState(new window.google.maps.InfoWindow({content: ''}))
+    const drawPieChart = (dataSet, container, title) => {
+        const data = new googleChart.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        let rows = []
+        for (const item of Object.entries(dataSet)){
+            console.log(item)
+            rows.push(item)
+        }
+        data.addRows(rows);
+        var options = {title,
+            'width':300,
+            'height':250};
+        const newChart = new googleChart.visualization.PieChart(container);
+        newChart.draw(data, options);
+    }
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
+        infoBox.setPosition(e.latLng)
         if (e.feature.getProperty("livability_variable")){
             const percent =
                 ((e.feature.getProperty("livability_variable") - livabilityValMin) /
@@ -43,17 +61,27 @@ const Map = ({
             document.getElementById("data-caret").style.display = "block";
             document.getElementById("data-caret").style.paddingLeft = percent + "%";
             infoBox.setPosition(e.latLng)
-            let content = (
-                `
-                <div>
-                    location: ${e.feature.getProperty("vic_lga__2")}
-                </div>
-                <div>
-                    score: ${e.feature.getProperty("livability_variable").toFixed(2)}
-                </div>
-            `
-            )
-            infoBox.setContent(content)
+
+            let infoContent = document.createElement('div');
+            let locNode = document.createElement('div');
+            let scoreNode = document.createElement('div');
+            let chartNode = document.createElement('div');
+            const chartNodeId = "chartNodeId"
+            locNode.setAttribute('class', "fw_bold fz_20")
+            scoreNode.setAttribute('class', "fw_bold fz_20")
+            chartNode.setAttribute('id', chartNodeId)
+            let chartData = {
+                neutralMetric: e.feature.getProperty("neutralMetric"),
+                positiveMetric: e.feature.getProperty("positiveMetric"),
+                negativeMetric: e.feature.getProperty("negativeMetric"),
+            }
+            drawPieChart(chartData, chartNode, "Pie chart of Twitter sentiment ratio")
+            locNode.innerHTML = `Location: <span class="fw_normal">${e.feature.getProperty("vic_lga__2")}</span>`;
+            scoreNode.innerHTML = `Total liveability index: <span class="fw_normal">${e.feature.getProperty("livability_variable").toFixed(2)}</span>`;
+            infoContent.appendChild(locNode);
+            infoContent.appendChild(scoreNode);
+            infoContent.appendChild(chartNode);
+            infoBox.setContent(infoContent)
             infoBox.open(map)
         }
     }
@@ -61,16 +89,21 @@ const Map = ({
         e.feature.setProperty("state", "normal");
         infoBox.close()
     }
+    const clickRegion = (e) => {
+        infoBox.close()
+        setZoom(12)
+        setCenter(e.latLng)
+        map.setCenter(e.latLng)
+        map.setZoom(12)
+    }
     const styleFeature = (feature) => {
         let low = [5, 69, 54]; // color of smallest datum
         let high = [151, 83, 34]; // color of largest datum
-        // delta represents where the value sits between the min and max
         let delta =
             (feature.getProperty("livability_variable") - livabilityValMin) /
             (livabilityValMax - livabilityValMin);
         let color = [];
         for (let i = 0; i < 3; i++) {
-            // calculate an integer color based on the delta
             color[i] = (high[i] - low[i]) * delta + low[i];
         }
         let showRow = true
@@ -94,12 +127,14 @@ const Map = ({
         };
     }
     const loadData = (variable) => {
-        console.log("select: ", variable)
         let min = Number.MAX_VALUE, max = -Number.MAX_VALUE
         GetScene(variable).then((res) => {
             let data = res['Metrics']
             data.forEach(function(row) {
                 let livabilityVariable = parseFloat(row.totalMetrics);
+                let neutralMetric = parseFloat(row.neutralMetric);
+                let negativeMetric = parseFloat(row.negativeMetric);
+                let positiveMetric = parseFloat(row.positiveMetric);
                 let locId = row.location;
                 // keep track of min and max values.
                 if (livabilityVariable < min) {
@@ -113,6 +148,9 @@ const Map = ({
                 map.data.forEach((feat) => {
                     if(feat.getProperty("lga_pid") == locId){
                         feat.setProperty('livability_variable', livabilityVariable);
+                        feat.setProperty('neutralMetric', neutralMetric);
+                        feat.setProperty('negativeMetric', negativeMetric);
+                        feat.setProperty('positiveMetric', positiveMetric);
                     }
                 })
             });
@@ -134,7 +172,6 @@ const Map = ({
         });
         document.getElementById("data-caret").style.display = "none";
     }
-
     //init map
     useEffect(() => {
         if (ref.current && !map) {
@@ -142,12 +179,6 @@ const Map = ({
             setMap(new window.google.maps.Map(ref.current,{ styles: mapStyle, zoom, center }))
         }
     },[ref])
-    // useEffect(() => {
-    //     if(map){
-    //         console.log("load property hook")
-    //
-    //     }
-    // },[map])
     useEffect(()=>{
         if(readyFlag){
             let rangeState = {
@@ -167,7 +198,6 @@ const Map = ({
                 dispatch(setReadyFlag({flag: false}))
                 dispatch(setSelectedTopic(selectBox.options[selectBox.selectedIndex].value))
                 clearData();
-                console.log("looklook:", selectedTopic)
                 loadData(selectBox.options[selectBox.selectedIndex].value);
             });
             map.data.loadGeoJson(
@@ -175,7 +205,6 @@ const Map = ({
                 { idPropertyName: "lg_ply_pid" },
                 // { idPropertyName: "lga_pid" },
                 (feat)=>{
-                    console.log("length:", feat.length)
                     window.google.maps.event.trigger(
                         document.getElementById("livability-variable"),
                         "change"
@@ -190,6 +219,7 @@ const Map = ({
             map.data.setStyle(styleFeature);
             map.data.addListener("mouseover", mouseInToRegion);
             map.data.addListener("mouseout", mouseOutOfRegion);
+            map.data.addListener("click", clickRegion);
         }
     },[range])
     // regi listener

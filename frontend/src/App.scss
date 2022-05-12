@@ -11,7 +11,7 @@ html, body, #root, .App{
 }
 
 html {
-  //scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Media query */
@@ -97,3 +97,20 @@ body {
   text-align: center;
   background: rgba(0, 0, 0, .5) url('./asset/melb_view.jpg') center / cover no-repeat fixed;
 }
+
+.chartContainer{
+  background-color: #fff;
+}
+
+.fz_20{
+  font-size: 20px;
+}
+
+.fw_bold{
+  font-weight: bold;
+}
+
+.fw_normal{
+  font-weight: normal;
+}
+

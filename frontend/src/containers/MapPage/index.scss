@@ -4,21 +4,6 @@
   color: #09203F;
   font-weight: bold;
   position: relative;
-  .ant-spin-spinning{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    .ant-spin-dot-spin{
-      .ant-spin-dot-item{
-        background: antiquewhite;
-      }
-    }
-    .ant-spin-text{
-      color: antiquewhite;
-      font-weight: bold;
-    }
-  }
   .gm-style-iw + div {
     display: none;
   }

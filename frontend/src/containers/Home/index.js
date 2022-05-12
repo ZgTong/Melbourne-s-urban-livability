@@ -1,48 +1,33 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './index.scss'
 import MapPage from "../../containers/MapPage"
-import { Carousel } from "antd";
+import {Button, Spin} from "antd";
+import { LineChartOutlined } from "@ant-design/icons"
+import { useSelector } from "react-redux";
+import { readyFlagSelector } from '../../store/reducers/map'
+import CollapsePanel from "../../components/CollapsePanel";
+import HomeCarousel from "../../components/HomeCarousel";
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
+    const [showPop, setShowPop] = useState(false)
+    const readyFlag = useSelector(readyFlagSelector)
+    const showSlide = () => {
+        console.log(showPop)
+        setShowPop(!showPop)
+    }
     return (
-        <div className='homeContainer'>
+        <div className='homeContainer' id='homeContainer'>
             <Parallax pages={3}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className={"banner"}>
                         <div className="author">
                             <h1 className='title'>Team 28 Info: </h1>
-                            <Carousel autoplay autoplaySpeed={3000}>
-                                <div className='carousel_card'>
-                                    <h3 className='name'>Jinyu Tan</h3>
-                                    <p className='role'>Role: Backend Developer</p>
-                                    <p className='description'>Job description.</p>
-                                </div>
-                                <div className='carousel_card'>
-                                    <h3 className='name'>Ruoyi Gan</h3>
-                                    <p className='role'>Role: Data analyst</p>
-                                    <p className='description'>Job description.</p>
-                                </div>
-                                <div className='carousel_card'>
-                                    <h3 className='name'>Yuanzhi Shang</h3>
-                                    <p className='role'>Role: Operations</p>
-                                    <p className='description'>Job description.</p>
-                                </div>
-                                <div className='carousel_card'>
-                                    <h3 className='name'>Zixuan Guo</h3>
-                                    <p className='role'>Role: Data analyst</p>
-                                    <p className='description'>Job description.</p>
-                                </div>
-                                <div className='carousel_card'>
-                                    <h3 className='name'>Zuguang Tong</h3>
-                                    <p className='role'>Role: Frontend Developer</p>
-                                    <p className='description'>Built a front-end app that uses React as a framework, Google Maps API and Ant Design as a visualization tool.</p>
-                                </div>
-                            </Carousel>
+                            <HomeCarousel />
                         </div>
                         <div className="intro">
-                            <div className="title">About this</div>
+                            <div className="title">About this shit</div>
                             <div className="content">
                                 <p>Here is Content !!!</p>
                                 <p>Here is Content !!!</p>
@@ -52,11 +37,14 @@ const Home = () => {
                                 <p>Here is Content !!!</p>
                                 <p>Here is Content !!!</p>
                             </div>
+                            <div className="explore">
+                                <Button size="large" ghost>Scroll to Discover More! ↓</Button>
+                            </div>
 
                         </div>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: 1, end: 2.5 }} style={{ ...alignCenter, justifyContent: 'flex-start', zIndex:-1 }}>
+                <ParallaxLayer sticky={{ start: 1, end: 1.1 }} style={{ ...alignCenter, justifyContent: 'flex-start', zIndex:-1 }}>
                     <div className={'sticky'}>
                         <div className="title">
                             Melbourne's Livability
@@ -64,14 +52,22 @@ const Home = () => {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.2} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-                    <div className='mapCard'>
-                        <MapPage />
+                    <div className={`charts ${'white'}`}>
+                        <div className="title">
+                            <span>See what do we have </span>
+                            <LineChartOutlined />
+                        </div>
+                        <CollapsePanel />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-                    <div className={`${'card'} ${'parallax'} ${'blue'}`}>
-                        <p>Other Analysis</p>
+                <ParallaxLayer offset={2} speed={1.5}>
+                    <Spin spinning={ !readyFlag } size="large" tip="Data is Loading, Please Wait Patiently...." />
+                    <div className='mapCard' style={{display: readyFlag? "block" : "none"}}>
+                        <MapPage />
                     </div>
+                    {/*<div className='mapCard'>*/}
+                    {/*    <MapPage />*/}
+                    {/*</div>*/}
                 </ParallaxLayer>
             </Parallax>
         </div>
