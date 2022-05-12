@@ -67,3 +67,155 @@ OTljMmNlOTBlYzA3YTIw
     1.  是/opt/date的权限问题
     2.  如果进行挂载，则用root写，couchdb打不开，出现permission denied，错误
     3.  master端口映射
+
+
+- 问题，harvester线上问题
+
+- ip: 112
+    - docker logs
+
+        ```
+        [nltk_data] Downloading package stopwords to /root/nltk_data...
+        [nltk_data]   Unzipping corpora/stopwords.zip.
+        [nltk_data] Downloading package punkt to /root/nltk_data...
+        [nltk_data]   Unzipping tokenizers/punkt.zip.
+        ['_replicator', '_users', 'aurin-bars', 'aurin-cafes', 'aurin-carparks', 'aurin-dwellings', 'aurin-employees', 'aurin_sports', 'city', 'foods', 'sports', 'traffic', 'user', 'weather', 'weather-past-10years']
+        Connected to Twitter API!
+        Search starts
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 40
+        ```
+
+    - config/credential.py
+
+        API_KEY = "ExFd8gEydeWtKxE6mRhia7d6T"
+        API_KEY_SECRET = "P7FBy0BVQx0bbwbcG258Gb2PBvrf3b3XWR0DT2Q9TBCv3sQxjD"
+        ACCESS_TOKEN = "2714319452-6SvB3qxmnMtuazE8olqmSkFOxnV6mVQv7Dl6V2b"
+        ACCESS_TOKEN_SECRET = "AMnimdbQgO3DOJk5kdTh8OR0IFcZPeqAysV9hhoVBjEyG"
+
+    - config/dbconfig.py
+        ```
+        DATABASE_USERNAME = "admin"
+        DATABASE_PASSWORD = "admin"
+        DATABASE_URL = "http://172.26.133.112:5984/"
+        DATABASE_VERSION = '3.0.0'
+        DATABASE_COOKIE = 'gQ7wygusPdkybBsmMr4uwGXq'
+        ```
+
+
+- ip:138
+    - docker logs
+        ```
+        [nltk_data] Downloading package stopwords to /root/nltk_data...
+        [nltk_data]   Unzipping corpora/stopwords.zip.
+        [nltk_data] Downloading package punkt to /root/nltk_data...
+        [nltk_data]   Unzipping tokenizers/punkt.zip.
+        ['_replicator', '_users', 'aurin-bars', 'aurin-cafes', 'aurin-carparks', 'aurin-dwellings', 'aurin-employees', 'aurin_sports', 'city', 'foods', 'sports', 'traffic', 'user', 'weather', 'weather-past-10years']
+        Connected to Twitter API!
+        Search starts
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        Stream encountered HTTP error: 401
+        ```
+
+    - config/credential.py
+        API_KEY = "vTRkuDzcs03q1ivojqreTfNtl"
+        API_KEY_SECRET = "jJ1RpLCEb9XptncDEAPJocoHduG3bn4mheFHK1XTRna2hf1UUp"
+        ACCESS_TOKEN = "1511218854865031170-g2SRaUF3t0xCSq9AzU3K60KGncR5cu"
+        ACCESS_TOKEN_SECRET = "aUU6d2VI9XqEiuyNuyQUbeC7D4JJjpaglmPlq7EqXTB4X"
+
+    - config/dbconfig.py
+        ```
+        DATABASE_USERNAME = "admin"
+        DATABASE_PASSWORD = "admin"
+        DATABASE_URL = "http://172.26.132.138:5984/"
+        DATABASE_VERSION = '3.0.0'
+        DATABASE_COOKIE = 'gQ7wygusPdkybBsmMr4uwGXq'
+        ```
+
+- ip: 12
+    - docker logs
+        ```
+        [nltk_data] Downloading package stopwords to /root/nltk_data...
+        [nltk_data]   Unzipping corpora/stopwords.zip.
+        [nltk_data] Downloading package punkt to /root/nltk_data...
+        [nltk_data]   Unzipping tokenizers/punkt.zip.
+        ['_replicator', '_users', 'aurin-bars', 'aurin-cafes', 'aurin-carparks', 'aurin-dwellings', 'aurin-employees', 'aurin_sports', 'city', 'foods', 'sports', 'traffic', 'user', 'weather', 'weather-past-10years']
+        Connected to Twitter API!
+        Search starts
+        (db mode) user: 130349600 completed, collected 45 tweets in total.
+        (db mode) user: 1356064579 completed, collected 45 tweets in total.
+        (db mode) user: 2472410144 completed, collected 192 tweets in total.
+        (db mode) user: 1316130270655913984 completed, collected 195 tweets in total.
+        (db mode) user: 58609334 completed, collected 198 tweets in total.
+        (db mode) user: 4216905732 completed, collected 384 tweets in total.
+        Stream connection closed by Twitter
+        14946 tweets checked, refresh harvester.
+        Search starts
+        (db mode) user: 1042272442603855872 completed, collected 6 tweets in total.
+        (db mode) user: 22249836 completed, collected 7 tweets in total.
+        (db mode) user: 1447943646 completed, collected 8 tweets in total.
+        exception: 401 Client Error: Unauthorized unauthorized You are not authorized to access this db. for url: http://172.26.128.12:5984//user
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/909898458407903232
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1273861889370370048
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/244480670
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1357630122216484870
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/556918789
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/167669397
+        exception: 401 Client Error: Unauthorized unauthorized You are not a server admin. for url: http://172.26.128.12:5984//_all_dbs
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/4834751002
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1895756396
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/3589942153
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1036966620
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1739973012
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1100681809929498624
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1036966620
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/96690601
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/3589942153
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/496753742
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/257216057
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1503573933261737988
+        exception: 401 Client Error: Unauthorized for url: http://172.26.128.12:5984//user/1047337539135135744
+        ```
+
+    - config/credential.py
+        ```
+        API_KEY = "75pOEC17lvdBWqw6JeOXx3P0e"
+        API_KEY_SECRET = "JgKkY4KbmbdTu9vvQFqRkUYjRRkQrEiK6HB82BZ86XoIdFV7yC"
+        ACCESS_TOKEN = "1512414749459632128-dAAQgxFCb6odngLLIA3TYZgRLymJeE"
+        ACCESS_TOKEN_SECRET = "k07hsH2CTKLvJOyOHW0DSZ6LCJ1TnNnZllZU74txVW1iv"
+        ```
+
+    - config/dbconfig.py
+        ```
+        DATABASE_USERNAME = "admin"
+        DATABASE_PASSWORD = "admin"
+        DATABASE_URL = "http://172.26.128.12:5984/"
+        DATABASE_VERSION = '3.0.0'
+        DATABASE_COOKIE = 'gQ7wygusPdkybBsmMr4uwGXq'
+        ```
