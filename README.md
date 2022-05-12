@@ -85,11 +85,26 @@ Overall，在这次project我们团队对asd任务进行了模块化拆分，使
     1. 首先clone对应branch的project repo
    
     2. Then, the configuration file of each twitter harvester would be dynamic assign by ansible. The configuration file of twitter harvester include following
-       1. credential.py, 包括了接入推特api所需要的证书
+       1. credential.py, 包括了接入推特api所需要的证书（balala一堆介绍需要的什么token，api-secret）
    
-       2. dgconfig.py，定义了当前twitter harvester所需要连接的数据库的配置。
+       2. dgconfig.py，定义了当前twitter harvester所需要连接的数据库的配置。（包括数据库username，password，version，cookie，ip 地址）
    
     3. 通过twitter harvest的repo中的Dockerfile，来构建twitter harvester的image
    
     4. 运行twitter harvester
     
+### About dynamice deployment
+- 
+    在本次project，我们实现了一键部署启动整个项目的目标。下面是有关于此的dynamic deployment的细节
+
+    在上述步骤的第一步，也就是部署mrc 资源的时候。此刻我们的脚本当前的hosts只有localhost，只有当完全了对mrc上云实例的部署之后，我们才能得到相应的ip地址，并且
+    手动的添加到hosts文件中，在进行下一步操作。
+
+    显然，这样子的实现是不符合dynamic deployment的要求的。为此我们应用了inventory script, openstack_inventory.py for dynamicly pull information facts of mrc openstack instance. 然后，通过hosts_gen.py 文件，我们递归的求出了mrc云实例上的ip地址，并且动态地生成了hosts文件给后续步骤使用
+
+
+- 对于twitter harvester来说，经过我们的测试，多个harvester同时使用一个token会导致爬取速率下降。我们希望所有instance上的harvester都读写他们本地的couchdb，这样做可以降低单个couchdb的压力，并且不用经受instance之间网络通信的延迟。所以，我们定位了两个问题
+    1. 如何让不同instance上的harvester使用不同的token
+    2. 如何让不同instance上的harvester读不同ip地址的couchdb
+   
+   好在我们在上一节动态的获取了ip地址，对于这两个，我们只要在ansible处根据不同的ip地址对不同的instance进行credentials.py和dbconfig.py文件的分发即可
