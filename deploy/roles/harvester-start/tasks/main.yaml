@@ -66,11 +66,9 @@
 # Run Harvester
 - name: Run harvester
   docker_container:
-    name: harvester
+    name: harvester_test0
     image: grp28/harvester
     state: started
     recreate: true
-    ports:
-      - "80:80"
   become: yes
   

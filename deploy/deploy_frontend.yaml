@@ -1,8 +1,7 @@
 
 
-- hosts: CouchdbAllNodes
-  vars_files:
-    - host_vars/all_hosts.yaml
+
+- hosts: accessNode
   gather_facts: true
   vars:
     - ansible_user: ubuntu
@@ -10,4 +9,4 @@
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     - ansible_python_interpreter: /usr/bin/python3
   roles:
-    - role: harvester-start
+    - role: frondend-start
