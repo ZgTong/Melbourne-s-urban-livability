@@ -1,4 +1,5 @@
 import json
+import sys
 import time
 from datetime import datetime
 
@@ -84,13 +85,20 @@ class MyListener(tweepy.Stream):
             pass
         
         except Exception as e1:
-            if self.db_client is not None:
-                self.db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                            url=db_url, connect=True, auto_renew=True)
-                self.users_db = self.db_client['user']
-                if 'user' in self.db_client.all_dbs():
-                    print('Reconnect successful.')
-            print("exception: {}".format(e1))
+            i = 0
+            while i < 5:
+                if self.db_client is not None:
+                    self.db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+                                url=db_url, connect=True, auto_renew=True)
+                    self.users_db = self.db_client['user']
+                    if 'user' in self.db_client.all_dbs():
+                        print('Reconnect successful.')
+                        break
+                i += 1
+                    
+            if 'user' not in self.db_client.all_dbs():
+                print("exception: {}, harverster terminated.".format(e1))
+                sys.exit(1)
             pass
 
         if self.collected_tweet >= self.limit:
