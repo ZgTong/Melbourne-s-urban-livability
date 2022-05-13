@@ -8,7 +8,7 @@ switch (process.env.NODE_ENV) {
         API_SERVER_URL = process.env.REACT_APP_API_SERVER
         break;
     default:
-        API_SERVER_URL = 'http://localhost:8082'
+        API_SERVER_URL = 'http://localhost:3000'
         break;
 }
 

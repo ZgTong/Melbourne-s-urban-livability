@@ -2,13 +2,12 @@ import React, {memo, useRef, useEffect, useState } from 'react';
 import useDeepCompareEffectForMaps from "use-deep-compare-effect";
 import { useSelector, useDispatch } from "react-redux";
 import { selectVariableRange, selectSelectedTopic, setVariableRange, setSelectedTopic } from '../../store/reducers/selectBar'
-import { readyFlagSelector, sceneDataSelector, setReadyFlag } from '../../store/reducers/map'
+import { readyFlagSelector, setReadyFlag, setAppReadyFlag } from '../../store/reducers/map'
 import './index.scss';
 import mapStyle from "../../asset/map_style";
 import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
-import { GetScene } from "../../api";
+import {GetScene, GetSuburbs} from "../../api";
 import useGoogleCharts from "../../utils/useGoogleCharts";
-
 const Map = ({
                 style,
                 children,
@@ -20,7 +19,6 @@ const Map = ({
              }) => {
     const range = useSelector(selectVariableRange);
     const readyFlag = useSelector(readyFlagSelector);
-    const sceneData = useSelector(sceneDataSelector);
     const selectedTopic = useSelector(selectSelectedTopic);
     const dispatch = useDispatch()
     const ref = useRef(null)
@@ -29,6 +27,8 @@ const Map = ({
         lat: -37.7998,
         lng: 144.9460,
     });
+    const [currentSceneData, setCurrentSceneData] = useState(null);
+    const updateSceneDataRef= useRef()
     const googleChart = useGoogleCharts()
     const [map, setMap] = useState(null)
     const [livabilityValMin, setLivabilityValMin] = useState(Number.MAX_VALUE)
@@ -40,11 +40,10 @@ const Map = ({
         data.addColumn('number', 'Slices');
         let rows = []
         for (const item of Object.entries(dataSet)){
-            console.log(item)
             rows.push(item)
         }
         data.addRows(rows);
-        var options = {title,
+        let options = {title,
             'width':300,
             'height':250};
         const newChart = new googleChart.visualization.PieChart(container);
@@ -53,6 +52,7 @@ const Map = ({
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
         infoBox.setPosition(e.latLng)
+        console.log(e.feature.getProperty("livability_variable"))
         if (e.feature.getProperty("livability_variable")){
             const percent =
                 ((e.feature.getProperty("livability_variable") - livabilityValMin) /
@@ -91,10 +91,19 @@ const Map = ({
     }
     const clickRegion = (e) => {
         infoBox.close()
-        setZoom(12)
-        setCenter(e.latLng)
-        map.setCenter(e.latLng)
-        map.setZoom(12)
+        // loadSuburbData(e.feature.getProperty("lga_pid"), e.latLng, 11)
+    }
+    const smoothZoom = (map, max, cnt) => {
+        if (cnt >= max) {
+            return;
+        }
+        else {
+            let z = window.google.maps.event.addListener(map, 'zoom_changed', function(event){
+                window.google.maps.event.removeListener(z);
+                smoothZoom(map, max, cnt + 1);
+            });
+            setTimeout(function(){setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
+        }
     }
     const styleFeature = (feature) => {
         let low = [5, 69, 54]; // color of smallest datum
@@ -126,10 +135,13 @@ const Map = ({
             visible: showRow,
         };
     }
+
     const loadData = (variable) => {
         let min = Number.MAX_VALUE, max = -Number.MAX_VALUE
         GetScene(variable).then((res) => {
             let data = res['Metrics']
+            // setCurrentSceneData(data)
+            // updateSceneDataRef.current = data
             data.forEach(function(row) {
                 let livabilityVariable = parseFloat(row.totalMetrics);
                 let neutralMetric = parseFloat(row.neutralMetric);
@@ -161,9 +173,29 @@ const Map = ({
             setLivabilityValMin(prev => min)
             setLivabilityValMax(prev => max)
             dispatch(setReadyFlag({flag: true}))
+            dispatch(setAppReadyFlag({flag: true}))
         })
-
     }
+    // const loadSuburbData = (lgaId, centerNew, zoomNew) => {
+    //     dispatch(setReadyFlag({flag: false}))
+    //     let lgaData = updateSceneDataRef.current.find(item => item['location'] === lgaId)
+    //     let subData = null
+    //     if (lgaData != undefined){
+    //         subData = lgaData['suburbs']
+    //     }
+    //     clearData();
+    //     GetSuburbs().then((res) => {
+    //         console.log("data: ", res, zoomNew, map.getZoom(), centerNew, subData)
+    //         map.data.addGeoJson(
+    //             res,
+    //             { idPropertyName: "lc_ply_pid" }
+    //         );
+    //     }).then(() => {
+    //         setCenter(centerNew)
+    //         smoothZoom(map, zoomNew, map.getZoom())
+    //         dispatch(setReadyFlag({flag: true}))
+    //     })
+    // }
     const clearData = () => {
         setLivabilityValMin(Number.MAX_VALUE);
         setLivabilityValMax(-Number.MAX_VALUE);
@@ -175,7 +207,7 @@ const Map = ({
     //init map
     useEffect(() => {
         if (ref.current && !map) {
-            console.log("init Map hook")
+            dispatch(setAppReadyFlag({flag: false}))
             setMap(new window.google.maps.Map(ref.current,{ styles: mapStyle, zoom, center }))
         }
     },[ref])

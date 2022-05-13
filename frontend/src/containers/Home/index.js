@@ -5,21 +5,17 @@ import MapPage from "../../containers/MapPage"
 import {Button, Spin} from "antd";
 import { LineChartOutlined } from "@ant-design/icons"
 import { useSelector } from "react-redux";
-import { readyFlagSelector } from '../../store/reducers/map'
+import { appReadyFlagSelector } from '../../store/reducers/map'
 import CollapsePanel from "../../components/CollapsePanel";
 import HomeCarousel from "../../components/HomeCarousel";
 
 const Home = () => {
     const alignCenter = { display: 'flex', alignItems: 'center' }
-    const [showPop, setShowPop] = useState(false)
-    const readyFlag = useSelector(readyFlagSelector)
-    const showSlide = () => {
-        console.log(showPop)
-        setShowPop(!showPop)
-    }
+    const appReadyFlag = useSelector(appReadyFlagSelector)
     return (
         <div className='homeContainer' id='homeContainer'>
-            <Parallax pages={3}>
+            <Spin spinning={ !appReadyFlag } size="large" tip="Initializing, Please Wait...." />
+            <Parallax pages={3}  style={{display: appReadyFlag? "block" : "none"}}>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className={"banner"}>
                         <div className="author">
@@ -61,13 +57,9 @@ const Home = () => {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={1.5}>
-                    <Spin spinning={ !readyFlag } size="large" tip="Data is Loading, Please Wait Patiently...." />
-                    <div className='mapCard' style={{display: readyFlag? "block" : "none"}}>
+                    <div className='mapCard'>
                         <MapPage />
                     </div>
-                    {/*<div className='mapCard'>*/}
-                    {/*    <MapPage />*/}
-                    {/*</div>*/}
                 </ParallaxLayer>
             </Parallax>
         </div>
