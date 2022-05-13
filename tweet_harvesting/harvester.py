@@ -28,10 +28,10 @@ class MyListener(tweepy.Stream):
         self.tweet_ids = set()
         self.bounding_box = [140.9637383263, -39.1701944869,
                              150.2020069979, -33.9807673149]
-        with open('tweet_harvesting/data/vic_geo.json') as f:
+        with open('data/vic_geo.json') as f:
             self.geo_info = json.load(f)
 
-        with open('tweet_harvesting/data/vic_geo_small.json') as fp:
+        with open('data/vic_geo_small.json') as fp:
             self.geo_info_small = json.load(fp)
 
         self.api = self.set_api()
