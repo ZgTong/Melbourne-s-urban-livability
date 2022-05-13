@@ -12,6 +12,7 @@ import tweetAnalyzer
 # from credential import *
 
 KEYWORD_LIST = ["city", "food", "sport", "traffic_weather"]
+db_url = f'http://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_URL[7:]}'
 
 
 class MyListener(tweepy.Stream):
@@ -26,10 +27,10 @@ class MyListener(tweepy.Stream):
         self.tweet_ids = set()
         self.bounding_box = [140.9637383263, -39.1701944869,
                              150.2020069979, -33.9807673149]
-        with open('data/vic_geo.json') as f:
+        with open('tweet_harvesting/data/vic_geo.json') as f:
             self.geo_info = json.load(f)
 
-        with open('data/vic_geo_small.json') as fp:
+        with open('tweet_harvesting/data/vic_geo_small.json') as fp:
             self.geo_info_small = json.load(fp)
 
         self.api = self.set_api()
@@ -83,6 +84,12 @@ class MyListener(tweepy.Stream):
             pass
         
         except Exception as e1:
+            if self.db_client is not None:
+                self.db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
+                            url=db_url, connect=True, auto_renew=True)
+                self.users_db = self.db_client['user']
+                if 'user' in self.db_client.all_dbs():
+                    print('Reconnect successful.')
             print("exception: {}".format(e1))
             pass
 
@@ -358,8 +365,8 @@ class MyListener(tweepy.Stream):
                     self.collected_tweet += 1
 
             total_streamed += 1
-            if total_streamed % 100 == 0:
-                time.sleep(10)
+            if total_streamed % 50 == 0:
+                time.sleep(5)
 
         self.checked_tweet += total_streamed
 
@@ -378,14 +385,11 @@ def main():
     # keyword = ["city", "food", "sport",
     #            "traffic_weather"][random.randint(0, 3)]
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    db_url = f'http://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_URL[7:]}'
 
     db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=db_url, connect=True)
+                        url=db_url, connect=True, auto_renew=True)
     print(str(db_client.all_dbs()))
 
-    if 'user' not in db_client.all_dbs():
-        db_client.create_database('user')
 
     # db_client = None
 
@@ -414,7 +418,7 @@ def main():
             stream_tweet.write_json(
                 stream_tweet.data, f'tweet_harvesting/output/{file_name}.json')
             db_client = CouchDB(DATABASE_USERNAME, DATABASE_PASSWORD,
-                        url=DATABASE_URL, connect=True)
+                        url=db_url, connect=True,auto_renew=True)
             stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
             
