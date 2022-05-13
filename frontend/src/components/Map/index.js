@@ -5,7 +5,7 @@ import { selectVariableRange, selectSelectedTopic, setVariableRange, setSelected
 import { readyFlagSelector, setReadyFlag, setAppReadyFlag } from '../../store/reducers/map'
 import './index.scss';
 import mapStyle from "../../asset/map_style";
-import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
+import { VIC_STATE_BOUNDARIES_JSON_PATH, VIC_SUBURB_BOUNDARIES_JSON_PATH } from "../../utils/constants";
 import {GetScene, GetSuburbs} from "../../api";
 import useGoogleCharts from "../../utils/useGoogleCharts";
 const Map = ({
@@ -31,6 +31,8 @@ const Map = ({
     const updateSceneDataRef= useRef()
     const googleChart = useGoogleCharts()
     const [map, setMap] = useState(null)
+    const [cityDataLayer, setCityDataLayer] = useState(new window.google.maps.Data())
+    const [subDataLayer, setSubDataLayer] = useState(new window.google.maps.Data())
     const [livabilityValMin, setLivabilityValMin] = useState(Number.MAX_VALUE)
     const [livabilityValMax, setLivabilityValMax] = useState(-Number.MAX_VALUE)
     const [infoBox] = useState(new window.google.maps.InfoWindow({content: ''}))
@@ -52,7 +54,6 @@ const Map = ({
     const mouseInToRegion = (e) => {
         e.feature.setProperty("state", "hover");
         infoBox.setPosition(e.latLng)
-        console.log(e.feature.getProperty("livability_variable"))
         if (e.feature.getProperty("livability_variable")){
             const percent =
                 ((e.feature.getProperty("livability_variable") - livabilityValMin) /
@@ -91,7 +92,7 @@ const Map = ({
     }
     const clickRegion = (e) => {
         infoBox.close()
-        // loadSuburbData(e.feature.getProperty("lga_pid"), e.latLng, 11)
+        loadSuburbData(e.feature.getProperty("lg_ply_pid"), e.feature.getProperty("lga_pid"), e.latLng, 11)
     }
     const smoothZoom = (map, max, cnt) => {
         if (cnt >= max) {
@@ -102,7 +103,7 @@ const Map = ({
                 window.google.maps.event.removeListener(z);
                 smoothZoom(map, max, cnt + 1);
             });
-            setTimeout(function(){setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
+            setTimeout(function(){map.setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
         }
     }
     const styleFeature = (feature) => {
@@ -140,8 +141,8 @@ const Map = ({
         let min = Number.MAX_VALUE, max = -Number.MAX_VALUE
         GetScene(variable).then((res) => {
             let data = res['Metrics']
-            // setCurrentSceneData(data)
-            // updateSceneDataRef.current = data
+            setCurrentSceneData(data)
+            updateSceneDataRef.current = data
             data.forEach(function(row) {
                 let livabilityVariable = parseFloat(row.totalMetrics);
                 let neutralMetric = parseFloat(row.neutralMetric);
@@ -157,7 +158,7 @@ const Map = ({
                 }
                 // update the existing row with the new data
                 // map.data.getFeatureById(locId).setProperty('livability_variable', livabilityVariable);
-                map.data.forEach((feat) => {
+                cityDataLayer.forEach((feat) => {
                     if(feat.getProperty("lga_pid") == locId){
                         feat.setProperty('livability_variable', livabilityVariable);
                         feat.setProperty('neutralMetric', neutralMetric);
@@ -174,32 +175,39 @@ const Map = ({
             setLivabilityValMax(prev => max)
             dispatch(setReadyFlag({flag: true}))
             dispatch(setAppReadyFlag({flag: true}))
+
         })
     }
-    // const loadSuburbData = (lgaId, centerNew, zoomNew) => {
-    //     dispatch(setReadyFlag({flag: false}))
-    //     let lgaData = updateSceneDataRef.current.find(item => item['location'] === lgaId)
-    //     let subData = null
-    //     if (lgaData != undefined){
-    //         subData = lgaData['suburbs']
-    //     }
-    //     clearData();
-    //     GetSuburbs().then((res) => {
-    //         console.log("data: ", res, zoomNew, map.getZoom(), centerNew, subData)
-    //         map.data.addGeoJson(
-    //             res,
-    //             { idPropertyName: "lc_ply_pid" }
-    //         );
-    //     }).then(() => {
-    //         setCenter(centerNew)
-    //         smoothZoom(map, zoomNew, map.getZoom())
-    //         dispatch(setReadyFlag({flag: true}))
-    //     })
-    // }
+    const loadSuburbData = (lg_ply_pid, lgaId, centerNew, zoomNew) => {
+        dispatch(setReadyFlag({flag: false}))
+        cityDataLayer.setMap(null)
+        let lgaData = updateSceneDataRef.current.find(item => item['location'] === lgaId)
+        let subData = null
+        if (lgaData != undefined){
+            subData = lgaData['suburbs']
+        }
+        clearData();
+        GetSuburbs().then((res) => {
+            console.log("data: ", res, zoomNew, map.getZoom(), centerNew, subData)
+            const subPolygon = {
+                "type": "FeatureCollection",
+                "features": res[lg_ply_pid]
+            }
+            subDataLayer.addGeoJson(
+                subPolygon,
+                { idPropertyName: "lc_ply_pid" }
+            );
+            subDataLayer.setMap(map)
+        }).then(() => {
+            map.setCenter(centerNew)
+            smoothZoom(map, zoomNew, map.getZoom())
+            dispatch(setReadyFlag({flag: true}))
+        })
+    }
     const clearData = () => {
         setLivabilityValMin(Number.MAX_VALUE);
         setLivabilityValMax(-Number.MAX_VALUE);
-        map.data.forEach((row) => {
+        cityDataLayer.forEach((row) => {
             row.setProperty("livability_variable", undefined);
         });
         document.getElementById("data-caret").style.display = "none";
@@ -218,12 +226,13 @@ const Map = ({
                 'variableMax': livabilityValMax
             }
             console.log("on ready set legend hook", rangeState)
+            cityDataLayer.setStyle(styleFeature);
             dispatch(setVariableRange(rangeState))
         }
     },[readyFlag, livabilityValMin, livabilityValMax])
     // load geo data ,and trigger change
     useEffect(() => {
-        if(map){
+        if(map && googleChart){
             console.log("load geojson hook")
             const selectBox = document.getElementById("livability-variable");
             window.google.maps.event.addDomListener(selectBox, "change", () => {
@@ -232,28 +241,42 @@ const Map = ({
                 clearData();
                 loadData(selectBox.options[selectBox.selectedIndex].value);
             });
-            map.data.loadGeoJson(
+            // const cityDataLayer = new window.google.maps.Data()
+            cityDataLayer.setMap(map)
+            cityDataLayer.loadGeoJson(
                 VIC_STATE_BOUNDARIES_JSON_PATH,
                 { idPropertyName: "lg_ply_pid" },
-                // { idPropertyName: "lga_pid" },
                 (feat)=>{
+                    cityDataLayer.addListener("mouseover", mouseInToRegion);
+                    cityDataLayer.addListener("mouseout", mouseOutOfRegion);
+                    cityDataLayer.addListener("click", clickRegion);
                     window.google.maps.event.trigger(
                         document.getElementById("livability-variable"),
                         "change"
                     );
                 }
-            );
+            )
+            // map.data.loadGeoJson(
+            //     VIC_STATE_BOUNDARIES_JSON_PATH,
+            //     { idPropertyName: "lg_ply_pid" },
+            //     // { idPropertyName: "lga_pid" },
+            //     (feat)=>{
+            //         window.google.maps.event.trigger(
+            //             document.getElementById("livability-variable"),
+            //             "change"
+            //         );
+            //     }
+            // );
         }
-    },[map])
-    useEffect(() => {
-        if(map){
-            console.log("mouseEvent hook")
-            map.data.setStyle(styleFeature);
-            map.data.addListener("mouseover", mouseInToRegion);
-            map.data.addListener("mouseout", mouseOutOfRegion);
-            map.data.addListener("click", clickRegion);
-        }
-    },[range])
+    },[map, googleChart, updateSceneDataRef])
+    // useEffect(() => {
+    //     if(map){
+    //         map.data.setStyle(styleFeature);
+    //         map.data.addListener("mouseover", mouseInToRegion);
+    //         map.data.addListener("mouseout", mouseOutOfRegion);
+    //         map.data.addListener("click", clickRegion);
+    //     }
+    // },[range])
     // regi listener
     useEffect(() => {
         if (map) {
