@@ -7,7 +7,7 @@ RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 RUN npm i serve -g
-RUN npm serve -- --port 3000
+RUN serve -s build
 
 #stage 2
 #FROM nginx:alpine
