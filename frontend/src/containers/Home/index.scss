@@ -1,58 +1,9 @@
-@keyframes slide-down{
-  0%{transform:scale(1,0);}
-  100%{transform:scale(1,1);}
-}
-
-@-webkit-keyframes slide-down{
-  0%{-webkit-transform:scale(1,0);}
-  100%{-webkit-transform:scale(1,1);}
-}
-
-.show {
-  max-height: 114px;
-  transition: max-height .3s ease-in;
-  transform-origin: 50% 0;
-  animation: slide-down 0.3s ease-in;
-  -webkit-animation: slide-down 0.3s ease-in;
-}
-
-.hidden {
-  max-height: 0px;
-  overflow: auto;
-  transition: max-height .3s ease-out;
-}
 .homeContainer{
   font-size: 24px;
   color: azure;
   width: 100%;
   height: 100%;
   position: relative;
-  .slideUp {
-    position: fixed;
-    bottom: -37vh;
-    width: 100%;
-    height: 40vh;
-    box-sizing: border-box;
-    z-index: 1;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 2px;
-    cursor: pointer;
-    .arrow{
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      left: 50%;
-      top: 0%;
-      transform: translateX(-50%);
-      color: #5b65ad;
-      opacity: 1;
-    }
-    .content{
-      position: absolute;
-      top: 30px;
-    }
-  }
   .banner {
     display: flex;
     justify-content: space-around;
@@ -72,12 +23,21 @@
         font-weight: bold;
         color: white;
       }
+      .description{
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
     }
     .intro{
       padding: 60px;
       width: 60%;
       font-size: 30px;
       position: relative;
+      .title{
+        font-weight: bold;
+        font-size: 40px;
+      }
       .content{
         font-size: 30px;
         text-align: left;

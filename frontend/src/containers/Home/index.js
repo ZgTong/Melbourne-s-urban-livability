@@ -19,17 +19,14 @@ const Home = () => {
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className={"banner"}>
                         <div className="author">
-                            <h1 className='title'>Team 28 Info: </h1>
+                            <h1 className='title'>Team 28 Profile</h1>
                             <HomeCarousel />
                         </div>
                         <div className="intro">
-                            <div className="title">About this shit</div>
+                            <div className="title">About This</div>
                             <div className="content">
-                                <p>Here is Content !!!</p>
-                                <p>Here is Content !!!</p>
-                                <p>Here is Content !!!</p>
-                                <p>Here is Content !!!</p>
-                                <p>Here is Content !!!</p>
+                                <p>This is the presentation website for Team 28 of the S1 2022 COMP90033 Clustering and Cloud Computing assignment 2 at the University of Melbourne.</p>
+                                <p></p>
                                 <p>Here is Content !!!</p>
                                 <p>Here is Content !!!</p>
                             </div>

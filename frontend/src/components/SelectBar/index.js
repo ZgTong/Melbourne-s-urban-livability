@@ -25,6 +25,11 @@ const SelectBar = () => {
                         Foods
                     </option>
                     <option
+                        value="traffic"
+                    >
+                        Traffic
+                    </option>
+                    <option
                         value="weather"
                     >
                         Weather
