@@ -14,7 +14,7 @@ function HomeCarousel() {
             name: "Ruoyi Gan",
             stuid: "987838",
             role: "Data analyst",
-            desc: "Job description.",
+            desc: "Implementation of Twitter Harvester, Tweets Sentiment Analysis, Statistical Analysis of Data.",
         },
         {
             name: "Yuanzhi Shang",
