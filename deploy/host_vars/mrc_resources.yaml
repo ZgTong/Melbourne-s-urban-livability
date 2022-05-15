@@ -1,0 +1,79 @@
+availability_zone: melbourne-qh2-uom
+instance_image: 356ff1ed-5960-4ac2-96a1-0c0198e6a999
+instance_key_name: id_rsa_ccc
+instance_flavor: uom.mse.2c9g
+
+# Security group
+security_groups:
+  - name: ssh
+    description: "SSH access"
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 0.0.0.0/0
+  - name: http
+    description: "HTTP access"
+    protocol: tcp
+    port_range_min: 80
+    port_range_max: 80
+    remote_ip_prefix: 0.0.0.0/0
+  - name: couchdb clustered mode standard
+    protocol: tcp
+    description: "couchdb clustered mode standard"
+    port_range_min: 5984
+    port_range_max: 5984
+    remote_ip_prefix: 0.0.0.0/0
+  - name: Erlang-native commu
+    protocol: tcp
+    description: "Erlang-native commu"
+    port_range_min: 4369
+    port_range_max: 4369
+    remote_ip_prefix: 0.0.0.0/0
+  - name: couchdb commu range
+    protocol: tcp
+    description: "couchdb commu range"
+    port_range_min: 9100
+    port_range_max: 9200
+    remote_ip_prefix: 0.0.0.0/0
+  - name: frontend
+    protocol: tcp
+    description: "front end access"
+    port_range_min: 3000
+    port_range_max: 3000
+    remote_ip_prefix: 0.0.0.0/0
+  - name: backend access
+    protocol: tcp
+    description: "front end access"
+    port_range_min: 8080
+    port_range_max: 8080
+    remote_ip_prefix: 0.0.0.0/0
+  
+
+volumes:
+  - vol_name: instance01-vol-common
+    vol_size: 50
+  - vol_name: instance01-vol-docker
+    vol_size: 20
+  - vol_name: instance02-vol-common
+    vol_size: 50
+  - vol_name: instance02-vol-docker
+    vol_size: 20
+  - vol_name: instance03-vol-common
+    vol_size: 50
+  - vol_name: instance03-vol-docker
+    vol_size: 20
+  - vol_name: instance04-vol-common
+    vol_size: 50
+  - vol_name: instance04-vol-docker
+    vol_size: 20
+
+instances:
+  - name: instance01
+    volumes: ['instance01-vol-common', 'instance01-vol-docker']
+  - name: instance02
+    volumes: ['instance02-vol-common', 'instance02-vol-docker']
+  - name: instance03
+    volumes: ['instance03-vol-common', 'instance03-vol-docker']
+  - name: instance04
+    volumes: ['instance04-vol-common', 'instance04-vol-docker']
+

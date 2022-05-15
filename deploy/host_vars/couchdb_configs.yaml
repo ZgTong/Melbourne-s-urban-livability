@@ -1,0 +1,13 @@
+
+---
+# Volumes for docker and couchdb data
+volumes:
+  - device: /dev/vdb
+    mountpoint: /data
+  - device: /dev/vdc
+    mountpoint: /var/lib/docker
+
+user: admin
+pass: "admin"
+VERSION: '3.0.0'
+cookie: 'gQ7wygusPdkybBsmMr4uwGXq'
