@@ -3,7 +3,7 @@
 
 
 # Deploy common stuff per instances
-- hosts: CouchdbAllNodes:&accessNode
+- hosts: CouchdbAllNodes:accessNode
   gather_facts: true
   vars:
     - ansible_user: ubuntu
@@ -11,7 +11,7 @@
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     - ansible_python_interpreter: /usr/bin/python3
   roles:
-    - role: instances-common
-    - role: instances-volume
-    - role: instances-docker
+    # - role: instances-common
+    # - role: instances-volume
+    # - role: instances-docker
     - role: instances-repo

@@ -113,7 +113,6 @@ Overall，在这次project我们团队对asd任务进行了模块化拆分，使
 ## User guide
 
 Our project source code repository is located at Github repository https://github.com/ZgTong/Melbourne-s-urban-livability. The project structure is allocated as following.
-
 ```
 MELBOURNE-S-URBAN-LIVABILTY
 deploy
@@ -129,7 +128,72 @@ backend
 ```
 
 ### System deployment
-In order to deploy the whole system, firstly the localhost is required to have ansible installed. Viewing the [installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) to install the ansible.
+In order to deploy the whole system, **firstly** the localhost is required to have ansible installed. Viewing the [installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) to install the ansible.
+
+**Secondly**, clone the project repository and change directory to "deploy/". For running the script, openstack required a authorization indentification password which located in "deploy/config/mrc_pass".
+
+**Finally**, run run_app.sh then fill in the password. A series of deployment process defined in file namd "deploy_*.yaml" would be execute.
+
+To see the project front end application, view **http://172.26.131.100:3000** (这边需要跟前端确认)
+
+
+### Details
+
+The ansible-playbook is defined in run.sh which is shown as following.
+
+```
+. ./openrc.sh; ansible-playbook deploy_mrc.yaml; ./openstack_inventory.py --list > inventory_info.json; ./hosts_gen.py; ansible-playbook -i config/hosts deploy_ins.yaml; ansible-playbook -i config/hosts deploy_db.yaml; ansible-playbook -i config/hosts deploy_harvester.yaml; ansible-playbook -i config/hosts deploy_frontend.yaml; ansible-playbook -i config/hosts deploy_backend.yaml
+```
+The instructions in the middle of each delimiter indicate a series of command to be performed according to specific file (e.g. .yaml, .py and .sh). Table X shows the details of the functionality of each file.
+
+(这边我用的markdown 表格)
+
+|NAME|FUNCTIONALITY|
+|----|----|
+|openrc.sh|openstack client enviroment script for authorization|
+|deploy_mrc.yaml|cloud resources deployment|
+|openstack_inventory.py|obtain remote host details |
+|hosts_gen.py|generate hosts file and configuration file|
+|deploy_ins.py|cloud instances setup|
+|deploy_db.yaml|couchdb cluster setup|
+|deploy_harvester.yaml|twitter harvester deployment|
+|deploy_frontend.yaml|frontend deployment|
+|deploy_backend.yaml|backend deployment|
+
+To run each component individually, simply copy the corresponding command from run.sh. (e.g. $ansible-plabook -i config/hosts deploy_ins.yaml). Make sure config/hosts file is generated.
+
+
+
+
+
+### Couchdb Cluster
+
+Couchdb is a Document-oriented and NoSql DBMS which allocate and store data as structured documentation. As a distributed database, it has the feature of availability by sharding and replication and has the feature of parition-tolerance by using MVCC. 
+
+In this project, couchdb cluster is deployed on three nodes (called "couchdbAllNodes" in ansible scripts)
+
+
+
+#### Cluster setup
+
+In this project, we use a stable version docker image of couchdb for starting three couchdb container on corresponding instances. Then, by setting up the configuration, we let the three couchdb container to form a cluster. For doing this, the ansible scripts "couchdb-start.yaml" and "couchdb-make-cluster.yaml" are responsible for all couchdb setup work.
+
+First, in the process of "couchdb-start.yaml", a stale version of couchdb docker image is used. For the later configuration of the cluster setup, there are few configuration parameter needs to declare.
+
+The first one is port number. Couchdb need three port group for inner and outer communication. The cloud security groups are need to open for 5984 (All http request), 4369 (Erlang port mapper daemon ) and 9100-9200 (documentation transfer).
+
+In addition, it is important to have a uniform cookie accorss three cluster nodes. This is also done by ansible docker enviroment module.
+
+
+The second setup defined in "couchdb-make-cluster.yaml". Couchdb expose the "_cluster_setup" endpoint for setting up cluster by transfering series url. The procedures are shown as follows
+
+1. Enable cluster
+2. Join cluster
+3. Finish cluster
+
+These actions is performed at each couchdb nodes except couchdb master node.
+
+
 
 
 

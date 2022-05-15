@@ -1,40 +1,25 @@
 
-# # Delete project directory
-# - name: Delete content & directory
-#   file:
-#     state: absent
-#     path: "/home/ubuntu/project"
-#   become: yes
+# Create a database configure directory
+- name: Create database config directory
+  become: yes
+  file:
+    path: "/home/ubuntu/Melbourne-s-urban-livability/tweet_harvesting/config"
+    recurse: yes
+    state: directory
 
-# # Clone harvester branch repo
-# - name: Git clone from remote public repo
-#   git:
-#     repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
-#     dest: "/home/ubuntu/project"
-#     version: "data/ruoyig"
-#   become: true
+# Copy database configuration
+- name: Copy database configuration to project repo
+  become: yes
+  copy:
+    src: "config/{{inventory_hostname}}/dbconfig.py"
+    dest: "/home/ubuntu/Melbourne-s-urban-livability/tweet_harvesting/config/dbconfig.py"
 
-# # Create a database configure directory
-# - name: Create database config directory
-#   become: yes
-#   file:
-#     path: "/home/ubuntu/project/tweet_harvesting/config"
-#     recurse: yes
-#     state: directory
-
-# # Copy database configuration
-# - name: Copy database configuration to project repo
-#   become: yes
-#   copy:
-#     src: "config/{{inventory_hostname}}/dbconfig.py"
-#     dest: "/home/ubuntu/project/tweet_harvesting/config/dbconfig.py"
-
-# # Copy Twitter api token
-# - name: Copy Twitter api token to project repo
-#   become: yes
-#   copy:
-#     src: "config/{{inventory_hostname}}/credential.py"
-#     dest: "/home/ubuntu/project/tweet_harvesting/config/credential.py"
+# Copy Twitter api token
+- name: Copy Twitter api token to project repo
+  become: yes
+  copy:
+    src: "config/{{inventory_hostname}}/credential.py"
+    dest: "/home/ubuntu/Melbourne-s-urban-livability/tweet_harvesting/config/credential.py"
 
 # Clear running harvester container
 - name: Clear harvester container
@@ -43,36 +28,37 @@
     state: absent
   become: yes
 
-# # Clear exsiting harvester image
-# - name: Remove image
-#   docker_image:
-#     state: absent
-#     name: grp28/harvester
-#   become: yes
+# Clear exsiting harvester image
+- name: Remove image
+  docker_image:
+    state: absent
+    name: grp28/harvester
+  become: yes
 
-# # Create harvester docker image 
-# - name: Create harvester docker image 
-#   docker_image:
-#     build:
-#       path: "/home/ubuntu/project/tweet_harvesting/"
-#       pull: yes
-#     name: grp28/harvester
-#     source: build
-#   become: yes
+# Create harvester docker image 
+- name: Create harvester docker image 
+  docker_image:
+    build:
+      path: "/home/ubuntu/Melbourne-s-urban-livability/tweet_harvesting/"
+      pull: yes
+    name: grp28/harvester
+    source: build
+  become: yes
 
 # Run Harvester
 - name: Run harvester
   docker_container:
-    name: harvester_test0
+    name: harvester
     image: grp28/harvester
     state: started
     restart: true
     recreate: true
+    restart_policy: on-failure
     restart_retries: 5
   become: yes
   
-- name: Run harvester by shell command
-  ansible.builtin.shell:
-    cmd: docker run -d --name harvester_shell --restart=on-failure:5 grp28/harvester
-    chdir: /home/ubuntu/project/tweet_harvesting/
-  become: yes
+# - name: Run harvester by shell command
+#   ansible.builtin.shell:
+#     cmd: docker run -d --name harvester_shell --restart=on-failure:5 grp28/harvester
+#     chdir: /home/ubuntu/project/tweet_harvesting/
+#   become: yes
