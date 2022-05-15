@@ -4,12 +4,12 @@
 - name: Delete content & directory
   file:
     state: absent
-    path: "/home/ubuntu/project"
+    path: "/home/ubuntu/Melbourne-s-urban-livability"
   become: yes
 
-# # Clone harvester branch repo
-# - name: Git clone from remote public repo
-#   git:
-#     repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
-#     dest: "/home/ubuntu/Melbourne-s-urban-livability"
-#   become: yes
+# Clone harvester branch repo
+- name: Git clone from remote public repo
+  git:
+    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
+    dest: "/home/ubuntu/Melbourne-s-urban-livability"
+  become: yes

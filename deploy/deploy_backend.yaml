@@ -1,6 +1,8 @@
 
 
 - hosts: accessNode
+  vars_files:
+    - host_vars/all_hosts.yaml
   gather_facts: true
   vars:
     - ansible_user: ubuntu
@@ -8,4 +10,4 @@
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     - ansible_python_interpreter: /usr/bin/python3
   roles:
-    - role: frontend-start
+    - role: backend-start

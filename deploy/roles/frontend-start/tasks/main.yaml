@@ -3,35 +3,20 @@
 # Check if project directory exist
 - name: Check if the project directory exist
   stat:
-    path: /home/ubuntu/project
+    path: /home/ubuntu/Melbourne-s-urban-livability/frontend
   register: stat_result
-
-# # Delete project directory
-# - name: Delete content & directory
-#   file:
-#     state: absent
-#     path: "/home/ubuntu/project_frontend"
-#   become: yes
-
-# # Clone front end branch
-# - name: Git clone from remote public repo
-#   git:
-#     repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
-#     dest: "/home/ubuntu/project_frontend"
-#     version: "frontend/zuguangt"
-#   become: true
 
 # Turn off existing frontend process
 - name: Tear down existing services
   docker_compose: 
-    project_src: /home/ubuntu/project/
+    project_src: /home/ubuntu/Melbourne-s-urban-livability/frontend
     state: absent
   become: yes
 
 # Activate frontend
 - name: Activate frontend
   docker_compose:
-    project_src: "/home/ubuntu/project/"
+    project_src: /home/ubuntu/Melbourne-s-urban-livability/frontend
     state: present
     build: yes
     pull: yes
@@ -41,3 +26,5 @@
 
 - ansible.builtin.debug:
     var: result
+
+

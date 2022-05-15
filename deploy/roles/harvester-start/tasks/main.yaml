@@ -27,7 +27,7 @@
     name: harvester
     state: absent
   become: yes
-
+ 
 # Clear exsiting harvester image
 - name: Remove image
   docker_image:
@@ -56,7 +56,7 @@
     restart_policy: on-failure
     restart_retries: 5
   become: yes
-  
+
 # - name: Run harvester by shell command
 #   ansible.builtin.shell:
 #     cmd: docker run -d --name harvester_shell --restart=on-failure:5 grp28/harvester
