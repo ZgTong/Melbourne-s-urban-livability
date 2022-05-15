@@ -8,13 +8,13 @@ function HomeCarousel() {
             name: "Jinyu Tan",
             stuid: "1184788",
             role: "Backend Developer",
-            desc: "Job description.",
+            desc: "Backend Server Implementation, Map reduce View for CouchDB, Overall System Design.",
         },
         {
             name: "Ruoyi Gan",
             stuid: "987838",
             role: "Data analyst",
-            desc: "Job description.",
+            desc: "Implementation of Twitter Harvester, Tweets Sentiment Analysis, Statistical Analysis of Data.",
         },
         {
             name: "Yuanzhi Shang",
