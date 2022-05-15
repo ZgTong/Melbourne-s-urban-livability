@@ -128,9 +128,7 @@ backend
   - backend server
 ```
 
-
 ### System deployment
-
 In order to deploy the whole system, firstly the localhost is required to have ansible installed. Viewing the [installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) to install the ansible.
 
 
