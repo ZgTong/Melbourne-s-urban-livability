@@ -1,0 +1,26 @@
+.ant-carousel{
+  height: 90%;
+  .slick-slider{
+    height: 100%;
+    .slick-list{
+      height: 100%;
+      .carousel_card{
+        height: 100%;
+        text-align: left;
+        .name{
+          color: white;
+          font-size: 30px;
+        }
+        .role{
+          color: white;
+          font-size: 26px;
+        }
+        .description{
+          color: white;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+}

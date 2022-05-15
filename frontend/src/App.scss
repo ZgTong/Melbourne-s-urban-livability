@@ -1,0 +1,116 @@
+@import '~antd/dist/antd.css';
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+html, body, #root, .App{
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media query */
+/* pc width > 1920px */
+html,
+body {
+  font-size: 25.6px;
+}
+/* pc width <1920px */
+@media screen and (max-width: 1920px) {
+  html,
+  body {
+    font-size: 19.2px;
+  }
+}
+/* pc width <1680px */
+@media screen and (max-width: 1680px) {
+  html,
+  body {
+    font-size: 16.8px;
+  }
+}
+/* pc width <1440px */
+@media screen and (max-width: 1440px) {
+  html,
+  body {
+    font-size: 14.4px;
+  }
+}
+/* ipad pro */
+@media screen and (max-width: 1366px) {
+  html,
+  body {
+    font-size: 13.66px;
+  }
+}
+/* ipad */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 7.68px;
+  }
+}
+/* iphone6 7 8 plus */
+@media screen and (max-width: 414px) {
+  html,
+  body {
+    font-size: 4.14px;
+  }
+}
+/* iphoneX */
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  html,
+  body {
+    font-size: 3.75px;
+  }
+}
+/* iphone6 7 8 */
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+  html,
+  body {
+    font-size: 3.75px;
+  }
+}
+/* iphone5 */
+@media screen and (max-width: 320px) {
+  html,
+  body {
+    font-size: 3.2px;
+  }
+}
+
+@function px2Rem($px, $base-font-size: 14.4px) {
+  @if (unitless($px)) {
+    @return ($px / 14.4) * 1rem;
+  } @else if (unit($px) == em) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+
+.App {
+  text-align: center;
+  background: rgba(0, 0, 0, .5) url('./asset/melb_view.jpg') center / cover no-repeat fixed;
+}
+
+.chartContainer{
+  background-color: #fff;
+}
+
+.fz_20{
+  font-size: 20px;
+}
+
+.fw_bold{
+  font-weight: bold;
+}
+
+.fw_normal{
+  font-weight: normal;
+}
+
