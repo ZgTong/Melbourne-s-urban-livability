@@ -3,10 +3,10 @@ services:
   frontend:
     container_name: "ccc-frontend"
     build:
-      context: ./frontend
+      context: ./
       dockerfile: prod.Dockerfile
     env_file:
-      - ./frontend/.env.production
+      - ./.env.production
     ports:
       - "3000:3000"
 
