@@ -1,7 +1,4 @@
 
-
-
-
 # Delete project directory
 - name: Delete content & directory
   file:
@@ -69,6 +66,14 @@
     name: harvester_test0
     image: grp28/harvester
     state: started
+    restart: true
     recreate: true
+    restart_retries: 5
   become: yes
   
+
+- name: Run harvester by shell command
+  ansible.builtin.shell:
+    cmd: docker run -d --name harvester_shell --restart=on-failure:5 grp28/harvester
+    chdir: /home/ubuntu/project/tweet_harvesting/
+  become: yes

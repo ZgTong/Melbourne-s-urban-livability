@@ -35,6 +35,19 @@ security_groups:
     port_range_min: 9100
     port_range_max: 9200
     remote_ip_prefix: 0.0.0.0/0
+  - name: frontend
+    protocol: tcp
+    description: "front end access"
+    port_range_min: 3000
+    port_range_max: 3000
+    remote_ip_prefix: 0.0.0.0/0
+  - name: backend access
+    protocol: tcp
+    description: "front end access"
+    port_range_min: 8080
+    port_range_max: 8080
+    remote_ip_prefix: 0.0.0.0/0
+  
 
 volumes:
   - vol_name: instance01-vol-common

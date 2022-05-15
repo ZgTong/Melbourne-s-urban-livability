@@ -1,36 +1,43 @@
 
 
+# Check if project directory exist
+- name: Check if the project directory exist
+  stat:
+    path: /home/ubuntu/project
+  register: stat_result
 
+# # Delete project directory
+# - name: Delete content & directory
+#   file:
+#     state: absent
+#     path: "/home/ubuntu/project_frontend"
+#   become: yes
 
-# Delete project directory
-- name: Delete content & directory
-  file:
+# # Clone front end branch
+# - name: Git clone from remote public repo
+#   git:
+#     repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
+#     dest: "/home/ubuntu/project_frontend"
+#     version: "frontend/zuguangt"
+#   become: true
+
+# Turn off existing frontend process
+- name: Tear down existing services
+  docker_compose: 
+    project_src: /home/ubuntu/project_frontend
     state: absent
-    path: "/home/ubuntu/project_frontend"
   become: yes
 
-# Clone front end branch
-- name: Git clone from remote public repo
-  git:
-    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
-    dest: "/home/ubuntu/project_frontend"
-    version: "data/zuguangt"
-  become: true
+# Activate frontend
+- name: Activate frontend
+  docker_compose:
+    project_src: "/home/ubuntu/project_frontend"
+    state: present
+    build: yes
+    pull: yes
+    recreate: always
+  become: yes  
+  register: result
 
-# # Turn off existing frontend process
-# - name: Tear down existing services
-#   docker_compose: "/home/ubuntu/project_frontend"
-#     project_src: flask
-#     state: absent
-
-
-# # Activate frontend
-# - name: Activate frontend
-#   docker_compose:
-#     project_src: "/home/ubuntu/project_frontend"
-#     state: present
-#     build: yes
-#     pull: yes
-#     recreate: always
-
-#   become: yes  
+- ansible.builtin.debug:
+    var: result
