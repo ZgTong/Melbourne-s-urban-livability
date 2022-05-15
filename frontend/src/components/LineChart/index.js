@@ -3,27 +3,21 @@ import { Line } from '@ant-design/charts';
 import './index.scss'
 
 const LineChart = (props) => {
-    const { label, data } = props;
+    const { label, data, series } = props;
     const config = {
         data,
         xField: `year`,
-        yField: 'metric',
-        seriesField: 'month',
+        yField: label,
+        seriesField: series,
         yAxis: {
             label: {
                 formatter: (v) => `${Number.parseInt(v).toFixed(1)}`,
             },
         },
-        // xAxis: {
-        //     label: {
-        //         formatter: (v) => `${Number.parseInt(v) % 12 == 0} ? ${yaer}+1-v`
-        //     }
-        // }
         legend: {
             position: 'top',
         },
         smooth: true,
-        // @TODO 后续会换一种动画方式
         animation: {
             appear: {
                 animation: 'path-in',

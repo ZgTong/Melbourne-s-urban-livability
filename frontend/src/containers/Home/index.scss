@@ -38,10 +38,6 @@
         font-weight: bold;
         font-size: 40px;
       }
-      .content{
-        font-size: 30px;
-        text-align: left;
-      }
       .explore{
         position: absolute;
         bottom: 20px;
@@ -72,6 +68,24 @@
     width: 90%;
     border-radius: 10px;
     margin-right: 20px;
+    .mapTitle{
+      font-style: italic;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .mapContent{
+      margin-top: 0;
+      .content1{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content2{
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
   }
   .charts{
     width: 50%;
@@ -81,6 +95,7 @@
     .title{
       text-align: left;
       font-weight: bold;
+      font-size: 40px;
     }
   }
 
@@ -101,8 +116,22 @@
     height: 70%;
     width: 30%;
     background-color: rgba(0,0,0,.3);
+    .title{
+      text-align: left;
+      font-style: italic;
+      font-size: 40px;
+    }
   }
 
+}
+
+.content{
+  font-size: 30px;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin-top: 20px;
 }
 
 .blue {

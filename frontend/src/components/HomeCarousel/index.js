@@ -26,7 +26,7 @@ function HomeCarousel() {
             name: "Zixuan Guo",
             stuid: "1298930",
             role: "Data analyst",
-            desc: "Job description.",
+            desc: "Data crawling, processing raw data, uploading CouchDB database for data aggregation and front-end display.",
         },
         {
             name: "Zuguang Tong",

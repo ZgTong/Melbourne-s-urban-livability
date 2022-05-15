@@ -2,22 +2,47 @@ import React, {useState} from 'react';
 import { Collapse } from 'antd';
 import './index.scss'
 import LineChart from "../LineChart";
-import PieChart from "../../components/PieChart";
-import { GetWeather } from "../../api";
+import {GetBarCafe, GetLineData, GetWeather} from "../../api";
+import ColumnPlot from "../ColumPlot";
+import {BarChartOutlined, LineChartOutlined} from "@ant-design/icons";
 
 const { Panel } = Collapse;
 
-function CollapsePanel() {
+function CollapsePanel(props) {
+    const { updateTxt } = props;
     const [weatherData, setWeatherData] = useState({"UVmetrics":[],"Tempmetrics":[],"Windmetrics":[],"HumidMetrics":[]});
+    const [sportsData, setSportsData] = useState([]);
+    const [cafeBarData, setCafeBarData] = useState([]);
     function callbackLevel1(key) {
-        console.log("level1:", key);
+        updateTxt(key)
         if(key === "1"){
             GetWeather().then((res) => {
-                console.log(res)
                 setWeatherData(res)
             })
+        } else if(key === "2"){
+            GetBarCafe().then((res) => {
+                let chartDt = []
+                for(const [k, v] of Object.entries(res.data)){
+                    const dt = [
+                        {
+                            "location": v.locationPid,
+                            "value": v.barsScore,
+                            "type": "Bars"
+                        },
+                        {
+                            "location": v.locationPid,
+                            "value": v.cafesScore,
+                            "type": "Cafes"
+                        },
+                    ]
+                    chartDt = chartDt.concat(dt)
+                }
+                setCafeBarData(chartDt)
+            })
         } else if(key === "3"){
-        } else if(key === "4"){
+            GetLineData("sports").then((res) => {
+                setSportsData(res)
+            })
         }
     }
 
@@ -25,34 +50,29 @@ function CollapsePanel() {
         console.log("level2:", key);
     }
 
-    const text = `
-      A dog is a type of domesticated animal.
-      Known for its loyalty and faithfulness,
-      it can be found as a welcome guest in many households across the world.
-    `;
     return (
         <Collapse onChange={callbackLevel1} accordion ghost>
-            <Panel header="Weather" key="1">
+            <Panel header={<p>Weather Indicators <LineChartOutlined /></p>} key="1">
                 <Collapse onChange={callbackLevel2} accordion ghost>
                     <Panel header="UVmetrics" key="11">
-                        <LineChart label={'UVmetrics'} data={weatherData['UVmetrics']}/>
+                        <LineChart label={'metric'} data={weatherData['UVmetrics']} series="month"/>
                     </Panel>
                     <Panel header="Tempmetrics" key="12">
-                        <LineChart label={'Tempmetrics'} data={weatherData['Tempmetrics']}/>
+                        <LineChart label={'metric'} data={weatherData['Tempmetrics']} series="month"/>
                     </Panel>
                     <Panel header="WindMetrics" key="13">
-                        <LineChart label={'WindMetrics'} data={weatherData['WindMetrics']}/>
+                        <LineChart label={'metric'} data={weatherData['WindMetrics']} series="month"/>
                     </Panel>
                     <Panel header="HumidMetrics" key="14">
-                        <LineChart label={'HumidMetrics'} data={weatherData['HumidMetrics']}/>
+                        <LineChart label={'metric'} data={weatherData['HumidMetrics']} series="month"/>
                     </Panel>
                 </Collapse>
             </Panel>
-            <Panel header="This is PieChart" key="2">
-                <PieChart />
+            <Panel header={<p>Cafe/Bar Ratio <BarChartOutlined /></p>} key="2">
+                <ColumnPlot data={cafeBarData} />
             </Panel>
-            <Panel header="This is panel header 3" key="3">
-                <p>{text}</p>
+            <Panel header={<p>Sports Indicators <LineChartOutlined /></p>} key="3">
+                <LineChart label={'Metric'} data={sportsData}/>
             </Panel>
         </Collapse>
     );
