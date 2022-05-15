@@ -1,0 +1,167 @@
+.homeContainer{
+  font-size: 24px;
+  color: azure;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .banner {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 1.25rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: px2Rem(10px);
+    background-color: rgba(0,0,0,.3);
+    .author{
+      width: 40%;
+      padding: 60px;
+      .title{
+        height: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+      }
+      .description{
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+    }
+    .intro{
+      padding: 60px;
+      width: 60%;
+      font-size: 30px;
+      position: relative;
+      .title{
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .explore{
+        position: absolute;
+        bottom: 20px;
+      }
+    }
+  }
+  .ant-spin-spinning{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    .ant-spin-dot-spin{
+      .ant-spin-dot-item{
+        background: antiquewhite;
+      }
+    }
+    .ant-spin-text{
+      color: antiquewhite;
+      font-weight: bold;
+    }
+  }
+  .mapCard {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    margin-right: 20px;
+    .mapTitle{
+      font-style: italic;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .mapContent{
+      margin-top: 0;
+      .content1{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content2{
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+  .charts{
+    width: 50%;
+    margin-right: 8%;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    .title{
+      text-align: left;
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+
+  .card {
+    font-size: 1.25rem;
+    height: 10rem;
+    width: 25%;
+    text-align: center;
+    border-radius: px2Rem(10px);
+  }
+
+  .parallax {
+    margin-right: 15%;
+  }
+
+  .sticky {
+    margin-left: 5%;
+    height: 70%;
+    width: 30%;
+    background-color: rgba(0,0,0,.3);
+    .title{
+      text-align: left;
+      font-style: italic;
+      font-size: 40px;
+    }
+  }
+
+}
+
+.content{
+  font-size: 30px;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin-top: 20px;
+}
+
+.blue {
+  background-color: #5b65ad;
+  color: white;
+}
+
+.greenyellow {
+  background-color: greenyellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.purple {
+  background-color: #9d65d0;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 40%;
+  }
+
+  .parallax {
+    margin-right: 1.5rem;
+  }
+
+  .sticky {
+    margin-left: 1.5rem;
+  }
+}

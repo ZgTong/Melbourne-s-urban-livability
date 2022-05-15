@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  frontend:
+    container_name: "ccc-frontend"
+    build:
+      context: ./frontend
+      dockerfile: prod.Dockerfile
+    env_file:
+      - ./frontend/.env.production
+    ports:
+      - "3000:3000"
+
