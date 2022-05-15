@@ -24,14 +24,14 @@
 # Turn off existing frontend process
 - name: Tear down existing services
   docker_compose: 
-    project_src: /home/ubuntu/project_frontend
+    project_src: /home/ubuntu/project/
     state: absent
   become: yes
 
 # Activate frontend
 - name: Activate frontend
   docker_compose:
-    project_src: "/home/ubuntu/project_frontend"
+    project_src: "/home/ubuntu/project/"
     state: present
     build: yes
     pull: yes

@@ -1,8 +1,9 @@
 
 
-- hosts: accessNode
-  vars_files:
-    - host_vars/couchdb_configs.yaml
+
+
+# Deploy common stuff per instances
+- hosts: CouchdbAllNodes:&accessNode
   gather_facts: true
   vars:
     - ansible_user: ubuntu
@@ -13,3 +14,4 @@
     - role: instances-common
     - role: instances-volume
     - role: instances-docker
+    - role: instances-repo

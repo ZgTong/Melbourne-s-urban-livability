@@ -41,7 +41,6 @@ Overall，在这次project我们团队对asd任务进行了模块化拆分，使
 6. Deploy backend end?（这边目前还没做）
 
 
-
 #### Details
 
 （这边描述部署的一些细节，以及资源调动等。）
@@ -108,3 +107,36 @@ Overall，在这次project我们团队对asd任务进行了模块化拆分，使
     2. 如何让不同instance上的harvester读不同ip地址的couchdb
    
    好在我们在上一节动态的获取了ip地址，对于这两个，我们只要在ansible处根据不同的ip地址对不同的instance进行credentials.py和dbconfig.py文件的分发即可
+
+
+
+## User guide
+
+Our project source code repository is located at Github repository https://github.com/ZgTong/Melbourne-s-urban-livability. The project structure is allocated as following.
+
+```
+MELBOURNE-S-URBAN-LIVABILTY
+deploy
+  - ansibe-playbook
+  - config
+frontend
+  - frontend project files
+tweet_harvesting
+  - twitter harvester
+  - pre-processed data
+backend
+  - backend server
+```
+
+
+### System deployment
+
+In order to deploy the whole system, firstly the localhost is required to have ansible installed. Viewing the [installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) to install the ansible.
+
+
+
+
+
+
+
+

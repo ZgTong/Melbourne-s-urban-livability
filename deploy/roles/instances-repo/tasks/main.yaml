@@ -1,0 +1,15 @@
+
+
+# Delete project directory
+- name: Delete content & directory
+  file:
+    state: absent
+    path: "/home/ubuntu/project"
+  become: yes
+
+# Clone harvester branch repo
+- name: Git clone from remote public repo
+  git:
+    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
+    dest: "/home/ubuntu/project"
+  become: yes

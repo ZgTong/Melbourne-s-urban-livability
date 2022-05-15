@@ -219,3 +219,5 @@ OTljMmNlOTBlYzA3YTIw
         DATABASE_VERSION = '3.0.0'
         DATABASE_COOKIE = 'gQ7wygusPdkybBsmMr4uwGXq'
         ```
+
+- openrc.sh要用source来激活环境变量
