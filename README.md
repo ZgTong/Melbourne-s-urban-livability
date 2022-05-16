@@ -33,6 +33,6 @@ In order to deploy the whole system, **firstly** the localhost is required to ha
  
 To see the project front end application
 
-view **http://172.26.131.100:3000** (这边需要跟前端确认)
+view **http://172.26.131.100:3000** 
  
  
