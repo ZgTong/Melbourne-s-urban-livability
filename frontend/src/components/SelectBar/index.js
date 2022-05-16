@@ -34,15 +34,17 @@ const SelectBar = () => {
                     >
                         Weather
                     </option>
+                    <option
+                        value="city"
+                    >
+                        City
+                    </option>
                 </select>
             </div>
             <div id="legend">
                 <div id="livability-min">0</div>
                 <div className="color-key"><span id="data-caret">&#x25c6;</span></div>
                 <div id="livability-max">1</div>
-                {/*<div id="livability-min">{range.variableMin.toFixed(2).toLocaleString()}</div>*/}
-                {/*<div className="color-key"><span id="data-caret">&#x25c6;</span></div>*/}
-                {/*<div id="livability-max">{range.variableMax.toFixed(2).toLocaleString()}</div>*/}
             </div>
         </div>
     );
