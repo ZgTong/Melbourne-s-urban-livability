@@ -28,5 +28,5 @@
   roles:
     - role: instances-common
     - role: instances-volume
-    - role: instances-dockerxx
-    - role: instances-repoxx
+    - role: instances-docker
+    - role: instances-repo

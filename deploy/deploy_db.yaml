@@ -24,7 +24,7 @@
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     - ansible_python_interpreter: /usr/bin/python3
   roles:
-    - role: couchdb-startxx
+    - role: couchdb-start
 
 - hosts: CouchdbAllNodes:!CouchdbMaster
   vars_files:
@@ -36,6 +36,6 @@
     - ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     - ansible_python_interpreter: /usr/bin/python3
   roles:
-    - role: couchdb-make-clusterxx
+    - role: couchdb-make-cluster
 
 
