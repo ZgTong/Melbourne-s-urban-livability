@@ -16,10 +16,17 @@
 #
 
 # Clone harvester branch repo
-- name: Git clone backend
+# - name: Git clone backend
+#   git:
+#     repo: "https://github.com/Joettan/ccc_backend.git"
+#     dest: "/home/ubuntu/ccc_backend"
+#   become: yes
+
+# Clone harvester branch repo
+- name: Git clone from remote public repo
   git:
-    repo: "https://github.com/Joettan/ccc_backend.git"
-    dest: "/home/ubuntu/ccc_backend"
+    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
+    dest: "/home/ubuntu/Melbourne-s-urban-livability"
   become: yes
 
 
@@ -41,7 +48,7 @@
 - name: Create backend docker image 
   docker_image:
     build:
-      path: "/home/ubuntu/ccc_backend/"
+      path: "/home/ubuntu/Melbourne-s-urban-livability/backend"
       pull: yes
     name: grp28/backend
     source: build
