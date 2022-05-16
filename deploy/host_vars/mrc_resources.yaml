@@ -69,8 +69,6 @@ security_groups:
     port_range_max: 9200
     remote_ip_prefix: 0.0.0.0/0
 
-  
-
 volumes:
   - vol_name: instance01-vol-common
     vol_size: 50

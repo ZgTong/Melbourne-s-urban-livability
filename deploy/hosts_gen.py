@@ -30,14 +30,6 @@ def gen_hosts(hosts):
     with open("roles/couchdb-make-cluster/defaults/main.yaml", 'w') as f:
         f.write("masternode: " + "\""+couchdbNodes[0]+"\"")
 
-    # with open("config/dbconfig.py", 'w') as f:
-    #     f.write("DATABASE_USERNAME = " + '\"admin\"\n' 
-    #             + "DATABASE_PASSWORD = " + "\"admin\"\n" 
-    #             + "DATABASE_MASTER = " + "\""+couchdbNodes[0]+"\"\n"
-    #             + "DATABASE_SLAVE0 = " + "\""+couchdbNodes[1]+"\"\n"
-    #             + "DATABASE_SLAVE1 = " + "\""+couchdbNodes[2]+"\"\n"
-    #             + "DATABASE_VERSION = " + "'3.0.0'\n"
-    #             + "DATABASE_COOKIE = " + "'gQ7wygusPdkybBsmMr4uwGXq'\n")
 
 def gen_config(hosts):
     couchdbNodes = hosts[:len(hosts) - 1]
@@ -49,9 +41,6 @@ def gen_config(hosts):
         gen_harvester_config(path + "/dbconfig.py", host)
         shutil.copy("config/token/" + "credential" + str(i) + ".py", path  + "/credential.py")
 
-    # gen_harvester_config("config/twharvester/dbconfig0.py", couchdbNodes[0])
-    # gen_harvester_config("config/twharvester/dbconfig1.py", couchdbNodes[1])
-    # gen_harvester_config("config/twharvester/dbconfig2.py", couchdbNodes[2])
 
 def gen_harvester_config(filename, ip):
     with open(filename, 'w') as f:
@@ -60,7 +49,7 @@ def gen_harvester_config(filename, ip):
                 + "DATABASE_URL = " + '\"http://' + str(ip) + ":5984/\"\n"
                 + "DATABASE_VERSION = " + "'3.0.0'\n"
                 + "DATABASE_COOKIE = " + "'gQ7wygusPdkybBsmMr4uwGXq'\n")
-
+                
 '''
 Parse ip address of remotes
 '''

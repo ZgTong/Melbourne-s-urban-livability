@@ -36,6 +36,8 @@
     recreate: true
     restart_policy: on-failure
     restart_retries: 5
+    ports:
+      - "8080:8080"
   become: yes
 
 # - name: Run backend by shell command

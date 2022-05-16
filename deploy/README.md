@@ -202,3 +202,25 @@ These actions is performed at each couchdb nodes except couchdb master node.
 
 
 
+
+## Challenage
+
+Firstly, we use Windows sub-linux system to opearate the mrc instances. But after using cisco vpn, the remote instances cannot be connect via ansible or ssh script. By searching on the issues online, we find that it's unresolved DNS name issue by using cisco vpn. Therefore, we simply change to use macOS for deployment.
+
+Setting up the couchdb cluster is difficult and tedious especially using ansible and docker container to set them up. Different couchdb version has its own setup rules and it is hard to trace the problem. We using docker container for more flexiability but couchdb offical does not have a clear standard for cluster setup via docker. Since the docker internal network is different from outside, we ends up with the connection refused issue by strictly following the tutorial demo and changing the ip address correspondingly. We finally setup the couchdb cluster via ansible scripts with couchdb version 3 with corresponding port expose and security group opened.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
