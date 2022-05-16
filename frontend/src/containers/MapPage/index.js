@@ -8,7 +8,6 @@ import "./index.scss"
 import './index.scss'
 import {Spin} from "antd";
 import {readyFlagSelector} from "../../store/reducers/map";
-import NewMap from "../../components/NewMap";
 
 
 const MapPage = () => {

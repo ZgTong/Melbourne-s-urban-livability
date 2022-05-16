@@ -13,6 +13,7 @@ import tweetAnalyzer
 # from credential import *
 
 KEYWORD_LIST = ["city", "food", "sport", "traffic_weather"]
+REQUIRED_DATABASE = ["user", "city", "foods", "sports", "weather", "traffic"]
 db_url = f'http://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_URL[7:]}'
 
 
@@ -404,6 +405,9 @@ def main():
     if db_client is not None:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET, db_client=db_client)
+        for db in REQUIRED_DATABASE:
+            if db not in db_client.all_dbs():
+                db_client.create_database(db)
     else:
         stream_tweet = MyListener(API_KEY, API_KEY_SECRET,
                                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET)

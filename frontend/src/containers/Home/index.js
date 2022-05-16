@@ -35,10 +35,9 @@ const Home = () => {
                         <div className="intro">
                             <div className="title">About This</div>
                             <div className="content">
-                                <p>This is the presentation website for Team 28 of the S1 2022 COMP90033 Clustering and Cloud Computing assignment 2 at the University of Melbourne.</p>
+                                <p>This is the presentation website for Team 28 of the S1 2022 COMP90024 Clustering and Cloud Computing assignment 2 at the University of Melbourne.</p>
                                 <p></p>
-                                <p>Here is Content !!!</p>
-                                <p>Here is Content !!!</p>
+                                <p>Cloud-based solution	that exploits a	multitude of virtual machines(VMs) across the UniMelb Research Cloud(MRC).</p>
                             </div>
                             <div className="explore">
                                 <Button size="large" ghost>Scroll to Discover More! ↓</Button>
