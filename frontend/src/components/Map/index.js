@@ -5,7 +5,7 @@ import { readyFlagSelector, setReadyFlag, setAppReadyFlag } from '../../store/re
 import './index.scss';
 import mapStyle from "../../asset/map_style";
 import { VIC_STATE_BOUNDARIES_JSON_PATH } from "../../utils/constants";
-import {GetScene, GetSuburbs} from "../../api";
+import {GetScene, GetSuburbs, GetSuburbsBack} from "../../api";
 import useGoogleCharts from "../../utils/useGoogleCharts";
 import {message} from "antd";
 const Map = ({
@@ -218,10 +218,14 @@ const Map = ({
             dispatch(setReadyFlag({flag: true}))
             return
         }
-        GetSuburbs().then((res) => {
+        GetSuburbsBack(lg_ply_pid).then((res) => {
+            // const subPolygon = {
+            //     "type": "FeatureCollection",
+            //     "features": res[lg_ply_pid]
+            // }
             const subPolygon = {
                 "type": "FeatureCollection",
-                "features": res[lg_ply_pid]
+                "features": res.data
             }
             subDataLayer.forEach((feat) => {
                 subDataLayer.remove(feat)

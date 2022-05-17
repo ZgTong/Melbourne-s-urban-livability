@@ -11,6 +11,9 @@ export const GetSports = () => {
 export const GetSuburbs = () => {
     return request.get(`${process.env.REACT_APP_WEB_SERVER}/city_suburb_map.json`)
 }
+export const GetSuburbsBack = (vid) => {
+    return request.get(`/citySuburb`,{vid})
+}
 export const GetBarCafe = () => {
     return request.get('/foods')
 }
