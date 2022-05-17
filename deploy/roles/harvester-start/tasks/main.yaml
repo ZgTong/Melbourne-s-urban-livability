@@ -13,6 +13,13 @@
 # Location: Melbourne
 #
 
+# Clone harvester branch repo
+- name: Git clone from remote public repo
+  git:
+    repo: "https://github.com/ZgTong/Melbourne-s-urban-livability.git"
+    dest: "/home/ubuntu/Melbourne-s-urban-livability"
+  become: yes
+
 # Create a database configure directory
 - name: Create database config directory
   become: yes
